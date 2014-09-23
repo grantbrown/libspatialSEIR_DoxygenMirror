@@ -1,0 +1,140 @@
+\hypertarget{classSpatialSEIR_1_1CovariateMatrix}{\section{Spatial\-S\-E\-I\-R\-:\-:Covariate\-Matrix Class Reference}
+\label{classSpatialSEIR_1_1CovariateMatrix}\index{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}}
+}
+
+
+{\ttfamily \#include $<$Covariate\-Matrix.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classSpatialSEIR_1_1CovariateMatrix_a6d01e75564364a8f3356c3cee02bf43d}{gen\-From\-Data\-Stream} (double $\ast$indata\-\_\-x, double $\ast$indata\-\_\-z, int $\ast$inrow\-\_\-x, int $\ast$incol\-\_\-x, int $\ast$inrow\-\_\-z, int $\ast$incol\-\_\-z)
+\item 
+int \hyperlink{classSpatialSEIR_1_1CovariateMatrix_a385a3e444e0e92993db6d50440a1c254}{calculate\-\_\-fixed\-\_\-eta\-\_\-\-C\-P\-U} (double $\ast$eta, double $\ast$beta)
+\item 
+int \hyperlink{classSpatialSEIR_1_1CovariateMatrix_ad99c3e064edae9c73aa30b5f68628c15}{calculate\-\_\-eta\-\_\-\-C\-P\-U} (double $\ast$eta, double $\ast$beta)
+\item 
+int \hyperlink{classSpatialSEIR_1_1CovariateMatrix_af9eed26337877e698c4077c2548aedd3}{calculate\-\_\-eta\-\_\-\-O\-C\-L} (double $\ast$eta, double $\ast$beta)
+\item 
+void \hyperlink{classSpatialSEIR_1_1CovariateMatrix_a094a15fd40f4a6920c3df909b11761f6}{build\-Decorrelation\-Projection\-Matrix} ()
+\item 
+\hyperlink{classSpatialSEIR_1_1CovariateMatrix_a249c8173d32d887ee3beb492e8f9dad1}{$\sim$\-Covariate\-Matrix} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1CovariateMatrix_a1db364bb68f755ff8fc15844ae429716}{X}
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1CovariateMatrix_a148a63e712e2a3fabc928615e24acd78}{Z}
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1CovariateMatrix_abdf2ed4c599a62b93e856a0bcbbcef2f}{decorrelation\-Projection\-Matrix}
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1CovariateMatrix_aea38ad4cbebd1c82842cf3c389c93856}{offset}
+\item 
+int $\ast$ \hyperlink{classSpatialSEIR_1_1CovariateMatrix_a85ba097a370463b0b96e1ab76791f681}{offset\-Length}
+\item 
+std\-::vector$<$ std\-::string $>$ $\ast$ \hyperlink{classSpatialSEIR_1_1CovariateMatrix_ad537dcde3bcf55230b30e2c68d9497f6}{varnames}
+\item 
+int $\ast$ \hyperlink{classSpatialSEIR_1_1CovariateMatrix_afd333a01394a5aea9ccd3cb34f781a59}{nrow\-\_\-x}
+\item 
+int $\ast$ \hyperlink{classSpatialSEIR_1_1CovariateMatrix_a84e9369443cf51230067605b13a36702}{ncol\-\_\-x}
+\item 
+int $\ast$ \hyperlink{classSpatialSEIR_1_1CovariateMatrix_a01bcdc77f58b3f98fea4f3fb20edbeae}{nrow\-\_\-z}
+\item 
+int $\ast$ \hyperlink{classSpatialSEIR_1_1CovariateMatrix_ac4e692ef3c7fe38cb0c383c561f4991e}{ncol\-\_\-z}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSpatialSEIR_1_1CovariateMatrix_a249c8173d32d887ee3beb492e8f9dad1}{\index{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}!$\sim$\-Covariate\-Matrix@{$\sim$\-Covariate\-Matrix}}
+\index{$\sim$\-Covariate\-Matrix@{$\sim$\-Covariate\-Matrix}!SpatialSEIR::CovariateMatrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}}
+\subsubsection[{$\sim$\-Covariate\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix\-::$\sim$\-Covariate\-Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1CovariateMatrix_a249c8173d32d887ee3beb492e8f9dad1}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSpatialSEIR_1_1CovariateMatrix_a094a15fd40f4a6920c3df909b11761f6}{\index{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}!build\-Decorrelation\-Projection\-Matrix@{build\-Decorrelation\-Projection\-Matrix}}
+\index{build\-Decorrelation\-Projection\-Matrix@{build\-Decorrelation\-Projection\-Matrix}!SpatialSEIR::CovariateMatrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}}
+\subsubsection[{build\-Decorrelation\-Projection\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix\-::build\-Decorrelation\-Projection\-Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1CovariateMatrix_a094a15fd40f4a6920c3df909b11761f6}
+\hypertarget{classSpatialSEIR_1_1CovariateMatrix_ad99c3e064edae9c73aa30b5f68628c15}{\index{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}!calculate\-\_\-eta\-\_\-\-C\-P\-U@{calculate\-\_\-eta\-\_\-\-C\-P\-U}}
+\index{calculate\-\_\-eta\-\_\-\-C\-P\-U@{calculate\-\_\-eta\-\_\-\-C\-P\-U}!SpatialSEIR::CovariateMatrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}}
+\subsubsection[{calculate\-\_\-eta\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix\-::calculate\-\_\-eta\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{eta, }
+\item[{double $\ast$}]{beta}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1CovariateMatrix_ad99c3e064edae9c73aa30b5f68628c15}
+\hypertarget{classSpatialSEIR_1_1CovariateMatrix_af9eed26337877e698c4077c2548aedd3}{\index{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}!calculate\-\_\-eta\-\_\-\-O\-C\-L@{calculate\-\_\-eta\-\_\-\-O\-C\-L}}
+\index{calculate\-\_\-eta\-\_\-\-O\-C\-L@{calculate\-\_\-eta\-\_\-\-O\-C\-L}!SpatialSEIR::CovariateMatrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}}
+\subsubsection[{calculate\-\_\-eta\-\_\-\-O\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix\-::calculate\-\_\-eta\-\_\-\-O\-C\-L (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{eta, }
+\item[{double $\ast$}]{beta}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1CovariateMatrix_af9eed26337877e698c4077c2548aedd3}
+\hypertarget{classSpatialSEIR_1_1CovariateMatrix_a385a3e444e0e92993db6d50440a1c254}{\index{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}!calculate\-\_\-fixed\-\_\-eta\-\_\-\-C\-P\-U@{calculate\-\_\-fixed\-\_\-eta\-\_\-\-C\-P\-U}}
+\index{calculate\-\_\-fixed\-\_\-eta\-\_\-\-C\-P\-U@{calculate\-\_\-fixed\-\_\-eta\-\_\-\-C\-P\-U}!SpatialSEIR::CovariateMatrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}}
+\subsubsection[{calculate\-\_\-fixed\-\_\-eta\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix\-::calculate\-\_\-fixed\-\_\-eta\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{eta, }
+\item[{double $\ast$}]{beta}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1CovariateMatrix_a385a3e444e0e92993db6d50440a1c254}
+\hypertarget{classSpatialSEIR_1_1CovariateMatrix_a6d01e75564364a8f3356c3cee02bf43d}{\index{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}!gen\-From\-Data\-Stream@{gen\-From\-Data\-Stream}}
+\index{gen\-From\-Data\-Stream@{gen\-From\-Data\-Stream}!SpatialSEIR::CovariateMatrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}}
+\subsubsection[{gen\-From\-Data\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix\-::gen\-From\-Data\-Stream (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{indata\-\_\-x, }
+\item[{double $\ast$}]{indata\-\_\-z, }
+\item[{int $\ast$}]{inrow\-\_\-x, }
+\item[{int $\ast$}]{incol\-\_\-x, }
+\item[{int $\ast$}]{inrow\-\_\-z, }
+\item[{int $\ast$}]{incol\-\_\-z}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1CovariateMatrix_a6d01e75564364a8f3356c3cee02bf43d}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSpatialSEIR_1_1CovariateMatrix_abdf2ed4c599a62b93e856a0bcbbcef2f}{\index{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}!decorrelation\-Projection\-Matrix@{decorrelation\-Projection\-Matrix}}
+\index{decorrelation\-Projection\-Matrix@{decorrelation\-Projection\-Matrix}!SpatialSEIR::CovariateMatrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}}
+\subsubsection[{decorrelation\-Projection\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix\-::decorrelation\-Projection\-Matrix}}\label{classSpatialSEIR_1_1CovariateMatrix_abdf2ed4c599a62b93e856a0bcbbcef2f}
+\hypertarget{classSpatialSEIR_1_1CovariateMatrix_a84e9369443cf51230067605b13a36702}{\index{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}!ncol\-\_\-x@{ncol\-\_\-x}}
+\index{ncol\-\_\-x@{ncol\-\_\-x}!SpatialSEIR::CovariateMatrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}}
+\subsubsection[{ncol\-\_\-x}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix\-::ncol\-\_\-x}}\label{classSpatialSEIR_1_1CovariateMatrix_a84e9369443cf51230067605b13a36702}
+\hypertarget{classSpatialSEIR_1_1CovariateMatrix_ac4e692ef3c7fe38cb0c383c561f4991e}{\index{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}!ncol\-\_\-z@{ncol\-\_\-z}}
+\index{ncol\-\_\-z@{ncol\-\_\-z}!SpatialSEIR::CovariateMatrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}}
+\subsubsection[{ncol\-\_\-z}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix\-::ncol\-\_\-z}}\label{classSpatialSEIR_1_1CovariateMatrix_ac4e692ef3c7fe38cb0c383c561f4991e}
+\hypertarget{classSpatialSEIR_1_1CovariateMatrix_afd333a01394a5aea9ccd3cb34f781a59}{\index{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}!nrow\-\_\-x@{nrow\-\_\-x}}
+\index{nrow\-\_\-x@{nrow\-\_\-x}!SpatialSEIR::CovariateMatrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}}
+\subsubsection[{nrow\-\_\-x}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix\-::nrow\-\_\-x}}\label{classSpatialSEIR_1_1CovariateMatrix_afd333a01394a5aea9ccd3cb34f781a59}
+\hypertarget{classSpatialSEIR_1_1CovariateMatrix_a01bcdc77f58b3f98fea4f3fb20edbeae}{\index{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}!nrow\-\_\-z@{nrow\-\_\-z}}
+\index{nrow\-\_\-z@{nrow\-\_\-z}!SpatialSEIR::CovariateMatrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}}
+\subsubsection[{nrow\-\_\-z}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix\-::nrow\-\_\-z}}\label{classSpatialSEIR_1_1CovariateMatrix_a01bcdc77f58b3f98fea4f3fb20edbeae}
+\hypertarget{classSpatialSEIR_1_1CovariateMatrix_aea38ad4cbebd1c82842cf3c389c93856}{\index{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}!offset@{offset}}
+\index{offset@{offset}!SpatialSEIR::CovariateMatrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}}
+\subsubsection[{offset}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix\-::offset}}\label{classSpatialSEIR_1_1CovariateMatrix_aea38ad4cbebd1c82842cf3c389c93856}
+\hypertarget{classSpatialSEIR_1_1CovariateMatrix_a85ba097a370463b0b96e1ab76791f681}{\index{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}!offset\-Length@{offset\-Length}}
+\index{offset\-Length@{offset\-Length}!SpatialSEIR::CovariateMatrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}}
+\subsubsection[{offset\-Length}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix\-::offset\-Length}}\label{classSpatialSEIR_1_1CovariateMatrix_a85ba097a370463b0b96e1ab76791f681}
+\hypertarget{classSpatialSEIR_1_1CovariateMatrix_ad537dcde3bcf55230b30e2c68d9497f6}{\index{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}!varnames@{varnames}}
+\index{varnames@{varnames}!SpatialSEIR::CovariateMatrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}}
+\subsubsection[{varnames}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::string$>$$\ast$ Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix\-::varnames}}\label{classSpatialSEIR_1_1CovariateMatrix_ad537dcde3bcf55230b30e2c68d9497f6}
+\hypertarget{classSpatialSEIR_1_1CovariateMatrix_a1db364bb68f755ff8fc15844ae429716}{\index{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}!X@{X}}
+\index{X@{X}!SpatialSEIR::CovariateMatrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}}
+\subsubsection[{X}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix\-::\-X}}\label{classSpatialSEIR_1_1CovariateMatrix_a1db364bb68f755ff8fc15844ae429716}
+\hypertarget{classSpatialSEIR_1_1CovariateMatrix_a148a63e712e2a3fabc928615e24acd78}{\index{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}!Z@{Z}}
+\index{Z@{Z}!SpatialSEIR::CovariateMatrix@{Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix}}
+\subsubsection[{Z}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-Covariate\-Matrix\-::\-Z}}\label{classSpatialSEIR_1_1CovariateMatrix_a148a63e712e2a3fabc928615e24acd78}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+lib\-Spatial\-S\-E\-I\-R/include/\-Data\-Structures/\hyperlink{CovariateMatrix_8hpp}{Covariate\-Matrix.\-hpp}\item 
+lib\-Spatial\-S\-E\-I\-R/src/\hyperlink{CovariateMatrix_8cpp}{Covariate\-Matrix.\-cpp}\end{DoxyCompactItemize}

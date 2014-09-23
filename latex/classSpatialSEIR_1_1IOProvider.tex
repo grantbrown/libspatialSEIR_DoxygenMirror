@@ -1,0 +1,162 @@
+\hypertarget{classSpatialSEIR_1_1IOProvider}{\section{Spatial\-S\-E\-I\-R\-:\-:I\-O\-Provider Class Reference}
+\label{classSpatialSEIR_1_1IOProvider}\index{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}}
+}
+
+
+{\ttfamily \#include $<$I\-O\-Provider.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSpatialSEIR_1_1IOProvider_ae89a408ae26e4a8b0dc6ed7279dcb7db}{I\-O\-Provider} ()
+\item 
+\hyperlink{classSpatialSEIR_1_1IOProvider_a933b502eeaa05b44bf1bef52c042659c}{I\-O\-Provider} (\hyperlink{classSpatialSEIR_1_1ModelContext}{Model\-Context} $\ast$\hyperlink{classSpatialSEIR_1_1IOProvider_add6cc02df595bc12b3ac76ce148cc3dc}{context}, std\-::string $\ast$\hyperlink{classSpatialSEIR_1_1IOProvider_a744600dd48a3b8a0f6d65dda5f160bda}{out\-File\-Path}, int $\ast$\hyperlink{classSpatialSEIR_1_1IOProvider_a756afb68ee349d9715566fa9fdc4d37e}{iteration\-Stride})
+\item 
+int \hyperlink{classSpatialSEIR_1_1IOProvider_a3472f7209ca2a3759a47e619f7832432}{populate} (\hyperlink{classSpatialSEIR_1_1ModelContext}{Model\-Context} $\ast$\hyperlink{classSpatialSEIR_1_1IOProvider_add6cc02df595bc12b3ac76ce148cc3dc}{context}, std\-::string $\ast$\hyperlink{classSpatialSEIR_1_1IOProvider_a744600dd48a3b8a0f6d65dda5f160bda}{out\-File\-Path}, int $\ast$\hyperlink{classSpatialSEIR_1_1IOProvider_a756afb68ee349d9715566fa9fdc4d37e}{iteration\-Stride})
+\item 
+void \hyperlink{classSpatialSEIR_1_1IOProvider_aa7568ce7698cad0aea3c429f1833f0bb}{set\-Trace} (int location\-Index)
+\item 
+void \hyperlink{classSpatialSEIR_1_1IOProvider_aa61e367e84b6f8a5377f7255877213e3}{set\-Trace} (int location\-Index, int time\-Index)
+\item 
+int \hyperlink{classSpatialSEIR_1_1IOProvider_a4951df99453c659fa25503781932373c}{close} ()
+\item 
+int \hyperlink{classSpatialSEIR_1_1IOProvider_afa6b6c8fd164717fd7ccfd1d08c4dca4}{file\-Init} ()
+\item 
+int \hyperlink{classSpatialSEIR_1_1IOProvider_a5ab95092c0c23757c54440ef1b78ad53}{cat\-Iter} (int iteration)
+\item 
+\hyperlink{classSpatialSEIR_1_1IOProvider_a1706d3ce051c5d8454fd8cf3b4c51d07}{$\sim$\-I\-O\-Provider} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSpatialSEIR_1_1ModelContext}{Model\-Context} $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1IOProvider_add6cc02df595bc12b3ac76ce148cc3dc}{context}
+\item 
+int $\ast$ \hyperlink{classSpatialSEIR_1_1IOProvider_a756afb68ee349d9715566fa9fdc4d37e}{iteration\-Stride}
+\item 
+bool $\ast$ \hyperlink{classSpatialSEIR_1_1IOProvider_ac482c0b2eccc9c587a08ae61f588e23e}{is\-Open}
+\item 
+time\-\_\-t $\ast$ \hyperlink{classSpatialSEIR_1_1IOProvider_acab89531190c3433ea0fe1bc3f14aa0f}{timer}
+\item 
+time\-\_\-t $\ast$ \hyperlink{classSpatialSEIR_1_1IOProvider_a4900b2f77db4845e2db1e5511b1f513b}{start\-Time}
+\item 
+std\-::vector$<$ \hyperlink{structSpatialSEIR_1_1TimeLocationTrace}{Time\-Location\-Trace} $\ast$ $>$ $\ast$ \hyperlink{classSpatialSEIR_1_1IOProvider_ad1fa227b00c230cc9549e682c17d5c1c}{time\-Location\-Traces}
+\item 
+std\-::vector$<$ \hyperlink{structSpatialSEIR_1_1LocationTrace}{Location\-Trace} $\ast$ $>$ $\ast$ \hyperlink{classSpatialSEIR_1_1IOProvider_a3dcb1c064746cd7e9fd6e15c1b55540d}{location\-Traces}
+\item 
+std\-::ofstream $\ast$ \hyperlink{classSpatialSEIR_1_1IOProvider_a7ce442ee5f7eda58ff86e68d3df07edc}{out\-File\-Stream}
+\item 
+std\-::string $\ast$ \hyperlink{classSpatialSEIR_1_1IOProvider_a744600dd48a3b8a0f6d65dda5f160bda}{out\-File\-Path}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classSpatialSEIR_1_1IOProvider}{I\-O\-Provider} class handles file output operations. You might expect given the name that it handled file input operations as well, but you would be mistaken. Mainly it writes M\-C\-M\-C sample output. The user shouldn't really need to interact with it, as \hyperlink{classSpatialSEIR_1_1ModelContext}{Model\-Context} handles the basics. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSpatialSEIR_1_1IOProvider_ae89a408ae26e4a8b0dc6ed7279dcb7db}{\index{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}!I\-O\-Provider@{I\-O\-Provider}}
+\index{I\-O\-Provider@{I\-O\-Provider}!SpatialSEIR::IOProvider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}}
+\subsubsection[{I\-O\-Provider}]{\setlength{\rightskip}{0pt plus 5cm}Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider\-::\-I\-O\-Provider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1IOProvider_ae89a408ae26e4a8b0dc6ed7279dcb7db}
+\hypertarget{classSpatialSEIR_1_1IOProvider_a933b502eeaa05b44bf1bef52c042659c}{\index{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}!I\-O\-Provider@{I\-O\-Provider}}
+\index{I\-O\-Provider@{I\-O\-Provider}!SpatialSEIR::IOProvider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}}
+\subsubsection[{I\-O\-Provider}]{\setlength{\rightskip}{0pt plus 5cm}Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider\-::\-I\-O\-Provider (
+\begin{DoxyParamCaption}
+\item[{{\bf Model\-Context} $\ast$}]{context, }
+\item[{std\-::string $\ast$}]{out\-File\-Path, }
+\item[{int $\ast$}]{iteration\-Stride}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1IOProvider_a933b502eeaa05b44bf1bef52c042659c}
+\hypertarget{classSpatialSEIR_1_1IOProvider_a1706d3ce051c5d8454fd8cf3b4c51d07}{\index{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}!$\sim$\-I\-O\-Provider@{$\sim$\-I\-O\-Provider}}
+\index{$\sim$\-I\-O\-Provider@{$\sim$\-I\-O\-Provider}!SpatialSEIR::IOProvider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}}
+\subsubsection[{$\sim$\-I\-O\-Provider}]{\setlength{\rightskip}{0pt plus 5cm}Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider\-::$\sim$\-I\-O\-Provider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1IOProvider_a1706d3ce051c5d8454fd8cf3b4c51d07}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSpatialSEIR_1_1IOProvider_a5ab95092c0c23757c54440ef1b78ad53}{\index{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}!cat\-Iter@{cat\-Iter}}
+\index{cat\-Iter@{cat\-Iter}!SpatialSEIR::IOProvider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}}
+\subsubsection[{cat\-Iter}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider\-::cat\-Iter (
+\begin{DoxyParamCaption}
+\item[{int}]{iteration}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1IOProvider_a5ab95092c0c23757c54440ef1b78ad53}
+\hypertarget{classSpatialSEIR_1_1IOProvider_a4951df99453c659fa25503781932373c}{\index{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}!close@{close}}
+\index{close@{close}!SpatialSEIR::IOProvider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider\-::close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1IOProvider_a4951df99453c659fa25503781932373c}
+\hypertarget{classSpatialSEIR_1_1IOProvider_afa6b6c8fd164717fd7ccfd1d08c4dca4}{\index{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}!file\-Init@{file\-Init}}
+\index{file\-Init@{file\-Init}!SpatialSEIR::IOProvider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}}
+\subsubsection[{file\-Init}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider\-::file\-Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1IOProvider_afa6b6c8fd164717fd7ccfd1d08c4dca4}
+\hypertarget{classSpatialSEIR_1_1IOProvider_a3472f7209ca2a3759a47e619f7832432}{\index{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}!populate@{populate}}
+\index{populate@{populate}!SpatialSEIR::IOProvider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}}
+\subsubsection[{populate}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider\-::populate (
+\begin{DoxyParamCaption}
+\item[{{\bf Model\-Context} $\ast$}]{context, }
+\item[{std\-::string $\ast$}]{out\-File\-Path, }
+\item[{int $\ast$}]{iteration\-Stride}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1IOProvider_a3472f7209ca2a3759a47e619f7832432}
+\hypertarget{classSpatialSEIR_1_1IOProvider_aa7568ce7698cad0aea3c429f1833f0bb}{\index{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}!set\-Trace@{set\-Trace}}
+\index{set\-Trace@{set\-Trace}!SpatialSEIR::IOProvider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}}
+\subsubsection[{set\-Trace}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider\-::set\-Trace (
+\begin{DoxyParamCaption}
+\item[{int}]{location\-Index}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1IOProvider_aa7568ce7698cad0aea3c429f1833f0bb}
+Keep track of compartment and transition probability information for location location\-Index \hypertarget{classSpatialSEIR_1_1IOProvider_aa61e367e84b6f8a5377f7255877213e3}{\index{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}!set\-Trace@{set\-Trace}}
+\index{set\-Trace@{set\-Trace}!SpatialSEIR::IOProvider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}}
+\subsubsection[{set\-Trace}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider\-::set\-Trace (
+\begin{DoxyParamCaption}
+\item[{int}]{location\-Index, }
+\item[{int}]{time\-Index}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1IOProvider_aa61e367e84b6f8a5377f7255877213e3}
+Keep track of compartment and transition probability information for location location\-Index and time point time\-Index 
+
+\subsection{Member Data Documentation}
+\hypertarget{classSpatialSEIR_1_1IOProvider_add6cc02df595bc12b3ac76ce148cc3dc}{\index{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}!context@{context}}
+\index{context@{context}!SpatialSEIR::IOProvider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}}
+\subsubsection[{context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Model\-Context}$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider\-::context}}\label{classSpatialSEIR_1_1IOProvider_add6cc02df595bc12b3ac76ce148cc3dc}
+\hypertarget{classSpatialSEIR_1_1IOProvider_ac482c0b2eccc9c587a08ae61f588e23e}{\index{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}!is\-Open@{is\-Open}}
+\index{is\-Open@{is\-Open}!SpatialSEIR::IOProvider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}}
+\subsubsection[{is\-Open}]{\setlength{\rightskip}{0pt plus 5cm}bool$\ast$ Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider\-::is\-Open}}\label{classSpatialSEIR_1_1IOProvider_ac482c0b2eccc9c587a08ae61f588e23e}
+\hypertarget{classSpatialSEIR_1_1IOProvider_a756afb68ee349d9715566fa9fdc4d37e}{\index{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}!iteration\-Stride@{iteration\-Stride}}
+\index{iteration\-Stride@{iteration\-Stride}!SpatialSEIR::IOProvider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}}
+\subsubsection[{iteration\-Stride}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider\-::iteration\-Stride}}\label{classSpatialSEIR_1_1IOProvider_a756afb68ee349d9715566fa9fdc4d37e}
+\hypertarget{classSpatialSEIR_1_1IOProvider_a3dcb1c064746cd7e9fd6e15c1b55540d}{\index{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}!location\-Traces@{location\-Traces}}
+\index{location\-Traces@{location\-Traces}!SpatialSEIR::IOProvider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}}
+\subsubsection[{location\-Traces}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Location\-Trace}$\ast$$>$$\ast$ Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider\-::location\-Traces}}\label{classSpatialSEIR_1_1IOProvider_a3dcb1c064746cd7e9fd6e15c1b55540d}
+\hypertarget{classSpatialSEIR_1_1IOProvider_a744600dd48a3b8a0f6d65dda5f160bda}{\index{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}!out\-File\-Path@{out\-File\-Path}}
+\index{out\-File\-Path@{out\-File\-Path}!SpatialSEIR::IOProvider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}}
+\subsubsection[{out\-File\-Path}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string$\ast$ Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider\-::out\-File\-Path}}\label{classSpatialSEIR_1_1IOProvider_a744600dd48a3b8a0f6d65dda5f160bda}
+\hypertarget{classSpatialSEIR_1_1IOProvider_a7ce442ee5f7eda58ff86e68d3df07edc}{\index{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}!out\-File\-Stream@{out\-File\-Stream}}
+\index{out\-File\-Stream@{out\-File\-Stream}!SpatialSEIR::IOProvider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}}
+\subsubsection[{out\-File\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ofstream$\ast$ Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider\-::out\-File\-Stream}}\label{classSpatialSEIR_1_1IOProvider_a7ce442ee5f7eda58ff86e68d3df07edc}
+\hypertarget{classSpatialSEIR_1_1IOProvider_a4900b2f77db4845e2db1e5511b1f513b}{\index{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}!start\-Time@{start\-Time}}
+\index{start\-Time@{start\-Time}!SpatialSEIR::IOProvider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}}
+\subsubsection[{start\-Time}]{\setlength{\rightskip}{0pt plus 5cm}time\-\_\-t$\ast$ Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider\-::start\-Time}}\label{classSpatialSEIR_1_1IOProvider_a4900b2f77db4845e2db1e5511b1f513b}
+\hypertarget{classSpatialSEIR_1_1IOProvider_ad1fa227b00c230cc9549e682c17d5c1c}{\index{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}!time\-Location\-Traces@{time\-Location\-Traces}}
+\index{time\-Location\-Traces@{time\-Location\-Traces}!SpatialSEIR::IOProvider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}}
+\subsubsection[{time\-Location\-Traces}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Time\-Location\-Trace}$\ast$$>$$\ast$ Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider\-::time\-Location\-Traces}}\label{classSpatialSEIR_1_1IOProvider_ad1fa227b00c230cc9549e682c17d5c1c}
+\hypertarget{classSpatialSEIR_1_1IOProvider_acab89531190c3433ea0fe1bc3f14aa0f}{\index{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}!timer@{timer}}
+\index{timer@{timer}!SpatialSEIR::IOProvider@{Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider}}
+\subsubsection[{timer}]{\setlength{\rightskip}{0pt plus 5cm}time\-\_\-t$\ast$ Spatial\-S\-E\-I\-R\-::\-I\-O\-Provider\-::timer}}\label{classSpatialSEIR_1_1IOProvider_acab89531190c3433ea0fe1bc3f14aa0f}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+lib\-Spatial\-S\-E\-I\-R/include/\hyperlink{IOProvider_8hpp}{I\-O\-Provider.\-hpp}\item 
+lib\-Spatial\-S\-E\-I\-R/src/\hyperlink{IOProvider_8cpp}{I\-O\-Provider.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,186 @@
+\hypertarget{classSpatialSEIR_1_1InitCompartmentFullConditional}{\section{Spatial\-S\-E\-I\-R\-:\-:Init\-Compartment\-Full\-Conditional Class Reference}
+\label{classSpatialSEIR_1_1InitCompartmentFullConditional}\index{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional@{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional}}
+}
+
+
+{\ttfamily \#include $<$L\-S\-S\-\_\-\-Full\-Conditional.\-hpp$>$}
+
+Inheritance diagram for Spatial\-S\-E\-I\-R\-:\-:Init\-Compartment\-Full\-Conditional\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.590909cm]{classSpatialSEIR_1_1InitCompartmentFullConditional}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classSpatialSEIR_1_1InitCompartmentFullConditional_a4d1e4214653686f98dbe94809e6a8390}{$\sim$\-Init\-Compartment\-Full\-Conditional} ()
+\item 
+virtual int \hyperlink{classSpatialSEIR_1_1InitCompartmentFullConditional_a25fc6e3ac2cb71a6e115ce3235fd8de0}{eval\-C\-P\-U} ()=0
+\item 
+virtual int \hyperlink{classSpatialSEIR_1_1InitCompartmentFullConditional_a2f0c4b5628e2f2074c1a84ea6349a754}{eval\-O\-C\-L} ()=0
+\item 
+virtual void \hyperlink{classSpatialSEIR_1_1InitCompartmentFullConditional_a03bcc440fa87265336980f3e833f59f2}{sample} (int verbose)=0
+\item 
+virtual long double \hyperlink{classSpatialSEIR_1_1InitCompartmentFullConditional_aadb3975a791221136e6c4be5e016d9f1}{get\-Value} ()=0
+\item 
+virtual void \hyperlink{classSpatialSEIR_1_1InitCompartmentFullConditional_acbc03a68f5c67beacefadcc3c22c1d88}{set\-Value} (long double value)=0
+\item 
+virtual int \hyperlink{classSpatialSEIR_1_1InitCompartmentFullConditional_a3fab33c4f5b857998fd928a00cea09e7}{calculate\-Relevant\-Compartments} ()=0
+\item 
+virtual int \hyperlink{classSpatialSEIR_1_1InitCompartmentFullConditional_aa4eae1aafbcdc4819be2e520d600dedf}{calculate\-Relevant\-Compartments\-\_\-\-O\-C\-L} ()=0
+\item 
+void \hyperlink{classSpatialSEIR_1_1InitCompartmentFullConditional_a7cf7ddd043ec51b17a3c369ebe03a95c}{update\-Sampling\-Parameters} (double desired\-Ratio, double target\-Width, double proportion\-Change)
+\item 
+int \hyperlink{classSpatialSEIR_1_1InitCompartmentFullConditional_a6c35c9ed95a8adbada0e3da0608531bd}{get\-Full\-Conditional\-Type} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classSpatialSEIR_1_1InitCompartmentFullConditional}{Init\-Compartment\-Full\-Conditional} class inherits the structure of \hyperlink{classSpatialSEIR_1_1FullConditional}{Full\-Conditional}, and provides sampling methods for the initial compartment size parameters. These are\-:
+\begin{DoxyEnumerate}
+\item \hyperlink{classSpatialSEIR_1_1FC__S0}{F\-C\-\_\-\-S0}, the initial susceptible group
+\item \hyperlink{classSpatialSEIR_1_1FC__E0}{F\-C\-\_\-\-E0}, the initial exposed group
+\item \hyperlink{classSpatialSEIR_1_1FC__I0}{F\-C\-\_\-\-I0}, the initial infectious group
+\item \hyperlink{classSpatialSEIR_1_1FC__R0}{F\-C\-\_\-\-R0}, the initial recovered group 
+\end{DoxyEnumerate}
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSpatialSEIR_1_1InitCompartmentFullConditional_a4d1e4214653686f98dbe94809e6a8390}{\index{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional@{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional}!$\sim$\-Init\-Compartment\-Full\-Conditional@{$\sim$\-Init\-Compartment\-Full\-Conditional}}
+\index{$\sim$\-Init\-Compartment\-Full\-Conditional@{$\sim$\-Init\-Compartment\-Full\-Conditional}!SpatialSEIR::InitCompartmentFullConditional@{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional}}
+\subsubsection[{$\sim$\-Init\-Compartment\-Full\-Conditional}]{\setlength{\rightskip}{0pt plus 5cm}virtual Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional\-::$\sim$\-Init\-Compartment\-Full\-Conditional (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classSpatialSEIR_1_1InitCompartmentFullConditional_a4d1e4214653686f98dbe94809e6a8390}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSpatialSEIR_1_1InitCompartmentFullConditional_a3fab33c4f5b857998fd928a00cea09e7}{\index{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional@{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional}!calculate\-Relevant\-Compartments@{calculate\-Relevant\-Compartments}}
+\index{calculate\-Relevant\-Compartments@{calculate\-Relevant\-Compartments}!SpatialSEIR::InitCompartmentFullConditional@{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional}}
+\subsubsection[{calculate\-Relevant\-Compartments}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional\-::calculate\-Relevant\-Compartments (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSpatialSEIR_1_1InitCompartmentFullConditional_a3fab33c4f5b857998fd928a00cea09e7}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1FullConditional_a04c671e900a359f5a554817f21a99b5c}{Spatial\-S\-E\-I\-R\-::\-Full\-Conditional}.
+
+
+
+Implemented in \hyperlink{classSpatialSEIR_1_1FC__I0_aa463dde280304445e22a9653536a1edb}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-I0}, \hyperlink{classSpatialSEIR_1_1FC__E0_accae19c302cdd306fdfebf3a76c84c11}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-E0}, \hyperlink{classSpatialSEIR_1_1FC__R0_a651e144af6767ba90b59ae04f3164c28}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-R0}, and \hyperlink{classSpatialSEIR_1_1FC__S0_a755fc8e1d69791f6f3883f12a2f1b1c9}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-S0}.
+
+\hypertarget{classSpatialSEIR_1_1InitCompartmentFullConditional_aa4eae1aafbcdc4819be2e520d600dedf}{\index{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional@{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional}!calculate\-Relevant\-Compartments\-\_\-\-O\-C\-L@{calculate\-Relevant\-Compartments\-\_\-\-O\-C\-L}}
+\index{calculate\-Relevant\-Compartments\-\_\-\-O\-C\-L@{calculate\-Relevant\-Compartments\-\_\-\-O\-C\-L}!SpatialSEIR::InitCompartmentFullConditional@{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional}}
+\subsubsection[{calculate\-Relevant\-Compartments\-\_\-\-O\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional\-::calculate\-Relevant\-Compartments\-\_\-\-O\-C\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSpatialSEIR_1_1InitCompartmentFullConditional_aa4eae1aafbcdc4819be2e520d600dedf}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1FullConditional_a77b75e8e1f62175aa0380a2e9aca3d46}{Spatial\-S\-E\-I\-R\-::\-Full\-Conditional}.
+
+
+
+Implemented in \hyperlink{classSpatialSEIR_1_1FC__I0_ab1d7728b636f695a984ce609de87efde}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-I0}, \hyperlink{classSpatialSEIR_1_1FC__E0_aab40abc211ff8095a6ed0ec0b0c48b51}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-E0}, \hyperlink{classSpatialSEIR_1_1FC__R0_ad94da8ac1a1b746f1902e709d4f81634}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-R0}, and \hyperlink{classSpatialSEIR_1_1FC__S0_ab1c67b9f867ed1e8b9ac27c4f855a102}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-S0}.
+
+\hypertarget{classSpatialSEIR_1_1InitCompartmentFullConditional_a25fc6e3ac2cb71a6e115ce3235fd8de0}{\index{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional@{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional}!eval\-C\-P\-U@{eval\-C\-P\-U}}
+\index{eval\-C\-P\-U@{eval\-C\-P\-U}!SpatialSEIR::InitCompartmentFullConditional@{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional}}
+\subsubsection[{eval\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional\-::eval\-C\-P\-U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSpatialSEIR_1_1InitCompartmentFullConditional_a25fc6e3ac2cb71a6e115ce3235fd8de0}
+
+
+Implemented in \hyperlink{classSpatialSEIR_1_1FC__I0_a36dbaf498cb226c7b2042438f9432ae4}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-I0}, \hyperlink{classSpatialSEIR_1_1FC__E0_a6f38f6b04084d8cc9a94a360195e459c}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-E0}, \hyperlink{classSpatialSEIR_1_1FC__R0_a0a7321f7437898caad90229e67ce7e12}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-R0}, and \hyperlink{classSpatialSEIR_1_1FC__S0_ae52c137dbd299a31a1b2055e924c93c2}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-S0}.
+
+\hypertarget{classSpatialSEIR_1_1InitCompartmentFullConditional_a2f0c4b5628e2f2074c1a84ea6349a754}{\index{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional@{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional}!eval\-O\-C\-L@{eval\-O\-C\-L}}
+\index{eval\-O\-C\-L@{eval\-O\-C\-L}!SpatialSEIR::InitCompartmentFullConditional@{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional}}
+\subsubsection[{eval\-O\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional\-::eval\-O\-C\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSpatialSEIR_1_1InitCompartmentFullConditional_a2f0c4b5628e2f2074c1a84ea6349a754}
+
+
+Implemented in \hyperlink{classSpatialSEIR_1_1FC__I0_abc02f4b767cda97f040e53095dd3024d}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-I0}, \hyperlink{classSpatialSEIR_1_1FC__E0_a7470507101e662f3f0c1b1a6ab861089}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-E0}, \hyperlink{classSpatialSEIR_1_1FC__R0_a36373b69de6603391aceb7c326b2cc00}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-R0}, and \hyperlink{classSpatialSEIR_1_1FC__S0_a9f9e3df7a26de238959461dd6d2511ef}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-S0}.
+
+\hypertarget{classSpatialSEIR_1_1InitCompartmentFullConditional_a6c35c9ed95a8adbada0e3da0608531bd}{\index{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional@{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional}!get\-Full\-Conditional\-Type@{get\-Full\-Conditional\-Type}}
+\index{get\-Full\-Conditional\-Type@{get\-Full\-Conditional\-Type}!SpatialSEIR::InitCompartmentFullConditional@{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional}}
+\subsubsection[{get\-Full\-Conditional\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional\-::get\-Full\-Conditional\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSpatialSEIR_1_1InitCompartmentFullConditional_a6c35c9ed95a8adbada0e3da0608531bd}
+Identify as init compartment full conditional 
+
+Implements \hyperlink{classSpatialSEIR_1_1FullConditional_a680a2a8af1962a5a99191ff84acf78c5}{Spatial\-S\-E\-I\-R\-::\-Full\-Conditional}.
+
+\hypertarget{classSpatialSEIR_1_1InitCompartmentFullConditional_aadb3975a791221136e6c4be5e016d9f1}{\index{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional@{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional}!get\-Value@{get\-Value}}
+\index{get\-Value@{get\-Value}!SpatialSEIR::InitCompartmentFullConditional@{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional}}
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual long double Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional\-::get\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSpatialSEIR_1_1InitCompartmentFullConditional_aadb3975a791221136e6c4be5e016d9f1}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1FullConditional_abe67c774a66370686ee9dc6fe6f278f6}{Spatial\-S\-E\-I\-R\-::\-Full\-Conditional}.
+
+
+
+Implemented in \hyperlink{classSpatialSEIR_1_1FC__I0_a69f4e641113c47ae2e28dbd44f8c8261}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-I0}, \hyperlink{classSpatialSEIR_1_1FC__E0_aa2681b2dc4378d162dd2c68ff5333288}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-E0}, \hyperlink{classSpatialSEIR_1_1FC__R0_ab52e48b7be8eb46258602b0d1467ff08}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-R0}, and \hyperlink{classSpatialSEIR_1_1FC__S0_ad1b806dbe3573b1e9652850b934d7b10}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-S0}.
+
+\hypertarget{classSpatialSEIR_1_1InitCompartmentFullConditional_a03bcc440fa87265336980f3e833f59f2}{\index{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional@{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional}!sample@{sample}}
+\index{sample@{sample}!SpatialSEIR::InitCompartmentFullConditional@{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional}}
+\subsubsection[{sample}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional\-::sample (
+\begin{DoxyParamCaption}
+\item[{int}]{verbose}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSpatialSEIR_1_1InitCompartmentFullConditional_a03bcc440fa87265336980f3e833f59f2}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1FullConditional_aac6928c9c2753acfc2c9e9bbe840ba82}{Spatial\-S\-E\-I\-R\-::\-Full\-Conditional}.
+
+
+
+Implemented in \hyperlink{classSpatialSEIR_1_1FC__I0_af87aa3379ff282e36478301ff271ba40}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-I0}, \hyperlink{classSpatialSEIR_1_1FC__E0_a7b396dca06e12a96473d3bf2855a9dc7}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-E0}, \hyperlink{classSpatialSEIR_1_1FC__R0_afee9585fb8a21f38002912896c85b529}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-R0}, and \hyperlink{classSpatialSEIR_1_1FC__S0_a595cb5eceaa9ede016e1f1d341105de6}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-S0}.
+
+\hypertarget{classSpatialSEIR_1_1InitCompartmentFullConditional_acbc03a68f5c67beacefadcc3c22c1d88}{\index{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional@{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional}!set\-Value@{set\-Value}}
+\index{set\-Value@{set\-Value}!SpatialSEIR::InitCompartmentFullConditional@{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional}}
+\subsubsection[{set\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional\-::set\-Value (
+\begin{DoxyParamCaption}
+\item[{long double}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classSpatialSEIR_1_1InitCompartmentFullConditional_acbc03a68f5c67beacefadcc3c22c1d88}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1FullConditional_a0834b0bb81ef4f7f368ba87fd784ff39}{Spatial\-S\-E\-I\-R\-::\-Full\-Conditional}.
+
+
+
+Implemented in \hyperlink{classSpatialSEIR_1_1FC__I0_ae5db486bbdcdf2900278a17aea761e7a}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-I0}, \hyperlink{classSpatialSEIR_1_1FC__E0_a44355906ac90df5dff3e0b7ffc62e23b}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-E0}, \hyperlink{classSpatialSEIR_1_1FC__R0_a6b21261ddd1928e70dfea6ef25d553bd}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-R0}, and \hyperlink{classSpatialSEIR_1_1FC__S0_affd898a5e578d7efec9f133f5031cf13}{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-S0}.
+
+\hypertarget{classSpatialSEIR_1_1InitCompartmentFullConditional_a7cf7ddd043ec51b17a3c369ebe03a95c}{\index{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional@{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional}!update\-Sampling\-Parameters@{update\-Sampling\-Parameters}}
+\index{update\-Sampling\-Parameters@{update\-Sampling\-Parameters}!SpatialSEIR::InitCompartmentFullConditional@{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional}}
+\subsubsection[{update\-Sampling\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional\-::update\-Sampling\-Parameters (
+\begin{DoxyParamCaption}
+\item[{double}]{desired\-Ratio, }
+\item[{double}]{target\-Width, }
+\item[{double}]{proportion\-Change}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSpatialSEIR_1_1InitCompartmentFullConditional_a7cf7ddd043ec51b17a3c369ebe03a95c}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1FullConditional_afd84b9273d641028453aefc06b342782}{Spatial\-S\-E\-I\-R\-::\-Full\-Conditional}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+lib\-Spatial\-S\-E\-I\-R/include/\-Full\-Conditionals/\hyperlink{LSS__FullConditional_8hpp}{L\-S\-S\-\_\-\-Full\-Conditional.\-hpp}\item 
+lib\-Spatial\-S\-E\-I\-R/src/\-Full\-Conditionals/\hyperlink{FullConditional_8cpp}{Full\-Conditional.\-cpp}\end{DoxyCompactItemize}

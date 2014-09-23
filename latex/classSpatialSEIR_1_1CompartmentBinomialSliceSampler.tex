@@ -1,0 +1,130 @@
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialSliceSampler}{\section{Spatial\-S\-E\-I\-R\-:\-:Compartment\-Binomial\-Slice\-Sampler Class Reference}
+\label{classSpatialSEIR_1_1CompartmentBinomialSliceSampler}\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}}
+}
+
+
+{\ttfamily \#include $<$L\-S\-S\-\_\-\-Samplers.\-hpp$>$}
+
+Inheritance diagram for Spatial\-S\-E\-I\-R\-:\-:Compartment\-Binomial\-Slice\-Sampler\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSpatialSEIR_1_1CompartmentBinomialSliceSampler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_a9ebfe2b2d471f4bcc8dff23cd23685fa}{Compartment\-Binomial\-Slice\-Sampler} (\hyperlink{classSpatialSEIR_1_1ModelContext}{Model\-Context} $\ast$\hyperlink{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_ad5631c8afe2fe4d0e8563b72fae517b0}{context}, \hyperlink{classSpatialSEIR_1_1CompartmentFullConditional}{Compartment\-Full\-Conditional} $\ast$\hyperlink{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_abd146e1a97514494297f7863a61d381d}{compartment\-F\-C}, int $\ast$\hyperlink{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_a6094cf1e5d3773db4d89186f19507c99}{compartment\-Data}, int $\ast$\hyperlink{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_a7a8d30fa7485e4db0e68faa38aa7bc61}{compartment\-From}, int $\ast$\hyperlink{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_a51e5687941d0911f0c5760af847b9c5d}{compartment\-To}, double $\ast$\hyperlink{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_aff766a8c61753ae89e8b1a6ffea0d108}{probability\-Vector}, int \hyperlink{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_aac982be0c3ae19b0a9960c0dbd1107ac}{probability\-Vector\-Len})
+\item 
+void \hyperlink{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_a6d89f57c350e131068718374ae0d135f}{draw\-Sample} ()
+\item 
+int \hyperlink{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_a35f2ba8531217f1fa227da3b801d05dd}{get\-Sampler\-Type} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_a231c0b5e4334099ef663ad5d59809ded}{gen\-Proposal} ()
+\item 
+\hyperlink{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_af0661567a3b84368cf8c5e64a6f4fc3e}{$\sim$\-Compartment\-Binomial\-Slice\-Sampler} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSpatialSEIR_1_1ModelContext}{Model\-Context} $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_ad5631c8afe2fe4d0e8563b72fae517b0}{context}
+\item 
+\hyperlink{classSpatialSEIR_1_1CompartmentFullConditional}{Compartment\-Full\-Conditional} $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_abd146e1a97514494297f7863a61d381d}{compartment\-F\-C}
+\item 
+int $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_a6094cf1e5d3773db4d89186f19507c99}{compartment\-Data}
+\item 
+int $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_a7a8d30fa7485e4db0e68faa38aa7bc61}{compartment\-From}
+\item 
+int $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_a51e5687941d0911f0c5760af847b9c5d}{compartment\-To}
+\item 
+double $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_aff766a8c61753ae89e8b1a6ffea0d108}{probability\-Vector}
+\item 
+int $\ast$ \hyperlink{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_aac982be0c3ae19b0a9960c0dbd1107ac}{probability\-Vector\-Len}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classSpatialSEIR_1_1CompartmentBinomialSliceSampler}{Compartment\-Binomial\-Slice\-Sampler} class is child of the \hyperlink{classSpatialSEIR_1_1Sampler}{Sampler} class which draws samples from the posterior distribution of the various transition compartments using a chain binomial proposal based on the parameters. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_a9ebfe2b2d471f4bcc8dff23cd23685fa}{\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}!Compartment\-Binomial\-Slice\-Sampler@{Compartment\-Binomial\-Slice\-Sampler}}
+\index{Compartment\-Binomial\-Slice\-Sampler@{Compartment\-Binomial\-Slice\-Sampler}!SpatialSEIR::CompartmentBinomialSliceSampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}}
+\subsubsection[{Compartment\-Binomial\-Slice\-Sampler}]{\setlength{\rightskip}{0pt plus 5cm}Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler\-::\-Compartment\-Binomial\-Slice\-Sampler (
+\begin{DoxyParamCaption}
+\item[{{\bf Model\-Context} $\ast$}]{context, }
+\item[{{\bf Compartment\-Full\-Conditional} $\ast$}]{compartment\-F\-C, }
+\item[{int $\ast$}]{compartment\-Data, }
+\item[{int $\ast$}]{compartment\-From, }
+\item[{int $\ast$}]{compartment\-To, }
+\item[{double $\ast$}]{probability\-Vector, }
+\item[{int}]{probability\-Vector\-Len}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_a9ebfe2b2d471f4bcc8dff23cd23685fa}
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_af0661567a3b84368cf8c5e64a6f4fc3e}{\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}!$\sim$\-Compartment\-Binomial\-Slice\-Sampler@{$\sim$\-Compartment\-Binomial\-Slice\-Sampler}}
+\index{$\sim$\-Compartment\-Binomial\-Slice\-Sampler@{$\sim$\-Compartment\-Binomial\-Slice\-Sampler}!SpatialSEIR::CompartmentBinomialSliceSampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}}
+\subsubsection[{$\sim$\-Compartment\-Binomial\-Slice\-Sampler}]{\setlength{\rightskip}{0pt plus 5cm}Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler\-::$\sim$\-Compartment\-Binomial\-Slice\-Sampler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_af0661567a3b84368cf8c5e64a6f4fc3e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_a6d89f57c350e131068718374ae0d135f}{\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}!draw\-Sample@{draw\-Sample}}
+\index{draw\-Sample@{draw\-Sample}!SpatialSEIR::CompartmentBinomialSliceSampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}}
+\subsubsection[{draw\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler\-::draw\-Sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_a6d89f57c350e131068718374ae0d135f}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1Sampler_aa07a42b26cb62249c20c58e855a08657}{Spatial\-S\-E\-I\-R\-::\-Sampler}.
+
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_a231c0b5e4334099ef663ad5d59809ded}{\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}!gen\-Proposal@{gen\-Proposal}}
+\index{gen\-Proposal@{gen\-Proposal}!SpatialSEIR::CompartmentBinomialSliceSampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}}
+\subsubsection[{gen\-Proposal}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler\-::gen\-Proposal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_a231c0b5e4334099ef663ad5d59809ded}
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_a35f2ba8531217f1fa227da3b801d05dd}{\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}!get\-Sampler\-Type@{get\-Sampler\-Type}}
+\index{get\-Sampler\-Type@{get\-Sampler\-Type}!SpatialSEIR::CompartmentBinomialSliceSampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}}
+\subsubsection[{get\-Sampler\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler\-::get\-Sampler\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_a35f2ba8531217f1fa227da3b801d05dd}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1Sampler_aaa79310ad809e6aeb25479849f322dda}{Spatial\-S\-E\-I\-R\-::\-Sampler}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_a6094cf1e5d3773db4d89186f19507c99}{\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}!compartment\-Data@{compartment\-Data}}
+\index{compartment\-Data@{compartment\-Data}!SpatialSEIR::CompartmentBinomialSliceSampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}}
+\subsubsection[{compartment\-Data}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler\-::compartment\-Data}}\label{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_a6094cf1e5d3773db4d89186f19507c99}
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_abd146e1a97514494297f7863a61d381d}{\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}!compartment\-F\-C@{compartment\-F\-C}}
+\index{compartment\-F\-C@{compartment\-F\-C}!SpatialSEIR::CompartmentBinomialSliceSampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}}
+\subsubsection[{compartment\-F\-C}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Compartment\-Full\-Conditional}$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler\-::compartment\-F\-C}}\label{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_abd146e1a97514494297f7863a61d381d}
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_a7a8d30fa7485e4db0e68faa38aa7bc61}{\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}!compartment\-From@{compartment\-From}}
+\index{compartment\-From@{compartment\-From}!SpatialSEIR::CompartmentBinomialSliceSampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}}
+\subsubsection[{compartment\-From}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler\-::compartment\-From}}\label{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_a7a8d30fa7485e4db0e68faa38aa7bc61}
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_a51e5687941d0911f0c5760af847b9c5d}{\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}!compartment\-To@{compartment\-To}}
+\index{compartment\-To@{compartment\-To}!SpatialSEIR::CompartmentBinomialSliceSampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}}
+\subsubsection[{compartment\-To}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler\-::compartment\-To}}\label{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_a51e5687941d0911f0c5760af847b9c5d}
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_ad5631c8afe2fe4d0e8563b72fae517b0}{\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}!context@{context}}
+\index{context@{context}!SpatialSEIR::CompartmentBinomialSliceSampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}}
+\subsubsection[{context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Model\-Context}$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler\-::context}}\label{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_ad5631c8afe2fe4d0e8563b72fae517b0}
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_aff766a8c61753ae89e8b1a6ffea0d108}{\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}!probability\-Vector@{probability\-Vector}}
+\index{probability\-Vector@{probability\-Vector}!SpatialSEIR::CompartmentBinomialSliceSampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}}
+\subsubsection[{probability\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler\-::probability\-Vector}}\label{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_aff766a8c61753ae89e8b1a6ffea0d108}
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_aac982be0c3ae19b0a9960c0dbd1107ac}{\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}!probability\-Vector\-Len@{probability\-Vector\-Len}}
+\index{probability\-Vector\-Len@{probability\-Vector\-Len}!SpatialSEIR::CompartmentBinomialSliceSampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler}}
+\subsubsection[{probability\-Vector\-Len}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Slice\-Sampler\-::probability\-Vector\-Len}}\label{classSpatialSEIR_1_1CompartmentBinomialSliceSampler_aac982be0c3ae19b0a9960c0dbd1107ac}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+lib\-Spatial\-S\-E\-I\-R/include/\hyperlink{LSS__Samplers_8hpp}{L\-S\-S\-\_\-\-Samplers.\-hpp}\end{DoxyCompactItemize}

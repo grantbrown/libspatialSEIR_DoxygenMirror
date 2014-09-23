@@ -1,0 +1,95 @@
+\hypertarget{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask}{\section{Spatial\-S\-E\-I\-R\-:\-:Set\-Compartment\-Sampling\-Indices\-Task Class Reference}
+\label{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask}\index{Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task@{Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task}}
+}
+
+
+{\ttfamily \#include $<$L\-S\-S\-\_\-\-Iteration\-Tasks.\-hpp$>$}
+
+Inheritance diagram for Spatial\-S\-E\-I\-R\-:\-:Set\-Compartment\-Sampling\-Indices\-Task\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask_a2f292054f24192f3b6e9ce7b63fa297b}{Set\-Compartment\-Sampling\-Indices\-Task} (\hyperlink{classSpatialSEIR_1_1ModelContext}{Model\-Context} $\ast$\hyperlink{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask_a52dd5ee41a16c253719145db4619f21d}{context})
+\item 
+\hyperlink{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask_a5d9804f091418dfead47b7bd284ffd29}{$\sim$\-Set\-Compartment\-Sampling\-Indices\-Task} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask_aebbc3bb4337fe6ce5c2f81335489c4df}{execute\-Task} ()
+\item 
+int \hyperlink{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask_ae48bddebfa315cf138729bc90f24abc0}{get\-Task\-Type} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSpatialSEIR_1_1ModelContext}{Model\-Context} $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask_a52dd5ee41a16c253719145db4619f21d}{context}
+\item 
+int $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask_aa886632dfda17a6f9a00cb1161685c35}{index}
+\item 
+int $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask_ae9c42a17508247572b82dd6357ecafed}{index\-Length}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Several of the compartment sampling classes rely on a list of indices managed by model context to jointly update the same space-\/time locations for each of the compartments in order to reduce sampler autocorrelation. This task updates the list of indices after each M\-C\-M\-C sample. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask_a2f292054f24192f3b6e9ce7b63fa297b}{\index{Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task@{Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task}!Set\-Compartment\-Sampling\-Indices\-Task@{Set\-Compartment\-Sampling\-Indices\-Task}}
+\index{Set\-Compartment\-Sampling\-Indices\-Task@{Set\-Compartment\-Sampling\-Indices\-Task}!SpatialSEIR::SetCompartmentSamplingIndicesTask@{Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task}}
+\subsubsection[{Set\-Compartment\-Sampling\-Indices\-Task}]{\setlength{\rightskip}{0pt plus 5cm}Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task\-::\-Set\-Compartment\-Sampling\-Indices\-Task (
+\begin{DoxyParamCaption}
+\item[{{\bf Model\-Context} $\ast$}]{context}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask_a2f292054f24192f3b6e9ce7b63fa297b}
+\hypertarget{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask_a5d9804f091418dfead47b7bd284ffd29}{\index{Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task@{Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task}!$\sim$\-Set\-Compartment\-Sampling\-Indices\-Task@{$\sim$\-Set\-Compartment\-Sampling\-Indices\-Task}}
+\index{$\sim$\-Set\-Compartment\-Sampling\-Indices\-Task@{$\sim$\-Set\-Compartment\-Sampling\-Indices\-Task}!SpatialSEIR::SetCompartmentSamplingIndicesTask@{Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task}}
+\subsubsection[{$\sim$\-Set\-Compartment\-Sampling\-Indices\-Task}]{\setlength{\rightskip}{0pt plus 5cm}Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task\-::$\sim$\-Set\-Compartment\-Sampling\-Indices\-Task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask_a5d9804f091418dfead47b7bd284ffd29}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask_aebbc3bb4337fe6ce5c2f81335489c4df}{\index{Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task@{Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task}!execute\-Task@{execute\-Task}}
+\index{execute\-Task@{execute\-Task}!SpatialSEIR::SetCompartmentSamplingIndicesTask@{Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task}}
+\subsubsection[{execute\-Task}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task\-::execute\-Task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask_aebbc3bb4337fe6ce5c2f81335489c4df}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1IterationTask_a68fcb08fe777ed506c97dc1ac5a0fb54}{Spatial\-S\-E\-I\-R\-::\-Iteration\-Task}.
+
+\hypertarget{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask_ae48bddebfa315cf138729bc90f24abc0}{\index{Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task@{Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task}!get\-Task\-Type@{get\-Task\-Type}}
+\index{get\-Task\-Type@{get\-Task\-Type}!SpatialSEIR::SetCompartmentSamplingIndicesTask@{Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task}}
+\subsubsection[{get\-Task\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task\-::get\-Task\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask_ae48bddebfa315cf138729bc90f24abc0}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1IterationTask_aaba9c737c4564df6b44b843d7c781722}{Spatial\-S\-E\-I\-R\-::\-Iteration\-Task}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask_a52dd5ee41a16c253719145db4619f21d}{\index{Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task@{Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task}!context@{context}}
+\index{context@{context}!SpatialSEIR::SetCompartmentSamplingIndicesTask@{Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task}}
+\subsubsection[{context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Model\-Context}$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task\-::context}}\label{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask_a52dd5ee41a16c253719145db4619f21d}
+\hypertarget{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask_aa886632dfda17a6f9a00cb1161685c35}{\index{Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task@{Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task}!index@{index}}
+\index{index@{index}!SpatialSEIR::SetCompartmentSamplingIndicesTask@{Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task}}
+\subsubsection[{index}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task\-::index}}\label{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask_aa886632dfda17a6f9a00cb1161685c35}
+\hypertarget{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask_ae9c42a17508247572b82dd6357ecafed}{\index{Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task@{Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task}!index\-Length@{index\-Length}}
+\index{index\-Length@{index\-Length}!SpatialSEIR::SetCompartmentSamplingIndicesTask@{Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task}}
+\subsubsection[{index\-Length}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task\-::index\-Length}}\label{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask_ae9c42a17508247572b82dd6357ecafed}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+lib\-Spatial\-S\-E\-I\-R/include/\hyperlink{LSS__IterationTasks_8hpp}{L\-S\-S\-\_\-\-Iteration\-Tasks.\-hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,97 @@
+\hypertarget{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL}{\section{Spatial\-S\-E\-I\-R\-:\-:Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L Class Reference}
+\label{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL}\index{Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L}}
+}
+
+
+{\ttfamily \#include $<$L\-S\-S\-\_\-\-Samplers.\-hpp$>$}
+
+Inheritance diagram for Spatial\-S\-E\-I\-R\-:\-:Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL_a8b74295190dc338730bf3ed73375b100}{Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L} (\hyperlink{classSpatialSEIR_1_1ModelContext}{Model\-Context} $\ast$\hyperlink{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL_acce9d454489373f0549af4f15dade51a}{context}, \hyperlink{classSpatialSEIR_1_1ParameterFullConditional}{Parameter\-Full\-Conditional} $\ast$\hyperlink{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL_a143445da6bf7037f86020e04185f4472}{param\-F\-C}, double $\ast$\hyperlink{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL_aa010e1643feb5965065efb65fd101a6f}{param})
+\item 
+void \hyperlink{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL_a21b7e344e6145b14db9cce5212c74d18}{draw\-Sample} ()
+\item 
+int \hyperlink{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL_a1049eea747bcdaa8112defcc52a651d5}{get\-Sampler\-Type} ()
+\item 
+\hyperlink{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL_a0cf77cb7a998c175b2d9d3c2cc768c20}{$\sim$\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL_aa010e1643feb5965065efb65fd101a6f}{param}
+\item 
+\hyperlink{classSpatialSEIR_1_1ModelContext}{Model\-Context} $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL_acce9d454489373f0549af4f15dade51a}{context}
+\item 
+\hyperlink{classSpatialSEIR_1_1ParameterFullConditional}{Parameter\-Full\-Conditional} $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL_a143445da6bf7037f86020e04185f4472}{param\-F\-C}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL}{Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L} uses full vector Metropolis proposals to sample non Compartmental\-Matrix parameters. This class makes use of the Open\-C\-L Capabilities of libspatial\-S\-E\-I\-R. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL_a8b74295190dc338730bf3ed73375b100}{\index{Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L}!Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L@{Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L}}
+\index{Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L@{Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L}!SpatialSEIR::ParameterJointMetropolisSampler_OCL@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L}}
+\subsubsection[{Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L (
+\begin{DoxyParamCaption}
+\item[{{\bf Model\-Context} $\ast$}]{context, }
+\item[{{\bf Parameter\-Full\-Conditional} $\ast$}]{param\-F\-C, }
+\item[{double $\ast$}]{param}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL_a8b74295190dc338730bf3ed73375b100}
+\hypertarget{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL_a0cf77cb7a998c175b2d9d3c2cc768c20}{\index{Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L}!$\sim$\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L@{$\sim$\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L}}
+\index{$\sim$\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L@{$\sim$\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L}!SpatialSEIR::ParameterJointMetropolisSampler_OCL@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L}}
+\subsubsection[{$\sim$\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L\-::$\sim$\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL_a0cf77cb7a998c175b2d9d3c2cc768c20}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL_a21b7e344e6145b14db9cce5212c74d18}{\index{Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L}!draw\-Sample@{draw\-Sample}}
+\index{draw\-Sample@{draw\-Sample}!SpatialSEIR::ParameterJointMetropolisSampler_OCL@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L}}
+\subsubsection[{draw\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L\-::draw\-Sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL_a21b7e344e6145b14db9cce5212c74d18}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1Sampler_aa07a42b26cb62249c20c58e855a08657}{Spatial\-S\-E\-I\-R\-::\-Sampler}.
+
+\hypertarget{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL_a1049eea747bcdaa8112defcc52a651d5}{\index{Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L}!get\-Sampler\-Type@{get\-Sampler\-Type}}
+\index{get\-Sampler\-Type@{get\-Sampler\-Type}!SpatialSEIR::ParameterJointMetropolisSampler_OCL@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L}}
+\subsubsection[{get\-Sampler\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L\-::get\-Sampler\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL_a1049eea747bcdaa8112defcc52a651d5}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1Sampler_aaa79310ad809e6aeb25479849f322dda}{Spatial\-S\-E\-I\-R\-::\-Sampler}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL_acce9d454489373f0549af4f15dade51a}{\index{Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L}!context@{context}}
+\index{context@{context}!SpatialSEIR::ParameterJointMetropolisSampler_OCL@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L}}
+\subsubsection[{context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Model\-Context}$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L\-::context}}\label{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL_acce9d454489373f0549af4f15dade51a}
+\hypertarget{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL_aa010e1643feb5965065efb65fd101a6f}{\index{Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L}!param@{param}}
+\index{param@{param}!SpatialSEIR::ParameterJointMetropolisSampler_OCL@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L}}
+\subsubsection[{param}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L\-::param}}\label{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL_aa010e1643feb5965065efb65fd101a6f}
+\hypertarget{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL_a143445da6bf7037f86020e04185f4472}{\index{Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L}!param\-F\-C@{param\-F\-C}}
+\index{param\-F\-C@{param\-F\-C}!SpatialSEIR::ParameterJointMetropolisSampler_OCL@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L}}
+\subsubsection[{param\-F\-C}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parameter\-Full\-Conditional}$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Parameter\-Joint\-Metropolis\-Sampler\-\_\-\-O\-C\-L\-::param\-F\-C}}\label{classSpatialSEIR_1_1ParameterJointMetropolisSampler__OCL_a143445da6bf7037f86020e04185f4472}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+lib\-Spatial\-S\-E\-I\-R/include/\hyperlink{LSS__Samplers_8hpp}{L\-S\-S\-\_\-\-Samplers.\-hpp}\end{DoxyCompactItemize}

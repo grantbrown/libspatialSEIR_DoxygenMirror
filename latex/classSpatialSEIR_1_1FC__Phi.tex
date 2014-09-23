@@ -1,0 +1,195 @@
+\hypertarget{classSpatialSEIR_1_1FC__Phi}{\section{Spatial\-S\-E\-I\-R\-:\-:F\-C\-\_\-\-Phi Class Reference}
+\label{classSpatialSEIR_1_1FC__Phi}\index{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}}
+}
+
+
+{\ttfamily \#include $<$L\-S\-S\-\_\-\-F\-C\-\_\-\-Phi.\-hpp$>$}
+
+Inheritance diagram for Spatial\-S\-E\-I\-R\-:\-:F\-C\-\_\-\-Phi\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classSpatialSEIR_1_1FC__Phi}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSpatialSEIR_1_1FC__Phi_afa42036238ea301db57410a08da92d8f}{F\-C\-\_\-\-Phi} (\hyperlink{classSpatialSEIR_1_1ModelContext}{Model\-Context} $\ast$\-\_\-context, \hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} $\ast$\-\_\-\-I\-\_\-star, double $\ast$\-\_\-phi, double \-\_\-prior\-Alpha, double \-\_\-prior\-Beta, int $\ast$\-\_\-\-Y, double \hyperlink{classSpatialSEIR_1_1FullConditional_a150ee031af8d086ad0a04b13630a110f}{slice\-Width})
+\item 
+\hyperlink{classSpatialSEIR_1_1FC__Phi_ab83a41edc6b119b0bf94105c929863ee}{$\sim$\-F\-C\-\_\-\-Phi} ()
+\item 
+virtual double \hyperlink{classSpatialSEIR_1_1FC__Phi_aa7773cd1f79ac2cc0aa0022b871be037}{eval\-Prior} ()
+\item 
+virtual int \hyperlink{classSpatialSEIR_1_1FC__Phi_a282b0c3778149a8f29364ff56543288d}{eval\-C\-P\-U} ()
+\item 
+virtual int \hyperlink{classSpatialSEIR_1_1FC__Phi_aa0683e5c52d7cfdaf106fe9d20348845}{eval\-O\-C\-L} ()
+\item 
+virtual void \hyperlink{classSpatialSEIR_1_1FC__Phi_ad01626131955f37c6abec78af34524dd}{sample} (int verbose)
+\item 
+virtual long double \hyperlink{classSpatialSEIR_1_1FC__Phi_a78d2ad18fd2696bdd91333b1b4d8984e}{get\-Value} ()
+\item 
+virtual void \hyperlink{classSpatialSEIR_1_1FC__Phi_a71c23b1ea81880634e867786569b8b26}{set\-Value} (long double val)
+\item 
+virtual int \hyperlink{classSpatialSEIR_1_1FC__Phi_a738d592a5efd1f6181b28b2f294d4f86}{calculate\-Relevant\-Compartments} ()
+\item 
+virtual int \hyperlink{classSpatialSEIR_1_1FC__Phi_acb391933ee8f5efd16d392b62d400933}{calculate\-Relevant\-Compartments\-\_\-\-O\-C\-L} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSpatialSEIR_1_1ModelContext}{Model\-Context} $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1FC__Phi_ad6a811039932fb9d393950d51e2a66d5}{context}
+\item 
+\hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1FC__Phi_a5b07b79b34c5c6e2c81748b4fd8c0961}{I\-\_\-star}
+\item 
+double $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1FC__Phi_a40287a4878b59620961c279a8cb31672}{phi}
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1FC__Phi_a416262207b7dff48d89e16fd31d7a41f}{prior\-Alpha}
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1FC__Phi_ad65cf8a1b9bc7fc76e63bfe6d051dda6}{prior\-Beta}
+\item 
+int $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1FC__Phi_a74748c40d5729ec9bdacbc04f2294548}{Y}
+\item 
+long double $\ast$ \hyperlink{classSpatialSEIR_1_1FC__Phi_a649b11fba5f8820f83ced5a538f40fa3}{value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classSpatialSEIR_1_1FC__Phi}{F\-C\-\_\-\-Phi} gives the full conditional distribution of rho, the scalar spatial dependence parameter. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSpatialSEIR_1_1FC__Phi_afa42036238ea301db57410a08da92d8f}{\index{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}!F\-C\-\_\-\-Phi@{F\-C\-\_\-\-Phi}}
+\index{F\-C\-\_\-\-Phi@{F\-C\-\_\-\-Phi}!SpatialSEIR::FC_Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}}
+\subsubsection[{F\-C\-\_\-\-Phi}]{\setlength{\rightskip}{0pt plus 5cm}Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi\-::\-F\-C\-\_\-\-Phi (
+\begin{DoxyParamCaption}
+\item[{{\bf Model\-Context} $\ast$}]{\-\_\-context, }
+\item[{{\bf Compartmental\-Model\-Matrix} $\ast$}]{\-\_\-\-I\-\_\-star, }
+\item[{double $\ast$}]{\-\_\-phi, }
+\item[{double}]{\-\_\-prior\-Alpha, }
+\item[{double}]{\-\_\-prior\-Beta, }
+\item[{int $\ast$}]{\-\_\-\-Y, }
+\item[{double}]{slice\-Width}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1FC__Phi_afa42036238ea301db57410a08da92d8f}
+\hypertarget{classSpatialSEIR_1_1FC__Phi_ab83a41edc6b119b0bf94105c929863ee}{\index{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}!$\sim$\-F\-C\-\_\-\-Phi@{$\sim$\-F\-C\-\_\-\-Phi}}
+\index{$\sim$\-F\-C\-\_\-\-Phi@{$\sim$\-F\-C\-\_\-\-Phi}!SpatialSEIR::FC_Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}}
+\subsubsection[{$\sim$\-F\-C\-\_\-\-Phi}]{\setlength{\rightskip}{0pt plus 5cm}Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi\-::$\sim$\-F\-C\-\_\-\-Phi (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1FC__Phi_ab83a41edc6b119b0bf94105c929863ee}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSpatialSEIR_1_1FC__Phi_a738d592a5efd1f6181b28b2f294d4f86}{\index{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}!calculate\-Relevant\-Compartments@{calculate\-Relevant\-Compartments}}
+\index{calculate\-Relevant\-Compartments@{calculate\-Relevant\-Compartments}!SpatialSEIR::FC_Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}}
+\subsubsection[{calculate\-Relevant\-Compartments}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi\-::calculate\-Relevant\-Compartments (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSpatialSEIR_1_1FC__Phi_a738d592a5efd1f6181b28b2f294d4f86}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1ParameterFullConditional_a65c39a2c3ca56e2f194b78cd362d35f9}{Spatial\-S\-E\-I\-R\-::\-Parameter\-Full\-Conditional}.
+
+\hypertarget{classSpatialSEIR_1_1FC__Phi_acb391933ee8f5efd16d392b62d400933}{\index{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}!calculate\-Relevant\-Compartments\-\_\-\-O\-C\-L@{calculate\-Relevant\-Compartments\-\_\-\-O\-C\-L}}
+\index{calculate\-Relevant\-Compartments\-\_\-\-O\-C\-L@{calculate\-Relevant\-Compartments\-\_\-\-O\-C\-L}!SpatialSEIR::FC_Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}}
+\subsubsection[{calculate\-Relevant\-Compartments\-\_\-\-O\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi\-::calculate\-Relevant\-Compartments\-\_\-\-O\-C\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSpatialSEIR_1_1FC__Phi_acb391933ee8f5efd16d392b62d400933}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1ParameterFullConditional_af40754537736a64f58848e0368b001fb}{Spatial\-S\-E\-I\-R\-::\-Parameter\-Full\-Conditional}.
+
+\hypertarget{classSpatialSEIR_1_1FC__Phi_a282b0c3778149a8f29364ff56543288d}{\index{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}!eval\-C\-P\-U@{eval\-C\-P\-U}}
+\index{eval\-C\-P\-U@{eval\-C\-P\-U}!SpatialSEIR::FC_Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}}
+\subsubsection[{eval\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi\-::eval\-C\-P\-U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSpatialSEIR_1_1FC__Phi_a282b0c3778149a8f29364ff56543288d}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1ParameterFullConditional_a186bd19fdeb52ca4522f56fb880201dd}{Spatial\-S\-E\-I\-R\-::\-Parameter\-Full\-Conditional}.
+
+\hypertarget{classSpatialSEIR_1_1FC__Phi_aa0683e5c52d7cfdaf106fe9d20348845}{\index{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}!eval\-O\-C\-L@{eval\-O\-C\-L}}
+\index{eval\-O\-C\-L@{eval\-O\-C\-L}!SpatialSEIR::FC_Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}}
+\subsubsection[{eval\-O\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi\-::eval\-O\-C\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSpatialSEIR_1_1FC__Phi_aa0683e5c52d7cfdaf106fe9d20348845}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1ParameterFullConditional_ac4cfb13dace7f72e8136c45d9e959eec}{Spatial\-S\-E\-I\-R\-::\-Parameter\-Full\-Conditional}.
+
+\hypertarget{classSpatialSEIR_1_1FC__Phi_aa7773cd1f79ac2cc0aa0022b871be037}{\index{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}!eval\-Prior@{eval\-Prior}}
+\index{eval\-Prior@{eval\-Prior}!SpatialSEIR::FC_Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}}
+\subsubsection[{eval\-Prior}]{\setlength{\rightskip}{0pt plus 5cm}virtual double Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi\-::eval\-Prior (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSpatialSEIR_1_1FC__Phi_aa7773cd1f79ac2cc0aa0022b871be037}
+\hypertarget{classSpatialSEIR_1_1FC__Phi_a78d2ad18fd2696bdd91333b1b4d8984e}{\index{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}!get\-Value@{get\-Value}}
+\index{get\-Value@{get\-Value}!SpatialSEIR::FC_Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}}
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual long double Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi\-::get\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSpatialSEIR_1_1FC__Phi_a78d2ad18fd2696bdd91333b1b4d8984e}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1ParameterFullConditional_a901368d385809e77179b9fa7532adfec}{Spatial\-S\-E\-I\-R\-::\-Parameter\-Full\-Conditional}.
+
+\hypertarget{classSpatialSEIR_1_1FC__Phi_ad01626131955f37c6abec78af34524dd}{\index{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}!sample@{sample}}
+\index{sample@{sample}!SpatialSEIR::FC_Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}}
+\subsubsection[{sample}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi\-::sample (
+\begin{DoxyParamCaption}
+\item[{int}]{verbose}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSpatialSEIR_1_1FC__Phi_ad01626131955f37c6abec78af34524dd}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1ParameterFullConditional_a651e22b15782acb6bd80be12bd476693}{Spatial\-S\-E\-I\-R\-::\-Parameter\-Full\-Conditional}.
+
+\hypertarget{classSpatialSEIR_1_1FC__Phi_a71c23b1ea81880634e867786569b8b26}{\index{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}!set\-Value@{set\-Value}}
+\index{set\-Value@{set\-Value}!SpatialSEIR::FC_Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}}
+\subsubsection[{set\-Value}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi\-::set\-Value (
+\begin{DoxyParamCaption}
+\item[{long double}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSpatialSEIR_1_1FC__Phi_a71c23b1ea81880634e867786569b8b26}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1ParameterFullConditional_adf03f213e27d26f120b574d6dd86ffc3}{Spatial\-S\-E\-I\-R\-::\-Parameter\-Full\-Conditional}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSpatialSEIR_1_1FC__Phi_ad6a811039932fb9d393950d51e2a66d5}{\index{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}!context@{context}}
+\index{context@{context}!SpatialSEIR::FC_Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}}
+\subsubsection[{context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Model\-Context}$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi\-::context}}\label{classSpatialSEIR_1_1FC__Phi_ad6a811039932fb9d393950d51e2a66d5}
+\hypertarget{classSpatialSEIR_1_1FC__Phi_a5b07b79b34c5c6e2c81748b4fd8c0961}{\index{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}!I\-\_\-star@{I\-\_\-star}}
+\index{I\-\_\-star@{I\-\_\-star}!SpatialSEIR::FC_Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}}
+\subsubsection[{I\-\_\-star}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Compartmental\-Model\-Matrix}$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi\-::\-I\-\_\-star}}\label{classSpatialSEIR_1_1FC__Phi_a5b07b79b34c5c6e2c81748b4fd8c0961}
+\hypertarget{classSpatialSEIR_1_1FC__Phi_a40287a4878b59620961c279a8cb31672}{\index{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}!phi@{phi}}
+\index{phi@{phi}!SpatialSEIR::FC_Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}}
+\subsubsection[{phi}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi\-::phi}}\label{classSpatialSEIR_1_1FC__Phi_a40287a4878b59620961c279a8cb31672}
+\hypertarget{classSpatialSEIR_1_1FC__Phi_a416262207b7dff48d89e16fd31d7a41f}{\index{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}!prior\-Alpha@{prior\-Alpha}}
+\index{prior\-Alpha@{prior\-Alpha}!SpatialSEIR::FC_Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}}
+\subsubsection[{prior\-Alpha}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi\-::prior\-Alpha}}\label{classSpatialSEIR_1_1FC__Phi_a416262207b7dff48d89e16fd31d7a41f}
+\hypertarget{classSpatialSEIR_1_1FC__Phi_ad65cf8a1b9bc7fc76e63bfe6d051dda6}{\index{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}!prior\-Beta@{prior\-Beta}}
+\index{prior\-Beta@{prior\-Beta}!SpatialSEIR::FC_Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}}
+\subsubsection[{prior\-Beta}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi\-::prior\-Beta}}\label{classSpatialSEIR_1_1FC__Phi_ad65cf8a1b9bc7fc76e63bfe6d051dda6}
+\hypertarget{classSpatialSEIR_1_1FC__Phi_a649b11fba5f8820f83ced5a538f40fa3}{\index{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}!value@{value}}
+\index{value@{value}!SpatialSEIR::FC_Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}}
+\subsubsection[{value}]{\setlength{\rightskip}{0pt plus 5cm}long double$\ast$ Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi\-::value}}\label{classSpatialSEIR_1_1FC__Phi_a649b11fba5f8820f83ced5a538f40fa3}
+\hypertarget{classSpatialSEIR_1_1FC__Phi_a74748c40d5729ec9bdacbc04f2294548}{\index{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}!Y@{Y}}
+\index{Y@{Y}!SpatialSEIR::FC_Phi@{Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi}}
+\subsubsection[{Y}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-F\-C\-\_\-\-Phi\-::\-Y}}\label{classSpatialSEIR_1_1FC__Phi_a74748c40d5729ec9bdacbc04f2294548}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+lib\-Spatial\-S\-E\-I\-R/include/\-Full\-Conditionals/\-Data\-Models/\-Overdispersion/\hyperlink{LSS__FC__Phi_8hpp}{L\-S\-S\-\_\-\-F\-C\-\_\-\-Phi.\-hpp}\end{DoxyCompactItemize}

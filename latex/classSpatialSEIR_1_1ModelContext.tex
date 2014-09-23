@@ -1,0 +1,1072 @@
+\hypertarget{classSpatialSEIR_1_1ModelContext}{\section{Spatial\-S\-E\-I\-R\-:\-:Model\-Context Class Reference}
+\label{classSpatialSEIR_1_1ModelContext}\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+}
+
+
+{\ttfamily \#include $<$Model\-Context.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSpatialSEIR_1_1ModelContext_aa00f6876aa8bff52856656c0a717af69}{Model\-Context} ()
+\item 
+\hyperlink{classSpatialSEIR_1_1ModelContext_a8e89f66b29dcd5ad4b9cac2fd18fb30c}{$\sim$\-Model\-Context} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a4dc8841ea3e9b23dd8632a9f4998603d}{populate} (\hyperlink{classSpatialSEIR_1_1InitData}{Init\-Data} $\ast$\-\_\-\-A0, \hyperlink{structSpatialSEIR_1_1covariateArgs}{covariate\-Args} $\ast$x\-Args, \hyperlink{structSpatialSEIR_1_1covariateArgs}{covariate\-Args} $\ast$x\-Prs\-Args, double $\ast$\hyperlink{classSpatialSEIR_1_1ModelContext_aedc2450556dd5cd0b30a0a1100843f81}{offset}, int $\ast$\hyperlink{classSpatialSEIR_1_1ModelContext_a21143ccd9b787ff4a42c83cdb2b81a80}{Y}, \hyperlink{structSpatialSEIR_1_1compartmentArgs}{compartment\-Args} $\ast$S\-\_\-star\-Args, \hyperlink{structSpatialSEIR_1_1compartmentArgs}{compartment\-Args} $\ast$E\-\_\-star\-Args, \hyperlink{structSpatialSEIR_1_1compartmentArgs}{compartment\-Args} $\ast$I\-\_\-star\-Args, \hyperlink{structSpatialSEIR_1_1compartmentArgs}{compartment\-Args} $\ast$R\-\_\-star\-Args, \hyperlink{structSpatialSEIR_1_1scaledDistanceArgs}{scaled\-Distance\-Args} $\ast$scaled\-Dist\-Args, double $\ast$\hyperlink{classSpatialSEIR_1_1ModelContext_a633cc9f969abeeb3ad9d3147023af13f}{rho}, double $\ast$\hyperlink{classSpatialSEIR_1_1ModelContext_a7873aaa6fe424c33d09287e63cdb6787}{phi}, double $\ast$\hyperlink{classSpatialSEIR_1_1ModelContext_a7e15e37b3aa868f1b56d0cf92a9839c8}{beta}, double $\ast$\hyperlink{classSpatialSEIR_1_1ModelContext_a72509958c44ad6153feff07ec3da9895}{gamma\-\_\-ei}, double $\ast$\hyperlink{classSpatialSEIR_1_1ModelContext_a9cbe4ffa8f5b19740f7cffc37d1a7b3c}{gamma\-\_\-ir}, double $\ast$\hyperlink{classSpatialSEIR_1_1ModelContext_abe52e0e1b4ad61cc0a71c104428c7dfc}{beta\-Prs}, int $\ast$\hyperlink{classSpatialSEIR_1_1ModelContext_a170b3ee4076d929c5e8012765f825eed}{N}, \hyperlink{structSpatialSEIR_1_1sliceParameters}{slice\-Parameters} $\ast$slice\-Widths, \hyperlink{structSpatialSEIR_1_1priorControl}{prior\-Control} $\ast$prior\-Information, \hyperlink{structSpatialSEIR_1_1modelConfiguration}{model\-Configuration} \-\_\-config)
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a9776db643c897f78fcf69ac7aef5900a}{build\-Model} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a997a0c014e321b460f676aedb905a443}{configure\-Iteration\-Tasks} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a6c5a9fdce69c12aa31bd4427b2245c50}{calculate\-S\-\_\-\-C\-P\-U} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a0cd4a5adb3527d661b9bf0b5f1b2e45b}{calculate\-S\-\_\-\-C\-P\-U} (int start\-Loc, int start\-Time)
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a2e1b237f14f7577cc3b6796e79ce48f3}{calculate\-S\-\_\-given\-E\-\_\-\-C\-P\-U} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a1f0d751d6c345b05cdaaab5c71fff2fd}{calculate\-S\-\_\-given\-E\-\_\-\-C\-P\-U} (int start\-Loc, int start\-Time)
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a2bffe866c20248be9387acf669342801}{calculate\-S\-\_\-\-O\-C\-L} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a7edf0be808e865dbfe118c115de94d3a}{calculate\-E\-\_\-\-C\-P\-U} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_adc45f875f781c504f0e2b3b5e38e3eb1}{calculate\-E\-\_\-\-C\-P\-U} (int start\-Loc, int start\-Time)
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_ab56f005ed4968fc904755692b82eb5ec}{calculate\-E\-\_\-given\-I\-\_\-\-C\-P\-U} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a9eaba7d0cce22b9f10942e4c5315034e}{calculate\-E\-\_\-given\-I\-\_\-\-C\-P\-U} (int start\-Loc, int start\-Time)
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a0da1ddb3f08c92bc7bca2587477e7bb3}{calculate\-E\-\_\-\-O\-C\-L} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a9f1196b7021e36e4bdfa85b8e5d8e982}{calculate\-I\-\_\-\-C\-P\-U} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a877a56e859bd275a9e4a1a77c9363013}{calculate\-I\-\_\-\-C\-P\-U} (int start\-Loc, int start\-Time)
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_af3c069ad35d3f86c3dadad02bc257b53}{calculate\-I\-\_\-given\-R\-\_\-\-C\-P\-U} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_ace5adbd2c049119a6526b77fa6db8abe}{calculate\-I\-\_\-given\-R\-\_\-\-C\-P\-U} (int start\-Loc, int start\-Time)
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a53e9b18996c5e27195ae9fbd6cc159e3}{calculate\-I\-\_\-\-O\-C\-L} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a92f748128f4fa804119358bde45d9495}{calculate\-R\-\_\-\-C\-P\-U} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_aefe857c9d21387113bcc97fab8bb6940}{calculate\-R\-\_\-\-C\-P\-U} (int start\-Loc, int start\-Time)
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_aa3033268ceb0ea5c5cbb855e3d81db01}{calculate\-R\-\_\-given\-S\-\_\-\-C\-P\-U} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_ab837c260a46169c0c4d7c041f09a47ec}{calculate\-R\-\_\-given\-S\-\_\-\-C\-P\-U} (int start\-Loc, int start\-Time)
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a45a46e9c64ccf0b883a6009a282147c5}{calculate\-R\-\_\-\-O\-C\-L} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_acfeda1172ab57c9cc5876c23749d86b5}{calculate\-Generic\-Compartment\-\_\-\-C\-P\-U} (\hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} $\ast$comp, int $\ast$comp0, \hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} $\ast$comp\-Star\-Add, \hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} $\ast$comp\-Star\-Sub)
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a5fab8ff5274f269e6b4739bf746df8c1}{calculate\-Generic\-Compartment\-\_\-\-C\-P\-U} (\hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} $\ast$comp, int $\ast$comp0, \hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} $\ast$comp\-Star\-Add, \hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} $\ast$comp\-Star\-Sub, int start\-Loc, int start\-Time)
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a2a73c2d012430c7909176d43b3343f84}{calculate\-Generic\-Compartment\-\_\-\-O\-C\-L} (int $\ast$comp, int $\ast$comp0, int $\ast$comp\-Star\-Add, int $\ast$comp\-Star\-Sub)
+\item 
+int \hyperlink{classSpatialSEIR_1_1ModelContext_af06b168dc8d9aaebbd04861e7a4f8181}{check\-Compartment\-Bounds} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a846e13b0470616965ea407875f52532c}{print\-F\-C\-Values} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a807197754b6f5b8bb04666de5848ec3d}{set\-Random\-Seed} (unsigned int seed\-Value)
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_af29d7173abc3a57dbd065b058e594c91}{simulation\-Iter} (bool verbose, bool debug)
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a582760455a9021e8e208f941747344d2}{run\-Simulation} (int n\-Iterations, bool verbose, bool debug)
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_aa813d16b4ffdc46646223fd3da3a384c}{update\-Sampling\-Parameters} (double desired\-Ratio, double target\-Width, double proportion\-Change)
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a9b16c72622a5dc724129828b885d0634}{set\-Compartment\-Sampling\-Mode} (int mode)
+\item 
+int \hyperlink{classSpatialSEIR_1_1ModelContext_aaae62ac4cd67fe7bc5468214213cdaf3}{get\-Compartment\-Sampling\-Mode} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a7bd0a35f25026a033527ddcaa336576e}{set\-Parameter\-Sampling\-Mode} (int mode)
+\item 
+int \hyperlink{classSpatialSEIR_1_1ModelContext_a7c69bb2ce3657b025b265ee3a6cd2073}{get\-Parameter\-Sampling\-Mode} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a1172c5fad9e7add3416304f42fd48921}{cache\-P\-\_\-\-S\-E\-\_\-\-Calculation} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_afd5a70407a05097e1dbeda4dfd8e90c1}{calculate\-P\-\_\-\-S\-E\-\_\-\-C\-P\-U} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_aab0c94a235cc693b1f61ff658fa9e05a}{calculate\-P\-\_\-\-S\-E\-\_\-\-C\-P\-U} (int start\-Loc, int start\-Time)
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_ab4136d72b61266483fd36fb914359d13}{calculate\-P\-\_\-\-S\-E\-\_\-\-O\-C\-L} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a29e0e03f136c0c55acfd94d2b858bb8b}{calculate\-P\-\_\-\-E\-I\-\_\-\-C\-P\-U} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a8a8236ea324fc9e792c5b379020183cb}{calculate\-P\-\_\-\-I\-R\-\_\-\-C\-P\-U} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1ModelContext_a1c99b4008dd3fd4035b8b33215103408}{calculate\-P\-\_\-\-R\-S\-\_\-\-C\-P\-U} ()
+\item 
+int \hyperlink{classSpatialSEIR_1_1ModelContext_a70301e33e229a6186bc6bd1859812966}{total\-S} ()
+\item 
+int \hyperlink{classSpatialSEIR_1_1ModelContext_a2f98dd4615d8ee7599e40032de50ba04}{total\-E} ()
+\item 
+int \hyperlink{classSpatialSEIR_1_1ModelContext_ae18307811ef91173a9c8ef59a4eb2f48}{total\-I} ()
+\item 
+int \hyperlink{classSpatialSEIR_1_1ModelContext_ad6502ed4ce84403c16c06a9fa54eb87a}{total\-R} ()
+\item 
+int \hyperlink{classSpatialSEIR_1_1ModelContext_ad4f0faeda8cf482cfaa7fee1c750655e}{total\-S} (int tpt)
+\item 
+int \hyperlink{classSpatialSEIR_1_1ModelContext_a16f31cae10c0043d132d3a5dde6536a6}{total\-E} (int tpt)
+\item 
+int \hyperlink{classSpatialSEIR_1_1ModelContext_af4bd57033a8a2c0138b2e0ab37722aef}{total\-I} (int tpt)
+\item 
+int \hyperlink{classSpatialSEIR_1_1ModelContext_a6ecac3d61faa0940c0c2c1813a0be2ac}{total\-R} (int tpt)
+\item 
+int \hyperlink{classSpatialSEIR_1_1ModelContext_a69035a68a9f37a34745cba86d0259fb7}{total\-S\-\_\-star} ()
+\item 
+int \hyperlink{classSpatialSEIR_1_1ModelContext_a536c46cb2c5ab9c746b6fbbb74fa806b}{total\-E\-\_\-star} ()
+\item 
+int \hyperlink{classSpatialSEIR_1_1ModelContext_a6a3a7e1b08d7aaef7261e6cc7c8481d4}{total\-I\-\_\-star} ()
+\item 
+int \hyperlink{classSpatialSEIR_1_1ModelContext_a9d6176568883661bcd259c7d8d7e5531}{total\-R\-\_\-star} ()
+\item 
+int \hyperlink{classSpatialSEIR_1_1ModelContext_aa85a5be6616c189722605624e9e5db94}{total\-S\-\_\-star} (int tpt)
+\item 
+int \hyperlink{classSpatialSEIR_1_1ModelContext_a1578d2c71f5a77617e254ead442971a3}{total\-E\-\_\-star} (int tpt)
+\item 
+int \hyperlink{classSpatialSEIR_1_1ModelContext_a50f72f64c8ad978f5b740af4efbdf113}{total\-I\-\_\-star} (int tpt)
+\item 
+int \hyperlink{classSpatialSEIR_1_1ModelContext_a5b486f6b0c97d26d106dffd007c1b515}{total\-R\-\_\-star} (int tpt)
+\item 
+double \hyperlink{classSpatialSEIR_1_1ModelContext_af1258e6c426000d483ac4a06220281a7}{avg\-P\-\_\-\-S\-E} ()
+\item 
+double \hyperlink{classSpatialSEIR_1_1ModelContext_a6c76f5d9d10b7dca77e02a8304f26203}{avg\-P\-\_\-\-R\-S} ()
+\item 
+double \hyperlink{classSpatialSEIR_1_1ModelContext_a9cb6ca074aff51c1f789b81111c7e153}{avg\-P\-\_\-\-S\-E} (int tpt)
+\item 
+double \hyperlink{classSpatialSEIR_1_1ModelContext_aa450557786a891db5bb3338a047b1544}{estimate\-R0} ()
+\item 
+double \hyperlink{classSpatialSEIR_1_1ModelContext_ac392c01b668dfbaaede3c5468a597513}{estimate\-R0} (int t)
+\item 
+double \hyperlink{classSpatialSEIR_1_1ModelContext_aceb1cb88b80e72b00d560871218c932c}{estimate\-R0} (int l, int t)
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a26650599b445d706e833ad33bbc4ad71}{calculate\-G} (int t)
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a637ceadc71ad656202e3d3fa21d01ade}{calculate\-Integrated\-G} (int t)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSpatialSEIR_1_1IOProvider}{I\-O\-Provider} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a388cbd8cccf85afc2ffee74f008e63e0}{file\-Provider}
+\item 
+\hyperlink{classSpatialSEIR_1_1RandomNumberProvider}{Random\-Number\-Provider} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a752872a2e8bb09bbf8b2c400860f5c33}{random}
+\item 
+\hyperlink{classSpatialSEIR_1_1OCLProvider}{O\-C\-L\-Provider} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_ab18c5fa9393c61d1936880776f534d62}{ocl\-Provider}
+\item 
+\hyperlink{classSpatialSEIR_1_1FC__S0}{F\-C\-\_\-\-S0} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_ab45d23e96fb44d1758dc73ea1a11629f}{S0\-\_\-fc}
+\item 
+\hyperlink{classSpatialSEIR_1_1FC__E0}{F\-C\-\_\-\-E0} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a677ffe9133f332b346d7b1652d95552f}{E0\-\_\-fc}
+\item 
+\hyperlink{classSpatialSEIR_1_1FC__I0}{F\-C\-\_\-\-I0} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a595c21a8b6130f09e3a2af6e114fe9da}{I0\-\_\-fc}
+\item 
+\hyperlink{classSpatialSEIR_1_1FC__R0}{F\-C\-\_\-\-R0} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a080fbc05c16a279300a4b1f7957592f8}{R0\-\_\-fc}
+\item 
+\hyperlink{classSpatialSEIR_1_1FC__S__Star}{F\-C\-\_\-\-S\-\_\-\-Star} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_adeacc82667f794bca82d60daeb03cd9d}{S\-\_\-star\-\_\-fc}
+\item 
+\hyperlink{classSpatialSEIR_1_1FC__E__Star}{F\-C\-\_\-\-E\-\_\-\-Star} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_ab2ceb1ec8e001f4d4f63eddfc0c44021}{E\-\_\-star\-\_\-fc}
+\item 
+\hyperlink{classSpatialSEIR_1_1FC__R__Star}{F\-C\-\_\-\-R\-\_\-\-Star} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a0f77d6658696a3c2fa584caa036135a5}{R\-\_\-star\-\_\-fc}
+\item 
+\hyperlink{classSpatialSEIR_1_1FC__Beta}{F\-C\-\_\-\-Beta} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a63278983ee123db534919685c46fbb5b}{beta\-\_\-fc}
+\item 
+\hyperlink{classSpatialSEIR_1_1FC__Rho}{F\-C\-\_\-\-Rho} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a894f23aa95ff98664b2cf71443cde6e5}{rho\-\_\-fc}
+\item 
+\hyperlink{classSpatialSEIR_1_1FC__Beta__P__RS}{F\-C\-\_\-\-Beta\-\_\-\-P\-\_\-\-R\-S} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a9eb52c439f5b00fe5926297f45484bd3}{beta\-Prs\-\_\-fc}
+\item 
+\hyperlink{classSpatialSEIR_1_1FC__Gamma__EI}{F\-C\-\_\-\-Gamma\-\_\-\-E\-I} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a6973164c7a807aea76f3bab1f4403cd5}{gamma\-\_\-ei\-\_\-fc}
+\item 
+\hyperlink{classSpatialSEIR_1_1FC__Gamma__IR}{F\-C\-\_\-\-Gamma\-\_\-\-I\-R} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a9293a2cef5007f0f4510072fb3babbf1}{gamma\-\_\-ir\-\_\-fc}
+\item 
+\hyperlink{classSpatialSEIR_1_1FC__I__Star__overdispersed}{F\-C\-\_\-\-I\-\_\-\-Star\-\_\-overdispersed} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a7c02046540bcf230845d6d6821148d67}{I\-\_\-star\-\_\-overdispersed\-\_\-fc}
+\item 
+\hyperlink{classSpatialSEIR_1_1FC__Phi}{F\-C\-\_\-\-Phi} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a97d54a9e4778575b5c88264f88831fc4}{phi\-\_\-fc}
+\item 
+\hyperlink{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask}{Set\-Compartment\-Sampling\-Indices\-Task} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_abc04b849ec0d819b9a4893862348a606}{set\-Sampling\-Indices\-Task}
+\item 
+\hyperlink{classSpatialSEIR_1_1PerformDecorrelationStep}{Perform\-Decorrelation\-Step} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a0b5cd5089cd6b9ebf3034387406dccb2}{decorrelation\-Step\-Task}
+\item 
+int $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a21143ccd9b787ff4a42c83cdb2b81a80}{Y}
+\item 
+\hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_afa683f7f79821d957107d301dfe392c1}{S}
+\item 
+\hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_ad5128cd85f8a1005b11a97c6ff7894e1}{E}
+\item 
+\hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_aa68b54ddf89a3ea432433dfb09c7983f}{I}
+\item 
+\hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a97ad90554c0f23cc4137661285df3213}{R}
+\item 
+\hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a6fce6827d821ab06e57abe08e6f6c4cb}{S\-\_\-star}
+\item 
+\hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a92a044fd49fd0d4996dd38a38f3f14a9}{E\-\_\-star}
+\item 
+\hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_adf47583e6bd65b272ea17dc84620e09f}{I\-\_\-star}
+\item 
+\hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a03a86c851b58cf707ed0e0f734f01780}{R\-\_\-star}
+\item 
+\hyperlink{classSpatialSEIR_1_1InitData}{Init\-Data} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_abe200f29b14eee50f6626d6280596785}{A0}
+\item 
+\hyperlink{classSpatialSEIR_1_1CovariateMatrix}{Covariate\-Matrix} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_ab92eeb3b5c0ee046321578f1b7fccea3}{X}
+\item 
+\hyperlink{classSpatialSEIR_1_1CovariateMatrix}{Covariate\-Matrix} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_ab4a6806ee81ecdd67ef14f40694a066c}{X\-\_\-p\-R\-S}
+\item 
+std\-::vector$<$ \hyperlink{classSpatialSEIR_1_1DistanceMatrix}{Distance\-Matrix} $\ast$ $>$ $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a7e263c5ae20ecdc892053a2588903459}{scaled\-Dist\-Matrices}
+\item 
+\hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_ae4569072f48495d446ef85968cb9a42d}{tmp\-Container}
+\item 
+\hyperlink{structSpatialSEIR_1_1modelConfiguration}{model\-Configuration} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a7c8c2708dabbc0a32bf32252942b3a12}{config}
+\item 
+std\-::vector$<$ \hyperlink{classSpatialSEIR_1_1FullConditional}{Full\-Conditional} $\ast$ $>$ $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_ad8f3a8fd85bef0ce628c0ea0a5debc8b}{model}
+\item 
+std\-::vector$<$ \hyperlink{classSpatialSEIR_1_1IterationTask}{Iteration\-Task} $\ast$ $>$ $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a681f80cc35dd7a8bf8784710a9175d47}{iteration\-Tasks}
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a7e15e37b3aa868f1b56d0cf92a9839c8}{beta}
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_abe52e0e1b4ad61cc0a71c104428c7dfc}{beta\-Prs}
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a633cc9f969abeeb3ad9d3147023af13f}{rho}
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a7873aaa6fe424c33d09287e63cdb6787}{phi}
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a4e545262577a97dd3aceeefc2a956626}{gamma}
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_aeecc346cd62bc2c8a816b1451b5da64b}{eta}
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_aedc2450556dd5cd0b30a0a1100843f81}{offset}
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a3039a6c9014a3465b38f5becbe369a4a}{p\-\_\-se}
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_aa6a04d39cec1ace0e7c57c3551d12bc4}{p\-\_\-se\-\_\-components}
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a7146f9527fc298a50828757e477a33d3}{compartment\-Cache}
+\item 
+int $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a451632183a787d4aab8bc53c745bea40}{index\-Length}
+\item 
+int $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a9813501d8b6ac165b9676947f7835473}{index\-List}
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a72509958c44ad6153feff07ec3da9895}{gamma\-\_\-ei}
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_ae0827d89df6c5eeca75216149e70b74c}{p\-\_\-ei}
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a9cbe4ffa8f5b19740f7cffc37d1a7b3c}{gamma\-\_\-ir}
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_ad313e395d6c4bc5ca5cbda8c189a67da}{p\-\_\-ir}
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a07133c92757c4de3a525ad921de527d5}{p\-\_\-rs}
+\item 
+int $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a170b3ee4076d929c5e8012765f825eed}{N}
+\item 
+int $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a698a8889db239e919323d764775a2148}{is\-Populated}
+\item 
+int $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a1bf4c4a975e9e060ef30b8c7be14b563}{single\-Location}
+\item 
+int $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_aa8b6063ce0c31c485b42b2de28317ca4}{num\-Iterations}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The model context class provides the central interface of libspatial\-S\-E\-I\-R. After instantiation, the populate method must be called before any meaningful work can be done. Once populated, \hyperlink{classSpatialSEIR_1_1ModelContext}{Model\-Context} holds pointers to all of the required \hyperlink{classSpatialSEIR_1_1FullConditional}{Full\-Conditional} instances as well as the data they use. In addition, \hyperlink{classSpatialSEIR_1_1ModelContext}{Model\-Context} provides calculation functions and holds pointers to additional utility classes such as \hyperlink{classSpatialSEIR_1_1OCLProvider}{O\-C\-L\-Provider}, \hyperlink{classSpatialSEIR_1_1IOProvider}{I\-O\-Provider}, and \hyperlink{classSpatialSEIR_1_1RandomNumberProvider}{Random\-Number\-Provider}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSpatialSEIR_1_1ModelContext_aa00f6876aa8bff52856656c0a717af69}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!Model\-Context@{Model\-Context}}
+\index{Model\-Context@{Model\-Context}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{Model\-Context}]{\setlength{\rightskip}{0pt plus 5cm}Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::\-Model\-Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_aa00f6876aa8bff52856656c0a717af69}
+\hypertarget{classSpatialSEIR_1_1ModelContext_a8e89f66b29dcd5ad4b9cac2fd18fb30c}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!$\sim$\-Model\-Context@{$\sim$\-Model\-Context}}
+\index{$\sim$\-Model\-Context@{$\sim$\-Model\-Context}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{$\sim$\-Model\-Context}]{\setlength{\rightskip}{0pt plus 5cm}Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::$\sim$\-Model\-Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a8e89f66b29dcd5ad4b9cac2fd18fb30c}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSpatialSEIR_1_1ModelContext_a6c76f5d9d10b7dca77e02a8304f26203}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!avg\-P\-\_\-\-R\-S@{avg\-P\-\_\-\-R\-S}}
+\index{avg\-P\-\_\-\-R\-S@{avg\-P\-\_\-\-R\-S}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{avg\-P\-\_\-\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}double Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::avg\-P\-\_\-\-R\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a6c76f5d9d10b7dca77e02a8304f26203}
+Calculates the average of all components of p\-\_\-rs. \hypertarget{classSpatialSEIR_1_1ModelContext_af1258e6c426000d483ac4a06220281a7}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!avg\-P\-\_\-\-S\-E@{avg\-P\-\_\-\-S\-E}}
+\index{avg\-P\-\_\-\-S\-E@{avg\-P\-\_\-\-S\-E}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{avg\-P\-\_\-\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}double Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::avg\-P\-\_\-\-S\-E (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_af1258e6c426000d483ac4a06220281a7}
+Calculates the average of all components of p\-\_\-se. \hypertarget{classSpatialSEIR_1_1ModelContext_a9cb6ca074aff51c1f789b81111c7e153}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!avg\-P\-\_\-\-S\-E@{avg\-P\-\_\-\-S\-E}}
+\index{avg\-P\-\_\-\-S\-E@{avg\-P\-\_\-\-S\-E}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{avg\-P\-\_\-\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}double Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::avg\-P\-\_\-\-S\-E (
+\begin{DoxyParamCaption}
+\item[{int}]{tpt}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a9cb6ca074aff51c1f789b81111c7e153}
+Calculates the average of all components of p\-\_\-se for a particular time point.. \hypertarget{classSpatialSEIR_1_1ModelContext_a9776db643c897f78fcf69ac7aef5900a}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!build\-Model@{build\-Model}}
+\index{build\-Model@{build\-Model}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{build\-Model}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::build\-Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a9776db643c897f78fcf69ac7aef5900a}
+\hypertarget{classSpatialSEIR_1_1ModelContext_a1172c5fad9e7add3416304f42fd48921}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!cache\-P\-\_\-\-S\-E\-\_\-\-Calculation@{cache\-P\-\_\-\-S\-E\-\_\-\-Calculation}}
+\index{cache\-P\-\_\-\-S\-E\-\_\-\-Calculation@{cache\-P\-\_\-\-S\-E\-\_\-\-Calculation}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{cache\-P\-\_\-\-S\-E\-\_\-\-Calculation}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::cache\-P\-\_\-\-S\-E\-\_\-\-Calculation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a1172c5fad9e7add3416304f42fd48921}
+cache\-P\-\_\-\-S\-E\-\_\-\-Calculation places the pre-\/requisites for calculating p\-\_\-se in p\-\_\-se\-\_\-components. This is useful when partial updates can be performed by \hyperlink{classSpatialSEIR_1_1ModelContext_aab0c94a235cc693b1f61ff658fa9e05a}{calculate\-P\-\_\-\-S\-E\-\_\-\-C\-P\-U(int start\-Loc, int start\-Time)} \hypertarget{classSpatialSEIR_1_1ModelContext_a7edf0be808e865dbfe118c115de94d3a}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-E\-\_\-\-C\-P\-U@{calculate\-E\-\_\-\-C\-P\-U}}
+\index{calculate\-E\-\_\-\-C\-P\-U@{calculate\-E\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-E\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-E\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a7edf0be808e865dbfe118c115de94d3a}
+The zero parameter overload of calculate\-E\-\_\-\-C\-P\-U calculates the E compartment from A0, I\-\_\-star, and E\-\_\-star. \hypertarget{classSpatialSEIR_1_1ModelContext_adc45f875f781c504f0e2b3b5e38e3eb1}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-E\-\_\-\-C\-P\-U@{calculate\-E\-\_\-\-C\-P\-U}}
+\index{calculate\-E\-\_\-\-C\-P\-U@{calculate\-E\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-E\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-E\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+\item[{int}]{start\-Loc, }
+\item[{int}]{start\-Time}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_adc45f875f781c504f0e2b3b5e38e3eb1}
+The two parameter overload of calculate\-E\-\_\-\-C\-P\-U again calculates the E compartment from A0, I\-\_\-star and E\-\_\-star, but assumes that only values of I\-\_\-star and E\-\_\-star at column (location) start\-Loc and after row (time) start\-Time have changed since E was last calculated. When applicable, this saves considerable time. \hypertarget{classSpatialSEIR_1_1ModelContext_ab56f005ed4968fc904755692b82eb5ec}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-E\-\_\-given\-I\-\_\-\-C\-P\-U@{calculate\-E\-\_\-given\-I\-\_\-\-C\-P\-U}}
+\index{calculate\-E\-\_\-given\-I\-\_\-\-C\-P\-U@{calculate\-E\-\_\-given\-I\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-E\-\_\-given\-I\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-E\-\_\-given\-I\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_ab56f005ed4968fc904755692b82eb5ec}
+The zero parameter overload of calculate E\-\_\-given\-I\-\_\-\-C\-P\-U takes advantage of the fact that N=S+\-E+\-I+\-R to update E when I changes. \hypertarget{classSpatialSEIR_1_1ModelContext_a9eaba7d0cce22b9f10942e4c5315034e}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-E\-\_\-given\-I\-\_\-\-C\-P\-U@{calculate\-E\-\_\-given\-I\-\_\-\-C\-P\-U}}
+\index{calculate\-E\-\_\-given\-I\-\_\-\-C\-P\-U@{calculate\-E\-\_\-given\-I\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-E\-\_\-given\-I\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-E\-\_\-given\-I\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+\item[{int}]{start\-Loc, }
+\item[{int}]{start\-Time}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a9eaba7d0cce22b9f10942e4c5315034e}
+The two parameter overload of calculate E\-\_\-given\-I\-\_\-\-C\-P\-U takes advantage of the fact that N=S+\-E+\-I+\-R to update E when I changes, while assuming that I has only changed for location start\-Loc and after time point start\-Time. \hypertarget{classSpatialSEIR_1_1ModelContext_a0da1ddb3f08c92bc7bca2587477e7bb3}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-E\-\_\-\-O\-C\-L@{calculate\-E\-\_\-\-O\-C\-L}}
+\index{calculate\-E\-\_\-\-O\-C\-L@{calculate\-E\-\_\-\-O\-C\-L}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-E\-\_\-\-O\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-E\-\_\-\-O\-C\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a0da1ddb3f08c92bc7bca2587477e7bb3}
+calculate\-E\-\_\-\-O\-C\-L works identically to calculate\-S\-\_\-\-C\-P\-U using calls to ocl\-Provider to perform computations in parallel. \hypertarget{classSpatialSEIR_1_1ModelContext_a26650599b445d706e833ad33bbc4ad71}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-G@{calculate\-G}}
+\index{calculate\-G@{calculate\-G}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-G}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-G (
+\begin{DoxyParamCaption}
+\item[{int}]{t}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a26650599b445d706e833ad33bbc4ad71}
+Calculates the next generation matrix used \hypertarget{classSpatialSEIR_1_1ModelContext_acfeda1172ab57c9cc5876c23749d86b5}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-Generic\-Compartment\-\_\-\-C\-P\-U@{calculate\-Generic\-Compartment\-\_\-\-C\-P\-U}}
+\index{calculate\-Generic\-Compartment\-\_\-\-C\-P\-U@{calculate\-Generic\-Compartment\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-Generic\-Compartment\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-Generic\-Compartment\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+\item[{{\bf Compartmental\-Model\-Matrix} $\ast$}]{comp, }
+\item[{int $\ast$}]{comp0, }
+\item[{{\bf Compartmental\-Model\-Matrix} $\ast$}]{comp\-Star\-Add, }
+\item[{{\bf Compartmental\-Model\-Matrix} $\ast$}]{comp\-Star\-Sub}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_acfeda1172ab57c9cc5876c23749d86b5}
+
+\begin{DoxyParams}{Parameters}
+{\em comp} & pointer to \hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} to be calculated. \\
+\hline
+{\em comp0} & pointer to integer array containing starting values for comp. \\
+\hline
+{\em comp\-Star\-Add} & pointer to transition matrix into comp. \\
+\hline
+{\em comp\-Star\-Sub} & pointer to transition \hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} out of comp. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSpatialSEIR_1_1ModelContext_a5fab8ff5274f269e6b4739bf746df8c1}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-Generic\-Compartment\-\_\-\-C\-P\-U@{calculate\-Generic\-Compartment\-\_\-\-C\-P\-U}}
+\index{calculate\-Generic\-Compartment\-\_\-\-C\-P\-U@{calculate\-Generic\-Compartment\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-Generic\-Compartment\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-Generic\-Compartment\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+\item[{{\bf Compartmental\-Model\-Matrix} $\ast$}]{comp, }
+\item[{int $\ast$}]{comp0, }
+\item[{{\bf Compartmental\-Model\-Matrix} $\ast$}]{comp\-Star\-Add, }
+\item[{{\bf Compartmental\-Model\-Matrix} $\ast$}]{comp\-Star\-Sub, }
+\item[{int}]{start\-Loc, }
+\item[{int}]{start\-Time}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a5fab8ff5274f269e6b4739bf746df8c1}
+The six parameter overload of calculate\-Generic\-Compartment\-\_\-\-C\-P\-U takes advantege of the common calculation pattern for S,E,I, and R to provide a single function mapping starting and transition values to the filan \hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} values, assuming that only location start\-Loc and time points after start\-Time need be considered. 
+\begin{DoxyParams}{Parameters}
+{\em comp} & pointer to \hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} to be calculated \\
+\hline
+{\em comp0} & pointer to integer array containing starting values for comp \\
+\hline
+{\em comp\-Star\-Add} & pointer to transition matrix into comp \\
+\hline
+{\em comp\-Star\-Sub} & pointer to transition \hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} out of comp \\
+\hline
+{\em start\-Loc} & location to update \\
+\hline
+{\em start\-Time} & time after which update is needed \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSpatialSEIR_1_1ModelContext_a2a73c2d012430c7909176d43b3343f84}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-Generic\-Compartment\-\_\-\-O\-C\-L@{calculate\-Generic\-Compartment\-\_\-\-O\-C\-L}}
+\index{calculate\-Generic\-Compartment\-\_\-\-O\-C\-L@{calculate\-Generic\-Compartment\-\_\-\-O\-C\-L}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-Generic\-Compartment\-\_\-\-O\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-Generic\-Compartment\-\_\-\-O\-C\-L (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{comp, }
+\item[{int $\ast$}]{comp0, }
+\item[{int $\ast$}]{comp\-Star\-Add, }
+\item[{int $\ast$}]{comp\-Star\-Sub}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a2a73c2d012430c7909176d43b3343f84}
+calculate\-Generic\-Compartment\-\_\-\-O\-C\-L works identically to calculate\-Generic\-Compartment\-\_\-\-C\-P\-U while using calls to ocl\-Provider to perform calculations in parallel. 
+\begin{DoxyParams}{Parameters}
+{\em comp} & pointer to \hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} to be calculated \\
+\hline
+{\em comp0} & pointer to integer array containing starting values for comp \\
+\hline
+{\em comp\-Star\-Add} & pointer to transition matrix into comp \\
+\hline
+{\em comp\-Star\-Sub} & pointer to transition \hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} out of comp \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSpatialSEIR_1_1ModelContext_a9f1196b7021e36e4bdfa85b8e5d8e982}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-I\-\_\-\-C\-P\-U@{calculate\-I\-\_\-\-C\-P\-U}}
+\index{calculate\-I\-\_\-\-C\-P\-U@{calculate\-I\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-I\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-I\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a9f1196b7021e36e4bdfa85b8e5d8e982}
+The zero parameter overload of calculate\-I\-\_\-\-C\-P\-U calculates the I compartment from A0, I\-\_\-star, and R\-\_\-star. \hypertarget{classSpatialSEIR_1_1ModelContext_a877a56e859bd275a9e4a1a77c9363013}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-I\-\_\-\-C\-P\-U@{calculate\-I\-\_\-\-C\-P\-U}}
+\index{calculate\-I\-\_\-\-C\-P\-U@{calculate\-I\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-I\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-I\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+\item[{int}]{start\-Loc, }
+\item[{int}]{start\-Time}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a877a56e859bd275a9e4a1a77c9363013}
+The two parameter overload of calculate\-I\-\_\-\-C\-P\-U again calculates the I compartment from A0, I\-\_\-star and R\-\_\-star, but assumes that only values of I\-\_\-star and R\-\_\-star at column (location) start\-Loc and after row (time) start\-Time have changed since I was last calculated. When applicable, this saves considerable time. \hypertarget{classSpatialSEIR_1_1ModelContext_af3c069ad35d3f86c3dadad02bc257b53}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-I\-\_\-given\-R\-\_\-\-C\-P\-U@{calculate\-I\-\_\-given\-R\-\_\-\-C\-P\-U}}
+\index{calculate\-I\-\_\-given\-R\-\_\-\-C\-P\-U@{calculate\-I\-\_\-given\-R\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-I\-\_\-given\-R\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-I\-\_\-given\-R\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_af3c069ad35d3f86c3dadad02bc257b53}
+The zero parameter overload of calculate I\-\_\-given\-R\-\_\-\-C\-P\-U takes advantage of the fact that N=S+\-E+\-I+\-R to update I when R changes. \hypertarget{classSpatialSEIR_1_1ModelContext_ace5adbd2c049119a6526b77fa6db8abe}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-I\-\_\-given\-R\-\_\-\-C\-P\-U@{calculate\-I\-\_\-given\-R\-\_\-\-C\-P\-U}}
+\index{calculate\-I\-\_\-given\-R\-\_\-\-C\-P\-U@{calculate\-I\-\_\-given\-R\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-I\-\_\-given\-R\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-I\-\_\-given\-R\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+\item[{int}]{start\-Loc, }
+\item[{int}]{start\-Time}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_ace5adbd2c049119a6526b77fa6db8abe}
+The two parameter overload of calculate I\-\_\-given\-R\-\_\-\-C\-P\-U takes advantage of the fact that N=S+\-E+\-I+\-R to update I when R changes, while assuming that R has only changed for location start\-Loc and after time point start\-Time. \hypertarget{classSpatialSEIR_1_1ModelContext_a53e9b18996c5e27195ae9fbd6cc159e3}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-I\-\_\-\-O\-C\-L@{calculate\-I\-\_\-\-O\-C\-L}}
+\index{calculate\-I\-\_\-\-O\-C\-L@{calculate\-I\-\_\-\-O\-C\-L}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-I\-\_\-\-O\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-I\-\_\-\-O\-C\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a53e9b18996c5e27195ae9fbd6cc159e3}
+calculate\-I\-\_\-\-O\-C\-L works identically to calculate\-I\-\_\-\-C\-P\-U using calls to ocl\-Provider to perform computations in parallel. \hypertarget{classSpatialSEIR_1_1ModelContext_a637ceadc71ad656202e3d3fa21d01ade}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-Integrated\-G@{calculate\-Integrated\-G}}
+\index{calculate\-Integrated\-G@{calculate\-Integrated\-G}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-Integrated\-G}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-Integrated\-G (
+\begin{DoxyParamCaption}
+\item[{int}]{t}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a637ceadc71ad656202e3d3fa21d01ade}
+Calculates the next generation matrix used, integrated forward in time. \hypertarget{classSpatialSEIR_1_1ModelContext_a29e0e03f136c0c55acfd94d2b858bb8b}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-P\-\_\-\-E\-I\-\_\-\-C\-P\-U@{calculate\-P\-\_\-\-E\-I\-\_\-\-C\-P\-U}}
+\index{calculate\-P\-\_\-\-E\-I\-\_\-\-C\-P\-U@{calculate\-P\-\_\-\-E\-I\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-P\-\_\-\-E\-I\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-P\-\_\-\-E\-I\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a29e0e03f136c0c55acfd94d2b858bb8b}
+calculate\-P\-\_\-\-E\-I\-\_\-\-C\-P\-U calculates the E to I transition probability vector p\-\_\-ei \hypertarget{classSpatialSEIR_1_1ModelContext_a8a8236ea324fc9e792c5b379020183cb}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-P\-\_\-\-I\-R\-\_\-\-C\-P\-U@{calculate\-P\-\_\-\-I\-R\-\_\-\-C\-P\-U}}
+\index{calculate\-P\-\_\-\-I\-R\-\_\-\-C\-P\-U@{calculate\-P\-\_\-\-I\-R\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-P\-\_\-\-I\-R\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-P\-\_\-\-I\-R\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a8a8236ea324fc9e792c5b379020183cb}
+calculate\-P\-\_\-\-I\-R\-\_\-\-C\-P\-U calculates the I to R transition probability vector p\-\_\-ir \hypertarget{classSpatialSEIR_1_1ModelContext_a1c99b4008dd3fd4035b8b33215103408}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-P\-\_\-\-R\-S\-\_\-\-C\-P\-U@{calculate\-P\-\_\-\-R\-S\-\_\-\-C\-P\-U}}
+\index{calculate\-P\-\_\-\-R\-S\-\_\-\-C\-P\-U@{calculate\-P\-\_\-\-R\-S\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-P\-\_\-\-R\-S\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-P\-\_\-\-R\-S\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a1c99b4008dd3fd4035b8b33215103408}
+calculate\-P\-\_\-\-R\-S\-\_\-\-C\-P\-U calculates the reinfection probability p\-\_\-rs. \hypertarget{classSpatialSEIR_1_1ModelContext_afd5a70407a05097e1dbeda4dfd8e90c1}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-P\-\_\-\-S\-E\-\_\-\-C\-P\-U@{calculate\-P\-\_\-\-S\-E\-\_\-\-C\-P\-U}}
+\index{calculate\-P\-\_\-\-S\-E\-\_\-\-C\-P\-U@{calculate\-P\-\_\-\-S\-E\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-P\-\_\-\-S\-E\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-P\-\_\-\-S\-E\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_afd5a70407a05097e1dbeda4dfd8e90c1}
+The zero parameter overload of calculate\-P\-\_\-\-S\-E\-\_\-\-C\-P\-U calculates the exposure probability p\-\_\-se. \hypertarget{classSpatialSEIR_1_1ModelContext_aab0c94a235cc693b1f61ff658fa9e05a}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-P\-\_\-\-S\-E\-\_\-\-C\-P\-U@{calculate\-P\-\_\-\-S\-E\-\_\-\-C\-P\-U}}
+\index{calculate\-P\-\_\-\-S\-E\-\_\-\-C\-P\-U@{calculate\-P\-\_\-\-S\-E\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-P\-\_\-\-S\-E\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-P\-\_\-\-S\-E\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+\item[{int}]{start\-Loc, }
+\item[{int}]{start\-Time}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_aab0c94a235cc693b1f61ff658fa9e05a}
+The two parameter overload of calculate\-P\-\_\-\-S\-E\-\_\-\-C\-P\-U calculates the exposure probability starting at start\-Loc and start\-Time. cache\-P\-\_\-\-S\-E\-\_\-\-Calculation must be called first. \hypertarget{classSpatialSEIR_1_1ModelContext_ab4136d72b61266483fd36fb914359d13}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-P\-\_\-\-S\-E\-\_\-\-O\-C\-L@{calculate\-P\-\_\-\-S\-E\-\_\-\-O\-C\-L}}
+\index{calculate\-P\-\_\-\-S\-E\-\_\-\-O\-C\-L@{calculate\-P\-\_\-\-S\-E\-\_\-\-O\-C\-L}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-P\-\_\-\-S\-E\-\_\-\-O\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-P\-\_\-\-S\-E\-\_\-\-O\-C\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_ab4136d72b61266483fd36fb914359d13}
+calculate\-P\-\_\-\-S\-E\-\_\-\-O\-C\-L works identically to calculate\-P\-\_\-\-S\-E\-\_\-\-C\-P\-U, while making calls to ocl\-Provider to perform calculations in parallel. \hypertarget{classSpatialSEIR_1_1ModelContext_a92f748128f4fa804119358bde45d9495}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-R\-\_\-\-C\-P\-U@{calculate\-R\-\_\-\-C\-P\-U}}
+\index{calculate\-R\-\_\-\-C\-P\-U@{calculate\-R\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-R\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-R\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a92f748128f4fa804119358bde45d9495}
+The zero parameter overload of calculate\-R\-\_\-\-C\-P\-U calculates the R compartment from A0, R\-\_\-star, and S\-\_\-star. \hypertarget{classSpatialSEIR_1_1ModelContext_aefe857c9d21387113bcc97fab8bb6940}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-R\-\_\-\-C\-P\-U@{calculate\-R\-\_\-\-C\-P\-U}}
+\index{calculate\-R\-\_\-\-C\-P\-U@{calculate\-R\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-R\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-R\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+\item[{int}]{start\-Loc, }
+\item[{int}]{start\-Time}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_aefe857c9d21387113bcc97fab8bb6940}
+The two parameter overload of calculate\-R\-\_\-\-C\-P\-U again calculates the R compartment from A0, R\-\_\-star and S\-\_\-star, but assumes that only values of R\-\_\-star and S\-\_\-star at column (location) start\-Loc and after row (time) start\-Time have changed since I was last calculated. When applicable, this saves considerable time. \hypertarget{classSpatialSEIR_1_1ModelContext_aa3033268ceb0ea5c5cbb855e3d81db01}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-R\-\_\-given\-S\-\_\-\-C\-P\-U@{calculate\-R\-\_\-given\-S\-\_\-\-C\-P\-U}}
+\index{calculate\-R\-\_\-given\-S\-\_\-\-C\-P\-U@{calculate\-R\-\_\-given\-S\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-R\-\_\-given\-S\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-R\-\_\-given\-S\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_aa3033268ceb0ea5c5cbb855e3d81db01}
+The zero parameter overload of calculate R\-\_\-given\-S\-\_\-\-C\-P\-U takes advantage of the fact that N=S+\-E+\-I+\-R to update R when S changes. \hypertarget{classSpatialSEIR_1_1ModelContext_ab837c260a46169c0c4d7c041f09a47ec}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-R\-\_\-given\-S\-\_\-\-C\-P\-U@{calculate\-R\-\_\-given\-S\-\_\-\-C\-P\-U}}
+\index{calculate\-R\-\_\-given\-S\-\_\-\-C\-P\-U@{calculate\-R\-\_\-given\-S\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-R\-\_\-given\-S\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-R\-\_\-given\-S\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+\item[{int}]{start\-Loc, }
+\item[{int}]{start\-Time}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_ab837c260a46169c0c4d7c041f09a47ec}
+The two parameter overload of calculate R\-\_\-given\-S\-\_\-\-C\-P\-U takes advantage of the fact that N=S+\-E+\-I+\-R to update R when S changes, while assuming that S has only changed for location start\-Loc and after time point start\-Time. \hypertarget{classSpatialSEIR_1_1ModelContext_a45a46e9c64ccf0b883a6009a282147c5}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-R\-\_\-\-O\-C\-L@{calculate\-R\-\_\-\-O\-C\-L}}
+\index{calculate\-R\-\_\-\-O\-C\-L@{calculate\-R\-\_\-\-O\-C\-L}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-R\-\_\-\-O\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-R\-\_\-\-O\-C\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a45a46e9c64ccf0b883a6009a282147c5}
+calculate\-R\-\_\-\-O\-C\-L works identically to calculate\-R\-\_\-\-C\-P\-U using calls to ocl\-Provider to perform computations in parallel. The four parameter overload of calculate\-Generic\-Compartment\-\_\-\-C\-P\-U takes advantege of the common calculation pattern for S,E,I, and R to provide a single function mapping starting and transition values to the filan \hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} values. \hypertarget{classSpatialSEIR_1_1ModelContext_a6c5a9fdce69c12aa31bd4427b2245c50}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-S\-\_\-\-C\-P\-U@{calculate\-S\-\_\-\-C\-P\-U}}
+\index{calculate\-S\-\_\-\-C\-P\-U@{calculate\-S\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-S\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-S\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a6c5a9fdce69c12aa31bd4427b2245c50}
+The zero parameter overload of calculate\-S\-\_\-\-C\-P\-U calculates the S compartment from A0, S\-\_\-star, and E\-\_\-star. \hypertarget{classSpatialSEIR_1_1ModelContext_a0cd4a5adb3527d661b9bf0b5f1b2e45b}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-S\-\_\-\-C\-P\-U@{calculate\-S\-\_\-\-C\-P\-U}}
+\index{calculate\-S\-\_\-\-C\-P\-U@{calculate\-S\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-S\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-S\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+\item[{int}]{start\-Loc, }
+\item[{int}]{start\-Time}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a0cd4a5adb3527d661b9bf0b5f1b2e45b}
+The two parameter overload of calculate\-S\-\_\-\-C\-P\-U again calculates the S compartment from A0, S\-\_\-star and E\-\_\-star, but assumes that only values of S\-\_\-star and E\-\_\-star at column (location) start\-Loc and after row (time) start\-Time have changed since S was last calculated. When applicable, this saves considerable time. \hypertarget{classSpatialSEIR_1_1ModelContext_a2e1b237f14f7577cc3b6796e79ce48f3}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-S\-\_\-given\-E\-\_\-\-C\-P\-U@{calculate\-S\-\_\-given\-E\-\_\-\-C\-P\-U}}
+\index{calculate\-S\-\_\-given\-E\-\_\-\-C\-P\-U@{calculate\-S\-\_\-given\-E\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-S\-\_\-given\-E\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-S\-\_\-given\-E\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a2e1b237f14f7577cc3b6796e79ce48f3}
+The zero parameter overload of calculate S\-\_\-given\-E\-\_\-\-C\-P\-U takes advantage of the fact that N=S+\-E+\-I+\-R to update S when E changes. \hypertarget{classSpatialSEIR_1_1ModelContext_a1f0d751d6c345b05cdaaab5c71fff2fd}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-S\-\_\-given\-E\-\_\-\-C\-P\-U@{calculate\-S\-\_\-given\-E\-\_\-\-C\-P\-U}}
+\index{calculate\-S\-\_\-given\-E\-\_\-\-C\-P\-U@{calculate\-S\-\_\-given\-E\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-S\-\_\-given\-E\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-S\-\_\-given\-E\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+\item[{int}]{start\-Loc, }
+\item[{int}]{start\-Time}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a1f0d751d6c345b05cdaaab5c71fff2fd}
+The two parameter overload of calculate S\-\_\-given\-E\-\_\-\-C\-P\-U takes advantage of the fact that N=S+\-E+\-I+\-R to update S when E changes, while assuming that E has only changed for location start\-Loc and after time point start\-Time. \hypertarget{classSpatialSEIR_1_1ModelContext_a2bffe866c20248be9387acf669342801}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-S\-\_\-\-O\-C\-L@{calculate\-S\-\_\-\-O\-C\-L}}
+\index{calculate\-S\-\_\-\-O\-C\-L@{calculate\-S\-\_\-\-O\-C\-L}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-S\-\_\-\-O\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-S\-\_\-\-O\-C\-L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a2bffe866c20248be9387acf669342801}
+calculate\-S\-\_\-\-O\-C\-L works identically to calculate\-S\-\_\-\-C\-P\-U using calls to ocl\-Provider to perform computations in parallel. \hypertarget{classSpatialSEIR_1_1ModelContext_af06b168dc8d9aaebbd04861e7a4f8181}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!check\-Compartment\-Bounds@{check\-Compartment\-Bounds}}
+\index{check\-Compartment\-Bounds@{check\-Compartment\-Bounds}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{check\-Compartment\-Bounds}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::check\-Compartment\-Bounds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_af06b168dc8d9aaebbd04861e7a4f8181}
+check\-Compartment\-Bounds is a debug mode function which checks for impossible compartment values and prints errors accordingly. \hypertarget{classSpatialSEIR_1_1ModelContext_a997a0c014e321b460f676aedb905a443}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!configure\-Iteration\-Tasks@{configure\-Iteration\-Tasks}}
+\index{configure\-Iteration\-Tasks@{configure\-Iteration\-Tasks}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{configure\-Iteration\-Tasks}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::configure\-Iteration\-Tasks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a997a0c014e321b460f676aedb905a443}
+configure\-Iteration\-Tasks determines whether there are any conditions which require additional logical tasks to be performed during M\-C\-M\-C sampling. \hypertarget{classSpatialSEIR_1_1ModelContext_aa450557786a891db5bb3338a047b1544}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!estimate\-R0@{estimate\-R0}}
+\index{estimate\-R0@{estimate\-R0}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{estimate\-R0}]{\setlength{\rightskip}{0pt plus 5cm}double Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::estimate\-R0 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_aa450557786a891db5bb3338a047b1544}
+Estimates the average basic reproductive number across all time periods and spatial locations. \hypertarget{classSpatialSEIR_1_1ModelContext_ac392c01b668dfbaaede3c5468a597513}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!estimate\-R0@{estimate\-R0}}
+\index{estimate\-R0@{estimate\-R0}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{estimate\-R0}]{\setlength{\rightskip}{0pt plus 5cm}double Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::estimate\-R0 (
+\begin{DoxyParamCaption}
+\item[{int}]{t}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_ac392c01b668dfbaaede3c5468a597513}
+Estimates the basic reproductive number for time point t \hypertarget{classSpatialSEIR_1_1ModelContext_aceb1cb88b80e72b00d560871218c932c}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!estimate\-R0@{estimate\-R0}}
+\index{estimate\-R0@{estimate\-R0}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{estimate\-R0}]{\setlength{\rightskip}{0pt plus 5cm}double Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::estimate\-R0 (
+\begin{DoxyParamCaption}
+\item[{int}]{l, }
+\item[{int}]{t}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_aceb1cb88b80e72b00d560871218c932c}
+Estimates the basic reproductive number for location l and time point t \hypertarget{classSpatialSEIR_1_1ModelContext_aaae62ac4cd67fe7bc5468214213cdaf3}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!get\-Compartment\-Sampling\-Mode@{get\-Compartment\-Sampling\-Mode}}
+\index{get\-Compartment\-Sampling\-Mode@{get\-Compartment\-Sampling\-Mode}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{get\-Compartment\-Sampling\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::get\-Compartment\-Sampling\-Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_aaae62ac4cd67fe7bc5468214213cdaf3}
+get\-Compartment\-Sampling\-Mode returns the current sampling mode as an integer \hypertarget{classSpatialSEIR_1_1ModelContext_a7c69bb2ce3657b025b265ee3a6cd2073}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!get\-Parameter\-Sampling\-Mode@{get\-Parameter\-Sampling\-Mode}}
+\index{get\-Parameter\-Sampling\-Mode@{get\-Parameter\-Sampling\-Mode}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{get\-Parameter\-Sampling\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::get\-Parameter\-Sampling\-Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a7c69bb2ce3657b025b265ee3a6cd2073}
+get\-Parameter\-Sampling\-Mode returns the current sampling mode for non-\/compartment parameters as an integer \hypertarget{classSpatialSEIR_1_1ModelContext_a4dc8841ea3e9b23dd8632a9f4998603d}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!populate@{populate}}
+\index{populate@{populate}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{populate}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::populate (
+\begin{DoxyParamCaption}
+\item[{{\bf Init\-Data} $\ast$}]{\-\_\-\-A0, }
+\item[{{\bf covariate\-Args} $\ast$}]{x\-Args, }
+\item[{{\bf covariate\-Args} $\ast$}]{x\-Prs\-Args, }
+\item[{double $\ast$}]{offset, }
+\item[{int $\ast$}]{Y, }
+\item[{{\bf compartment\-Args} $\ast$}]{S\-\_\-star\-Args, }
+\item[{{\bf compartment\-Args} $\ast$}]{E\-\_\-star\-Args, }
+\item[{{\bf compartment\-Args} $\ast$}]{I\-\_\-star\-Args, }
+\item[{{\bf compartment\-Args} $\ast$}]{R\-\_\-star\-Args, }
+\item[{{\bf scaled\-Distance\-Args} $\ast$}]{scaled\-Dist\-Args, }
+\item[{double $\ast$}]{rho, }
+\item[{double $\ast$}]{phi, }
+\item[{double $\ast$}]{beta, }
+\item[{double $\ast$}]{gamma\-\_\-ei, }
+\item[{double $\ast$}]{gamma\-\_\-ir, }
+\item[{double $\ast$}]{beta\-Prs, }
+\item[{int $\ast$}]{N, }
+\item[{{\bf slice\-Parameters} $\ast$}]{slice\-Widths, }
+\item[{{\bf prior\-Control} $\ast$}]{prior\-Information, }
+\item[{{\bf model\-Configuration}}]{\-\_\-config}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a4dc8841ea3e9b23dd8632a9f4998603d}
+The populate method is the entry point to working with spatial S\-E\-I\-R models in libspatial\-S\-E\-I\-R. 
+\begin{DoxyParams}{Parameters}
+{\em \-\_\-\-A0} & A0 must be an instance of \hyperlink{classSpatialSEIR_1_1InitData}{Init\-Data}, which contains the starting values of S0, E0, I0, R0 \\
+\hline
+{\em x\-Args} & x\-Args is an instance of \hyperlink{structSpatialSEIR_1_1covariateArgs}{covariate\-Args} which contains the dimensions of the fixed and time varying covariate matrices driving the exposure process. \\
+\hline
+{\em x\-Prs\-Args} & x\-Prs\-Args is an instance of \hyperlink{structSpatialSEIR_1_1covariateArgs}{covariate\-Args} which contains the dimensions of the fixed and time varying covariate matrices driving the reinfection process. \\
+\hline
+{\em offset} & Offset allows irregular spacing between time points. \\
+\hline
+{\em Y} & Y is the actual observed data vector. It must be of the same dimension as the rest of the Compartments. In the default data model, Y is exactly equal to I\-\_\-star. \\
+\hline
+{\em S\-\_\-star\-Args} & S\-\_\-star\-Args is an instance of \hyperlink{structSpatialSEIR_1_1compartmentArgs}{compartment\-Args} containing the dimensions and data for S\-\_\-star, along with the steady\-State\-Constraint\-Precision parameter. \\
+\hline
+{\em E\-\_\-star\-Args} & E\-\_\-star\-Args is an instance of \hyperlink{structSpatialSEIR_1_1compartmentArgs}{compartment\-Args} containing the dimensions and data for E\-\_\-star, along with the steady\-State\-Constraint\-Precision parameter. \\
+\hline
+{\em I\-\_\-star\-Args} & I\-\_\-star\-Args is an instance of \hyperlink{structSpatialSEIR_1_1compartmentArgs}{compartment\-Args} containing the dimensions and data for I\-\_\-star, along with the steady\-State\-Constraint\-Precision parameter. \\
+\hline
+{\em R\-\_\-star\-Args} & R\-\_\-star\-Args is an instance of \hyperlink{structSpatialSEIR_1_1compartmentArgs}{compartment\-Args} containing the dimensions and data for R\-\_\-star, along with the steady\-State\-Constraint\-Precision parameter. \\
+\hline
+{\em scaled\-Dist\-Args} & scaled\-Dist\-Args is the \hyperlink{structSpatialSEIR_1_1scaledDistanceArgs}{scaled\-Distance\-Args} struct containing the data and dimension of the unscaled distance matrices. \\
+\hline
+{\em rho} & rho gives the starting value of the spatial dependence parameter \\
+\hline
+{\em phi} & starting value for overdispersion precision \\
+\hline
+{\em beta} & beta gives the starting vector of regression parameters driving the exposure process. \\
+\hline
+{\em gamma\-\_\-ei} & p\-\_\-ei is the starting value of the parameter driving the exposed to infectious transition probability. \\
+\hline
+{\em gamma\-\_\-ir} & p\-\_\-ir is the starting value of the parameter driving the infectious to removed/recovered transition probability. \\
+\hline
+{\em beta\-Prs} & beta\-Prs is the starting vector of regression parameters driving the reinfection process. \\
+\hline
+{\em N} & N is the matrix of population sizes, corresponding in dimension to the \hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} instances. \\
+\hline
+{\em slice\-Widths} & slice\-Widths is an instance of \hyperlink{structSpatialSEIR_1_1sliceParameters}{slice\-Parameters} which gives the slice sampling widths/ Metropolis-\/\-Hastings tuning parameters for the various \hyperlink{classSpatialSEIR_1_1FullConditional}{Full\-Conditional} distributions. \\
+\hline
+{\em prior\-Information} & The \hyperlink{structSpatialSEIR_1_1priorControl}{prior\-Control} struct gives the prior precisions for the regression parameters, and the prior alpha and beta parameters for the p\-\_\-ei and p\-\_\-ir distributions. \\
+\hline
+{\em \-\_\-config} & The \hyperlink{structSpatialSEIR_1_1modelConfiguration}{model\-Configuration} struct gives the reinfection mode (S\-E\-I\-R\-S, S\-E\-I\-R, S\-S\-E\-I\-R) and the M\-C\-M\-C sampling mode. M\-C\-M\-C sampling modes are under very active development. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSpatialSEIR_1_1ModelContext_a846e13b0470616965ea407875f52532c}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!print\-F\-C\-Values@{print\-F\-C\-Values}}
+\index{print\-F\-C\-Values@{print\-F\-C\-Values}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{print\-F\-C\-Values}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::print\-F\-C\-Values (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a846e13b0470616965ea407875f52532c}
+print\-F\-C\-Values is a semi-\/depricated debug mode function which displays the current full conditional likelihood values of the model parameters. \hypertarget{classSpatialSEIR_1_1ModelContext_a582760455a9021e8e208f941747344d2}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!run\-Simulation@{run\-Simulation}}
+\index{run\-Simulation@{run\-Simulation}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{run\-Simulation}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::run\-Simulation (
+\begin{DoxyParamCaption}
+\item[{int}]{n\-Iterations, }
+\item[{bool}]{verbose = {\ttfamily false}, }
+\item[{bool}]{debug = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a582760455a9021e8e208f941747344d2}
+run\-Simulation runs n\-Iterations M\-C\-M\-C updates given the current model state. Optionally, verbose and debug level output is available. \hypertarget{classSpatialSEIR_1_1ModelContext_a9b16c72622a5dc724129828b885d0634}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!set\-Compartment\-Sampling\-Mode@{set\-Compartment\-Sampling\-Mode}}
+\index{set\-Compartment\-Sampling\-Mode@{set\-Compartment\-Sampling\-Mode}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{set\-Compartment\-Sampling\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::set\-Compartment\-Sampling\-Mode (
+\begin{DoxyParamCaption}
+\item[{int}]{mode}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a9b16c72622a5dc724129828b885d0634}
+set\-Compartment\-Sampling\-Mode sets the sampling mode for the disease compartments. This part of the A\-P\-I is in flux. \hypertarget{classSpatialSEIR_1_1ModelContext_a7bd0a35f25026a033527ddcaa336576e}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!set\-Parameter\-Sampling\-Mode@{set\-Parameter\-Sampling\-Mode}}
+\index{set\-Parameter\-Sampling\-Mode@{set\-Parameter\-Sampling\-Mode}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{set\-Parameter\-Sampling\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::set\-Parameter\-Sampling\-Mode (
+\begin{DoxyParamCaption}
+\item[{int}]{mode}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a7bd0a35f25026a033527ddcaa336576e}
+set\-Parameter\-Sampling\-Mode sets the sampling mode for non compartment parameters. This part of the A\-P\-I is in flux. \hypertarget{classSpatialSEIR_1_1ModelContext_a807197754b6f5b8bb04666de5848ec3d}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!set\-Random\-Seed@{set\-Random\-Seed}}
+\index{set\-Random\-Seed@{set\-Random\-Seed}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{set\-Random\-Seed}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::set\-Random\-Seed (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{seed\-Value}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a807197754b6f5b8bb04666de5848ec3d}
+set\-Random\-Seed sets the seed used by the pseudorandom number generator provided by \hyperlink{classSpatialSEIR_1_1RandomNumberProvider}{Random\-Number\-Provider} \hypertarget{classSpatialSEIR_1_1ModelContext_af29d7173abc3a57dbd065b058e594c91}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!simulation\-Iter@{simulation\-Iter}}
+\index{simulation\-Iter@{simulation\-Iter}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{simulation\-Iter}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::simulation\-Iter (
+\begin{DoxyParamCaption}
+\item[{bool}]{verbose = {\ttfamily false}, }
+\item[{bool}]{debug = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_af29d7173abc3a57dbd065b058e594c91}
+simulation\-Iter runs a single M\-C\-M\-C update given the current model state. Optionally, verbose and debug level output is available. \hypertarget{classSpatialSEIR_1_1ModelContext_a2f98dd4615d8ee7599e40032de50ba04}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!total\-E@{total\-E}}
+\index{total\-E@{total\-E}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{total\-E}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::total\-E (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a2f98dd4615d8ee7599e40032de50ba04}
+Calculates the sum of all components of E. \hypertarget{classSpatialSEIR_1_1ModelContext_a16f31cae10c0043d132d3a5dde6536a6}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!total\-E@{total\-E}}
+\index{total\-E@{total\-E}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{total\-E}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::total\-E (
+\begin{DoxyParamCaption}
+\item[{int}]{tpt}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a16f31cae10c0043d132d3a5dde6536a6}
+Calculates the sum of all components of E. \hypertarget{classSpatialSEIR_1_1ModelContext_a536c46cb2c5ab9c746b6fbbb74fa806b}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!total\-E\-\_\-star@{total\-E\-\_\-star}}
+\index{total\-E\-\_\-star@{total\-E\-\_\-star}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{total\-E\-\_\-star}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::total\-E\-\_\-star (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a536c46cb2c5ab9c746b6fbbb74fa806b}
+Calculates the sum of all components of E\-\_\-star. \hypertarget{classSpatialSEIR_1_1ModelContext_a1578d2c71f5a77617e254ead442971a3}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!total\-E\-\_\-star@{total\-E\-\_\-star}}
+\index{total\-E\-\_\-star@{total\-E\-\_\-star}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{total\-E\-\_\-star}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::total\-E\-\_\-star (
+\begin{DoxyParamCaption}
+\item[{int}]{tpt}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a1578d2c71f5a77617e254ead442971a3}
+Calculates the sum of all components of E\-\_\-star. \hypertarget{classSpatialSEIR_1_1ModelContext_ae18307811ef91173a9c8ef59a4eb2f48}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!total\-I@{total\-I}}
+\index{total\-I@{total\-I}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{total\-I}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::total\-I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_ae18307811ef91173a9c8ef59a4eb2f48}
+Calculates the sum of all components of I. \hypertarget{classSpatialSEIR_1_1ModelContext_af4bd57033a8a2c0138b2e0ab37722aef}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!total\-I@{total\-I}}
+\index{total\-I@{total\-I}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{total\-I}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::total\-I (
+\begin{DoxyParamCaption}
+\item[{int}]{tpt}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_af4bd57033a8a2c0138b2e0ab37722aef}
+Calculates the sum of all components of I. \hypertarget{classSpatialSEIR_1_1ModelContext_a6a3a7e1b08d7aaef7261e6cc7c8481d4}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!total\-I\-\_\-star@{total\-I\-\_\-star}}
+\index{total\-I\-\_\-star@{total\-I\-\_\-star}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{total\-I\-\_\-star}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::total\-I\-\_\-star (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a6a3a7e1b08d7aaef7261e6cc7c8481d4}
+Calculates the sum of all components of I\-\_\-star. \hypertarget{classSpatialSEIR_1_1ModelContext_a50f72f64c8ad978f5b740af4efbdf113}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!total\-I\-\_\-star@{total\-I\-\_\-star}}
+\index{total\-I\-\_\-star@{total\-I\-\_\-star}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{total\-I\-\_\-star}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::total\-I\-\_\-star (
+\begin{DoxyParamCaption}
+\item[{int}]{tpt}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a50f72f64c8ad978f5b740af4efbdf113}
+Calculates the sum of all components of I\-\_\-star. \hypertarget{classSpatialSEIR_1_1ModelContext_ad6502ed4ce84403c16c06a9fa54eb87a}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!total\-R@{total\-R}}
+\index{total\-R@{total\-R}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{total\-R}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::total\-R (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_ad6502ed4ce84403c16c06a9fa54eb87a}
+Calculates the sum of all components of R. \hypertarget{classSpatialSEIR_1_1ModelContext_a6ecac3d61faa0940c0c2c1813a0be2ac}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!total\-R@{total\-R}}
+\index{total\-R@{total\-R}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{total\-R}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::total\-R (
+\begin{DoxyParamCaption}
+\item[{int}]{tpt}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a6ecac3d61faa0940c0c2c1813a0be2ac}
+Calculates the sum of all components of R. \hypertarget{classSpatialSEIR_1_1ModelContext_a9d6176568883661bcd259c7d8d7e5531}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!total\-R\-\_\-star@{total\-R\-\_\-star}}
+\index{total\-R\-\_\-star@{total\-R\-\_\-star}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{total\-R\-\_\-star}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::total\-R\-\_\-star (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a9d6176568883661bcd259c7d8d7e5531}
+Calculates the sum of all components of R\-\_\-star. \hypertarget{classSpatialSEIR_1_1ModelContext_a5b486f6b0c97d26d106dffd007c1b515}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!total\-R\-\_\-star@{total\-R\-\_\-star}}
+\index{total\-R\-\_\-star@{total\-R\-\_\-star}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{total\-R\-\_\-star}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::total\-R\-\_\-star (
+\begin{DoxyParamCaption}
+\item[{int}]{tpt}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a5b486f6b0c97d26d106dffd007c1b515}
+Calculates the sum of all components of R\-\_\-star. \hypertarget{classSpatialSEIR_1_1ModelContext_a70301e33e229a6186bc6bd1859812966}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!total\-S@{total\-S}}
+\index{total\-S@{total\-S}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{total\-S}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::total\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a70301e33e229a6186bc6bd1859812966}
+Calculates the sum of all components of S. \hypertarget{classSpatialSEIR_1_1ModelContext_ad4f0faeda8cf482cfaa7fee1c750655e}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!total\-S@{total\-S}}
+\index{total\-S@{total\-S}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{total\-S}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::total\-S (
+\begin{DoxyParamCaption}
+\item[{int}]{tpt}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_ad4f0faeda8cf482cfaa7fee1c750655e}
+Calculates the sum of all components of S. \hypertarget{classSpatialSEIR_1_1ModelContext_a69035a68a9f37a34745cba86d0259fb7}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!total\-S\-\_\-star@{total\-S\-\_\-star}}
+\index{total\-S\-\_\-star@{total\-S\-\_\-star}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{total\-S\-\_\-star}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::total\-S\-\_\-star (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a69035a68a9f37a34745cba86d0259fb7}
+Calculates the sum of all components of S\-\_\-star. \hypertarget{classSpatialSEIR_1_1ModelContext_aa85a5be6616c189722605624e9e5db94}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!total\-S\-\_\-star@{total\-S\-\_\-star}}
+\index{total\-S\-\_\-star@{total\-S\-\_\-star}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{total\-S\-\_\-star}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::total\-S\-\_\-star (
+\begin{DoxyParamCaption}
+\item[{int}]{tpt}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_aa85a5be6616c189722605624e9e5db94}
+Calculates the sum of all components of S\-\_\-star. \hypertarget{classSpatialSEIR_1_1ModelContext_aa813d16b4ffdc46646223fd3da3a384c}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!update\-Sampling\-Parameters@{update\-Sampling\-Parameters}}
+\index{update\-Sampling\-Parameters@{update\-Sampling\-Parameters}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{update\-Sampling\-Parameters}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::update\-Sampling\-Parameters (
+\begin{DoxyParamCaption}
+\item[{double}]{desired\-Ratio, }
+\item[{double}]{target\-Width, }
+\item[{double}]{proportion\-Change}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_aa813d16b4ffdc46646223fd3da3a384c}
+update\-Sampling\-Parameters moves the various slice sampling widths / Metropolis-\/\-Hastings tuning parameters up or down depending on the current acceptance rate, and re-\/sets the acceptance counters. 
+\begin{DoxyParams}{Parameters}
+{\em desired\-Ratio} & desired M\-C\-M\-C acceptance ratio \\
+\hline
+{\em target\-Width} & target ratio tolerance (how close is close enough) \\
+\hline
+{\em proportion\-Change} & proportion to change the sampling parameters by \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSpatialSEIR_1_1ModelContext_abe200f29b14eee50f6626d6280596785}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!A0@{A0}}
+\index{A0@{A0}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{A0}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Init\-Data}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::\-A0}}\label{classSpatialSEIR_1_1ModelContext_abe200f29b14eee50f6626d6280596785}
+Pointer to \hyperlink{classSpatialSEIR_1_1InitData}{Init\-Data} instance containing the data for the initial compartment sizes. \hypertarget{classSpatialSEIR_1_1ModelContext_a7e15e37b3aa868f1b56d0cf92a9839c8}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!beta@{beta}}
+\index{beta@{beta}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{beta}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::beta}}\label{classSpatialSEIR_1_1ModelContext_a7e15e37b3aa868f1b56d0cf92a9839c8}
+Storage for the regression parameters beta \hypertarget{classSpatialSEIR_1_1ModelContext_a63278983ee123db534919685c46fbb5b}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!beta\-\_\-fc@{beta\-\_\-fc}}
+\index{beta\-\_\-fc@{beta\-\_\-fc}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{beta\-\_\-fc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-C\-\_\-\-Beta}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::beta\-\_\-fc}}\label{classSpatialSEIR_1_1ModelContext_a63278983ee123db534919685c46fbb5b}
+Pointer to \hyperlink{classSpatialSEIR_1_1FullConditional}{Full\-Conditional} distribution for the regression parameters beta \hypertarget{classSpatialSEIR_1_1ModelContext_abe52e0e1b4ad61cc0a71c104428c7dfc}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!beta\-Prs@{beta\-Prs}}
+\index{beta\-Prs@{beta\-Prs}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{beta\-Prs}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::beta\-Prs}}\label{classSpatialSEIR_1_1ModelContext_abe52e0e1b4ad61cc0a71c104428c7dfc}
+Storage for the regression parameters beta\-P\-\_\-\-R\-S \hypertarget{classSpatialSEIR_1_1ModelContext_a9eb52c439f5b00fe5926297f45484bd3}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!beta\-Prs\-\_\-fc@{beta\-Prs\-\_\-fc}}
+\index{beta\-Prs\-\_\-fc@{beta\-Prs\-\_\-fc}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{beta\-Prs\-\_\-fc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-C\-\_\-\-Beta\-\_\-\-P\-\_\-\-R\-S}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::beta\-Prs\-\_\-fc}}\label{classSpatialSEIR_1_1ModelContext_a9eb52c439f5b00fe5926297f45484bd3}
+Pointer to \hyperlink{classSpatialSEIR_1_1FullConditional}{Full\-Conditional} distribution for the regression parameters beta\-P\-\_\-\-R\-S \hypertarget{classSpatialSEIR_1_1ModelContext_a7146f9527fc298a50828757e477a33d3}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!compartment\-Cache@{compartment\-Cache}}
+\index{compartment\-Cache@{compartment\-Cache}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{compartment\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::compartment\-Cache}}\label{classSpatialSEIR_1_1ModelContext_a7146f9527fc298a50828757e477a33d3}
+Comparmental\-Model\-Matrix sized cache of doubles. \hypertarget{classSpatialSEIR_1_1ModelContext_a7c8c2708dabbc0a32bf32252942b3a12}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!config@{config}}
+\index{config@{config}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{config}]{\setlength{\rightskip}{0pt plus 5cm}{\bf model\-Configuration}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::config}}\label{classSpatialSEIR_1_1ModelContext_a7c8c2708dabbc0a32bf32252942b3a12}
+Pointer to \hyperlink{structSpatialSEIR_1_1modelConfiguration}{model\-Configuration} instance. \hypertarget{classSpatialSEIR_1_1ModelContext_a0b5cd5089cd6b9ebf3034387406dccb2}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!decorrelation\-Step\-Task@{decorrelation\-Step\-Task}}
+\index{decorrelation\-Step\-Task@{decorrelation\-Step\-Task}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{decorrelation\-Step\-Task}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Perform\-Decorrelation\-Step}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::decorrelation\-Step\-Task}}\label{classSpatialSEIR_1_1ModelContext_a0b5cd5089cd6b9ebf3034387406dccb2}
+Pointer to the decorrelation step task \hypertarget{classSpatialSEIR_1_1ModelContext_ad5128cd85f8a1005b11a97c6ff7894e1}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!E@{E}}
+\index{E@{E}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{E}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Compartmental\-Model\-Matrix}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::\-E}}\label{classSpatialSEIR_1_1ModelContext_ad5128cd85f8a1005b11a97c6ff7894e1}
+Pointer to the \hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} data structure storing the E compartment. \hypertarget{classSpatialSEIR_1_1ModelContext_a677ffe9133f332b346d7b1652d95552f}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!E0\-\_\-fc@{E0\-\_\-fc}}
+\index{E0\-\_\-fc@{E0\-\_\-fc}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{E0\-\_\-fc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-C\-\_\-\-E0}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::\-E0\-\_\-fc}}\label{classSpatialSEIR_1_1ModelContext_a677ffe9133f332b346d7b1652d95552f}
+Pointer to \hyperlink{classSpatialSEIR_1_1FullConditional}{Full\-Conditional} distribution for the initial exposed population -\/ not used \hypertarget{classSpatialSEIR_1_1ModelContext_a92a044fd49fd0d4996dd38a38f3f14a9}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!E\-\_\-star@{E\-\_\-star}}
+\index{E\-\_\-star@{E\-\_\-star}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{E\-\_\-star}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Compartmental\-Model\-Matrix}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::\-E\-\_\-star}}\label{classSpatialSEIR_1_1ModelContext_a92a044fd49fd0d4996dd38a38f3f14a9}
+Pointer to the \hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} data structure storing the E\-\_\-star compartment. \hypertarget{classSpatialSEIR_1_1ModelContext_ab2ceb1ec8e001f4d4f63eddfc0c44021}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!E\-\_\-star\-\_\-fc@{E\-\_\-star\-\_\-fc}}
+\index{E\-\_\-star\-\_\-fc@{E\-\_\-star\-\_\-fc}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{E\-\_\-star\-\_\-fc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-C\-\_\-\-E\-\_\-\-Star}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::\-E\-\_\-star\-\_\-fc}}\label{classSpatialSEIR_1_1ModelContext_ab2ceb1ec8e001f4d4f63eddfc0c44021}
+Pointer to \hyperlink{classSpatialSEIR_1_1FullConditional}{Full\-Conditional} distribution for the transition matrix E\-\_\-star \hypertarget{classSpatialSEIR_1_1ModelContext_aeecc346cd62bc2c8a816b1451b5da64b}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!eta@{eta}}
+\index{eta@{eta}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{eta}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::eta}}\label{classSpatialSEIR_1_1ModelContext_aeecc346cd62bc2c8a816b1451b5da64b}
+Storage for the linear predictor, eta \hypertarget{classSpatialSEIR_1_1ModelContext_a388cbd8cccf85afc2ffee74f008e63e0}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!file\-Provider@{file\-Provider}}
+\index{file\-Provider@{file\-Provider}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{file\-Provider}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-O\-Provider}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::file\-Provider}}\label{classSpatialSEIR_1_1ModelContext_a388cbd8cccf85afc2ffee74f008e63e0}
+pointer to an \hyperlink{classSpatialSEIR_1_1IOProvider}{I\-O\-Provider} instance which writes selected sampler output to a comma delimited text file. \hypertarget{classSpatialSEIR_1_1ModelContext_a4e545262577a97dd3aceeefc2a956626}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!gamma@{gamma}}
+\index{gamma@{gamma}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{gamma}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::gamma}}\label{classSpatialSEIR_1_1ModelContext_a4e545262577a97dd3aceeefc2a956626}
+Storage for the external infection parameters gamma (D\-E\-P\-R\-I\-C\-A\-T\-E\-D) \hypertarget{classSpatialSEIR_1_1ModelContext_a72509958c44ad6153feff07ec3da9895}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!gamma\-\_\-ei@{gamma\-\_\-ei}}
+\index{gamma\-\_\-ei@{gamma\-\_\-ei}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{gamma\-\_\-ei}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::gamma\-\_\-ei}}\label{classSpatialSEIR_1_1ModelContext_a72509958c44ad6153feff07ec3da9895}
+Parameter controlling transition probability vector p\-\_\-ei \hypertarget{classSpatialSEIR_1_1ModelContext_a6973164c7a807aea76f3bab1f4403cd5}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!gamma\-\_\-ei\-\_\-fc@{gamma\-\_\-ei\-\_\-fc}}
+\index{gamma\-\_\-ei\-\_\-fc@{gamma\-\_\-ei\-\_\-fc}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{gamma\-\_\-ei\-\_\-fc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-C\-\_\-\-Gamma\-\_\-\-E\-I}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::gamma\-\_\-ei\-\_\-fc}}\label{classSpatialSEIR_1_1ModelContext_a6973164c7a807aea76f3bab1f4403cd5}
+Pointer to \hyperlink{classSpatialSEIR_1_1FullConditional}{Full\-Conditional} distribution for the parameter transition probability p\-\_\-ei \hypertarget{classSpatialSEIR_1_1ModelContext_a9cbe4ffa8f5b19740f7cffc37d1a7b3c}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!gamma\-\_\-ir@{gamma\-\_\-ir}}
+\index{gamma\-\_\-ir@{gamma\-\_\-ir}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{gamma\-\_\-ir}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::gamma\-\_\-ir}}\label{classSpatialSEIR_1_1ModelContext_a9cbe4ffa8f5b19740f7cffc37d1a7b3c}
+Parameter controlling transition probability vector p\-\_\-ir \hypertarget{classSpatialSEIR_1_1ModelContext_a9293a2cef5007f0f4510072fb3babbf1}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!gamma\-\_\-ir\-\_\-fc@{gamma\-\_\-ir\-\_\-fc}}
+\index{gamma\-\_\-ir\-\_\-fc@{gamma\-\_\-ir\-\_\-fc}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{gamma\-\_\-ir\-\_\-fc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-C\-\_\-\-Gamma\-\_\-\-I\-R}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::gamma\-\_\-ir\-\_\-fc}}\label{classSpatialSEIR_1_1ModelContext_a9293a2cef5007f0f4510072fb3babbf1}
+Pointer to \hyperlink{classSpatialSEIR_1_1FullConditional}{Full\-Conditional} distribution for the parameter controlling transition probability p\-\_\-ir \hypertarget{classSpatialSEIR_1_1ModelContext_aa68b54ddf89a3ea432433dfb09c7983f}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!I@{I}}
+\index{I@{I}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{I}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Compartmental\-Model\-Matrix}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::\-I}}\label{classSpatialSEIR_1_1ModelContext_aa68b54ddf89a3ea432433dfb09c7983f}
+Pointer to the \hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} data structure storing the I compartment. \hypertarget{classSpatialSEIR_1_1ModelContext_a595c21a8b6130f09e3a2af6e114fe9da}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!I0\-\_\-fc@{I0\-\_\-fc}}
+\index{I0\-\_\-fc@{I0\-\_\-fc}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{I0\-\_\-fc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-C\-\_\-\-I0}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::\-I0\-\_\-fc}}\label{classSpatialSEIR_1_1ModelContext_a595c21a8b6130f09e3a2af6e114fe9da}
+Pointer to \hyperlink{classSpatialSEIR_1_1FullConditional}{Full\-Conditional} distribution for the initial infectious population \hypertarget{classSpatialSEIR_1_1ModelContext_adf47583e6bd65b272ea17dc84620e09f}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!I\-\_\-star@{I\-\_\-star}}
+\index{I\-\_\-star@{I\-\_\-star}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{I\-\_\-star}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Compartmental\-Model\-Matrix}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::\-I\-\_\-star}}\label{classSpatialSEIR_1_1ModelContext_adf47583e6bd65b272ea17dc84620e09f}
+Pointer to the \hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} data structure storing the I\-\_\-star compartment. \hypertarget{classSpatialSEIR_1_1ModelContext_a7c02046540bcf230845d6d6821148d67}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!I\-\_\-star\-\_\-overdispersed\-\_\-fc@{I\-\_\-star\-\_\-overdispersed\-\_\-fc}}
+\index{I\-\_\-star\-\_\-overdispersed\-\_\-fc@{I\-\_\-star\-\_\-overdispersed\-\_\-fc}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{I\-\_\-star\-\_\-overdispersed\-\_\-fc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-C\-\_\-\-I\-\_\-\-Star\-\_\-overdispersed}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::\-I\-\_\-star\-\_\-overdispersed\-\_\-fc}}\label{classSpatialSEIR_1_1ModelContext_a7c02046540bcf230845d6d6821148d67}
+Pointer to \hyperlink{classSpatialSEIR_1_1FullConditional}{Full\-Conditional} distribution for the I\-\_\-star transition matrix under overdispersion \hypertarget{classSpatialSEIR_1_1ModelContext_a451632183a787d4aab8bc53c745bea40}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!index\-Length@{index\-Length}}
+\index{index\-Length@{index\-Length}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{index\-Length}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::index\-Length}}\label{classSpatialSEIR_1_1ModelContext_a451632183a787d4aab8bc53c745bea40}
+Length of the index\-List array. \hypertarget{classSpatialSEIR_1_1ModelContext_a9813501d8b6ac165b9676947f7835473}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!index\-List@{index\-List}}
+\index{index\-List@{index\-List}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{index\-List}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::index\-List}}\label{classSpatialSEIR_1_1ModelContext_a9813501d8b6ac165b9676947f7835473}
+List of indices, used by some sampling functions. \hypertarget{classSpatialSEIR_1_1ModelContext_a698a8889db239e919323d764775a2148}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!is\-Populated@{is\-Populated}}
+\index{is\-Populated@{is\-Populated}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{is\-Populated}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::is\-Populated}}\label{classSpatialSEIR_1_1ModelContext_a698a8889db239e919323d764775a2148}
+Indicator that \hyperlink{classSpatialSEIR_1_1ModelContext}{Model\-Context} instance is ready for use. \hypertarget{classSpatialSEIR_1_1ModelContext_a681f80cc35dd7a8bf8784710a9175d47}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!iteration\-Tasks@{iteration\-Tasks}}
+\index{iteration\-Tasks@{iteration\-Tasks}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{iteration\-Tasks}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Iteration\-Task}$\ast$$>$$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::iteration\-Tasks}}\label{classSpatialSEIR_1_1ModelContext_a681f80cc35dd7a8bf8784710a9175d47}
+Iteration tasks are bits of logical code that need to execute periodically during M\-C\-M\-C sampling, but don't fall into the usual \hyperlink{classSpatialSEIR_1_1FullConditional}{Full\-Conditional} framework. \hypertarget{classSpatialSEIR_1_1ModelContext_ad8f3a8fd85bef0ce628c0ea0a5debc8b}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!model@{model}}
+\index{model@{model}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{model}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Full\-Conditional}$\ast$$>$$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::model}}\label{classSpatialSEIR_1_1ModelContext_ad8f3a8fd85bef0ce628c0ea0a5debc8b}
+A model in libspatial\-S\-E\-I\-R is a collection of full conditional distributions which must be sampled from. This collection is assembled during \hyperlink{classSpatialSEIR_1_1ModelContext_a4dc8841ea3e9b23dd8632a9f4998603d}{Model\-Context.\-populate} based on the reinfection mode, data model (not yet implemented), and the detection of special cases such as the single location case. \hypertarget{classSpatialSEIR_1_1ModelContext_a170b3ee4076d929c5e8012765f825eed}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!N@{N}}
+\index{N@{N}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{N}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::\-N}}\label{classSpatialSEIR_1_1ModelContext_a170b3ee4076d929c5e8012765f825eed}
+Matrix of population sizes \hypertarget{classSpatialSEIR_1_1ModelContext_aa8b6063ce0c31c485b42b2de28317ca4}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!num\-Iterations@{num\-Iterations}}
+\index{num\-Iterations@{num\-Iterations}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{num\-Iterations}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::num\-Iterations}}\label{classSpatialSEIR_1_1ModelContext_aa8b6063ce0c31c485b42b2de28317ca4}
+Number of M\-C\-M\-C samples so far. \hypertarget{classSpatialSEIR_1_1ModelContext_ab18c5fa9393c61d1936880776f534d62}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!ocl\-Provider@{ocl\-Provider}}
+\index{ocl\-Provider@{ocl\-Provider}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{ocl\-Provider}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-C\-L\-Provider}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::ocl\-Provider}}\label{classSpatialSEIR_1_1ModelContext_ab18c5fa9393c61d1936880776f534d62}
+pointer to an instance of \hyperlink{classSpatialSEIR_1_1OCLProvider}{O\-C\-L\-Provider} which supplies an interface for selecting active Open\-C\-L devices as well as parallelized computations required for various \hyperlink{classSpatialSEIR_1_1FullConditional}{Full\-Conditional} distributions. \hypertarget{classSpatialSEIR_1_1ModelContext_aedc2450556dd5cd0b30a0a1100843f81}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!offset@{offset}}
+\index{offset@{offset}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{offset}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::offset}}\label{classSpatialSEIR_1_1ModelContext_aedc2450556dd5cd0b30a0a1100843f81}
+Storage for the vector of offsets. \hypertarget{classSpatialSEIR_1_1ModelContext_ae0827d89df6c5eeca75216149e70b74c}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!p\-\_\-ei@{p\-\_\-ei}}
+\index{p\-\_\-ei@{p\-\_\-ei}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{p\-\_\-ei}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::p\-\_\-ei}}\label{classSpatialSEIR_1_1ModelContext_ae0827d89df6c5eeca75216149e70b74c}
+Transition probability vector p\-\_\-ei \hypertarget{classSpatialSEIR_1_1ModelContext_ad313e395d6c4bc5ca5cbda8c189a67da}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!p\-\_\-ir@{p\-\_\-ir}}
+\index{p\-\_\-ir@{p\-\_\-ir}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{p\-\_\-ir}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::p\-\_\-ir}}\label{classSpatialSEIR_1_1ModelContext_ad313e395d6c4bc5ca5cbda8c189a67da}
+Transition probability vector p\-\_\-ir \hypertarget{classSpatialSEIR_1_1ModelContext_a07133c92757c4de3a525ad921de527d5}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!p\-\_\-rs@{p\-\_\-rs}}
+\index{p\-\_\-rs@{p\-\_\-rs}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{p\-\_\-rs}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::p\-\_\-rs}}\label{classSpatialSEIR_1_1ModelContext_a07133c92757c4de3a525ad921de527d5}
+Transition probability vector p\-\_\-rs \hypertarget{classSpatialSEIR_1_1ModelContext_a3039a6c9014a3465b38f5becbe369a4a}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!p\-\_\-se@{p\-\_\-se}}
+\index{p\-\_\-se@{p\-\_\-se}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{p\-\_\-se}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::p\-\_\-se}}\label{classSpatialSEIR_1_1ModelContext_a3039a6c9014a3465b38f5becbe369a4a}
+Storage for the exposure probability matrix, p\-\_\-se \hypertarget{classSpatialSEIR_1_1ModelContext_aa6a04d39cec1ace0e7c57c3551d12bc4}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!p\-\_\-se\-\_\-components@{p\-\_\-se\-\_\-components}}
+\index{p\-\_\-se\-\_\-components@{p\-\_\-se\-\_\-components}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{p\-\_\-se\-\_\-components}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::p\-\_\-se\-\_\-components}}\label{classSpatialSEIR_1_1ModelContext_aa6a04d39cec1ace0e7c57c3551d12bc4}
+Storage for cacheable portions of the p\-\_\-se calculation \hypertarget{classSpatialSEIR_1_1ModelContext_a7873aaa6fe424c33d09287e63cdb6787}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!phi@{phi}}
+\index{phi@{phi}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{phi}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::phi}}\label{classSpatialSEIR_1_1ModelContext_a7873aaa6fe424c33d09287e63cdb6787}
+Storage for the overdispersion parameter \hypertarget{classSpatialSEIR_1_1ModelContext_a97d54a9e4778575b5c88264f88831fc4}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!phi\-\_\-fc@{phi\-\_\-fc}}
+\index{phi\-\_\-fc@{phi\-\_\-fc}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{phi\-\_\-fc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-C\-\_\-\-Phi}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::phi\-\_\-fc}}\label{classSpatialSEIR_1_1ModelContext_a97d54a9e4778575b5c88264f88831fc4}
+Pointer to \hyperlink{classSpatialSEIR_1_1FullConditional}{Full\-Conditional} distribution for the overdispersion parameter for I\-\_\-star \hypertarget{classSpatialSEIR_1_1ModelContext_a97ad90554c0f23cc4137661285df3213}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!R@{R}}
+\index{R@{R}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{R}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Compartmental\-Model\-Matrix}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::\-R}}\label{classSpatialSEIR_1_1ModelContext_a97ad90554c0f23cc4137661285df3213}
+Pointer to the \hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} data structure storing the R compartment. \hypertarget{classSpatialSEIR_1_1ModelContext_a080fbc05c16a279300a4b1f7957592f8}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!R0\-\_\-fc@{R0\-\_\-fc}}
+\index{R0\-\_\-fc@{R0\-\_\-fc}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{R0\-\_\-fc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-C\-\_\-\-R0}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::\-R0\-\_\-fc}}\label{classSpatialSEIR_1_1ModelContext_a080fbc05c16a279300a4b1f7957592f8}
+Pointer to \hyperlink{classSpatialSEIR_1_1FullConditional}{Full\-Conditional} distribution for the initial recovered population -\/ not used \hypertarget{classSpatialSEIR_1_1ModelContext_a03a86c851b58cf707ed0e0f734f01780}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!R\-\_\-star@{R\-\_\-star}}
+\index{R\-\_\-star@{R\-\_\-star}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{R\-\_\-star}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Compartmental\-Model\-Matrix}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::\-R\-\_\-star}}\label{classSpatialSEIR_1_1ModelContext_a03a86c851b58cf707ed0e0f734f01780}
+Pointer to the \hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} data structure storing the R\-\_\-star compartment. \hypertarget{classSpatialSEIR_1_1ModelContext_a0f77d6658696a3c2fa584caa036135a5}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!R\-\_\-star\-\_\-fc@{R\-\_\-star\-\_\-fc}}
+\index{R\-\_\-star\-\_\-fc@{R\-\_\-star\-\_\-fc}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{R\-\_\-star\-\_\-fc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-C\-\_\-\-R\-\_\-\-Star}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::\-R\-\_\-star\-\_\-fc}}\label{classSpatialSEIR_1_1ModelContext_a0f77d6658696a3c2fa584caa036135a5}
+Pointer to \hyperlink{classSpatialSEIR_1_1FullConditional}{Full\-Conditional} distribution for the transition matrix R\-\_\-star \hypertarget{classSpatialSEIR_1_1ModelContext_a752872a2e8bb09bbf8b2c400860f5c33}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!random@{random}}
+\index{random@{random}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{random}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Random\-Number\-Provider}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::random}}\label{classSpatialSEIR_1_1ModelContext_a752872a2e8bb09bbf8b2c400860f5c33}
+pointer to a \hyperlink{classSpatialSEIR_1_1RandomNumberProvider}{Random\-Number\-Provider} instance which provides random numbers from various distributions as well implementations of several probability density functions. \hypertarget{classSpatialSEIR_1_1ModelContext_a633cc9f969abeeb3ad9d3147023af13f}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!rho@{rho}}
+\index{rho@{rho}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{rho}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::rho}}\label{classSpatialSEIR_1_1ModelContext_a633cc9f969abeeb3ad9d3147023af13f}
+Storage for the vector of spatial dependence parameters, rho \hypertarget{classSpatialSEIR_1_1ModelContext_a894f23aa95ff98664b2cf71443cde6e5}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!rho\-\_\-fc@{rho\-\_\-fc}}
+\index{rho\-\_\-fc@{rho\-\_\-fc}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{rho\-\_\-fc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-C\-\_\-\-Rho}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::rho\-\_\-fc}}\label{classSpatialSEIR_1_1ModelContext_a894f23aa95ff98664b2cf71443cde6e5}
+Pointer to \hyperlink{classSpatialSEIR_1_1FullConditional}{Full\-Conditional} distribution for the spatial depenence parameter rho \hypertarget{classSpatialSEIR_1_1ModelContext_afa683f7f79821d957107d301dfe392c1}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!S@{S}}
+\index{S@{S}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Compartmental\-Model\-Matrix}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::\-S}}\label{classSpatialSEIR_1_1ModelContext_afa683f7f79821d957107d301dfe392c1}
+Pointer to the \hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} data structure storing the S compartment. \hypertarget{classSpatialSEIR_1_1ModelContext_ab45d23e96fb44d1758dc73ea1a11629f}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!S0\-\_\-fc@{S0\-\_\-fc}}
+\index{S0\-\_\-fc@{S0\-\_\-fc}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{S0\-\_\-fc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-C\-\_\-\-S0}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::\-S0\-\_\-fc}}\label{classSpatialSEIR_1_1ModelContext_ab45d23e96fb44d1758dc73ea1a11629f}
+Pointer to \hyperlink{classSpatialSEIR_1_1FullConditional}{Full\-Conditional} distribution for the initial suscptible population. \hypertarget{classSpatialSEIR_1_1ModelContext_a6fce6827d821ab06e57abe08e6f6c4cb}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!S\-\_\-star@{S\-\_\-star}}
+\index{S\-\_\-star@{S\-\_\-star}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{S\-\_\-star}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Compartmental\-Model\-Matrix}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::\-S\-\_\-star}}\label{classSpatialSEIR_1_1ModelContext_a6fce6827d821ab06e57abe08e6f6c4cb}
+Pointer to the \hyperlink{classSpatialSEIR_1_1CompartmentalModelMatrix}{Compartmental\-Model\-Matrix} data structure storing the S\-\_\-star compartment. \hypertarget{classSpatialSEIR_1_1ModelContext_adeacc82667f794bca82d60daeb03cd9d}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!S\-\_\-star\-\_\-fc@{S\-\_\-star\-\_\-fc}}
+\index{S\-\_\-star\-\_\-fc@{S\-\_\-star\-\_\-fc}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{S\-\_\-star\-\_\-fc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\-C\-\_\-\-S\-\_\-\-Star}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::\-S\-\_\-star\-\_\-fc}}\label{classSpatialSEIR_1_1ModelContext_adeacc82667f794bca82d60daeb03cd9d}
+Pointer to \hyperlink{classSpatialSEIR_1_1FullConditional}{Full\-Conditional} distribution for the transition matrix S\-\_\-star \hypertarget{classSpatialSEIR_1_1ModelContext_a7e263c5ae20ecdc892053a2588903459}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!scaled\-Dist\-Matrices@{scaled\-Dist\-Matrices}}
+\index{scaled\-Dist\-Matrices@{scaled\-Dist\-Matrices}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{scaled\-Dist\-Matrices}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Distance\-Matrix}$\ast$$>$$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::scaled\-Dist\-Matrices}}\label{classSpatialSEIR_1_1ModelContext_a7e263c5ae20ecdc892053a2588903459}
+Pointer to vector of scaled \hyperlink{classSpatialSEIR_1_1DistanceMatrix}{Distance\-Matrix} objects. \hypertarget{classSpatialSEIR_1_1ModelContext_abc04b849ec0d819b9a4893862348a606}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!set\-Sampling\-Indices\-Task@{set\-Sampling\-Indices\-Task}}
+\index{set\-Sampling\-Indices\-Task@{set\-Sampling\-Indices\-Task}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{set\-Sampling\-Indices\-Task}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Set\-Compartment\-Sampling\-Indices\-Task}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::set\-Sampling\-Indices\-Task}}\label{classSpatialSEIR_1_1ModelContext_abc04b849ec0d819b9a4893862348a606}
+Pointer to the sampling indices task. \hypertarget{classSpatialSEIR_1_1ModelContext_a1bf4c4a975e9e060ef30b8c7be14b563}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!single\-Location@{single\-Location}}
+\index{single\-Location@{single\-Location}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{single\-Location}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::single\-Location}}\label{classSpatialSEIR_1_1ModelContext_a1bf4c4a975e9e060ef30b8c7be14b563}
+Indicator that \hyperlink{classSpatialSEIR_1_1ModelContext}{Model\-Context} is operating in the single location special case. \hypertarget{classSpatialSEIR_1_1ModelContext_ae4569072f48495d446ef85968cb9a42d}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!tmp\-Container@{tmp\-Container}}
+\index{tmp\-Container@{tmp\-Container}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{tmp\-Container}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Compartmental\-Model\-Matrix}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::tmp\-Container}}\label{classSpatialSEIR_1_1ModelContext_ae4569072f48495d446ef85968cb9a42d}
+Extra compartment storage for caching integer computations \hypertarget{classSpatialSEIR_1_1ModelContext_ab92eeb3b5c0ee046321578f1b7fccea3}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!X@{X}}
+\index{X@{X}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{X}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Covariate\-Matrix}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::\-X}}\label{classSpatialSEIR_1_1ModelContext_ab92eeb3b5c0ee046321578f1b7fccea3}
+Pointer to \hyperlink{classSpatialSEIR_1_1CovariateMatrix}{Covariate\-Matrix} instance containing covariate informating driving the exposure process. \hypertarget{classSpatialSEIR_1_1ModelContext_ab4a6806ee81ecdd67ef14f40694a066c}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!X\-\_\-p\-R\-S@{X\-\_\-p\-R\-S}}
+\index{X\-\_\-p\-R\-S@{X\-\_\-p\-R\-S}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{X\-\_\-p\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Covariate\-Matrix}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::\-X\-\_\-p\-R\-S}}\label{classSpatialSEIR_1_1ModelContext_ab4a6806ee81ecdd67ef14f40694a066c}
+Pointer to \hyperlink{classSpatialSEIR_1_1CovariateMatrix}{Covariate\-Matrix} instance containing covariate informating driving the reinfection process. \hypertarget{classSpatialSEIR_1_1ModelContext_a21143ccd9b787ff4a42c83cdb2b81a80}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!Y@{Y}}
+\index{Y@{Y}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{Y}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::\-Y}}\label{classSpatialSEIR_1_1ModelContext_a21143ccd9b787ff4a42c83cdb2b81a80}
+Pointer to the actual data vector\-: Y. Y is related by a data model to I\-\_\-star. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+lib\-Spatial\-S\-E\-I\-R/include/\hyperlink{ModelContext_8hpp}{Model\-Context.\-hpp}\item 
+lib\-Spatial\-S\-E\-I\-R/src/\hyperlink{ModelContext_8cpp}{Model\-Context.\-cpp}\item 
+lib\-Spatial\-S\-E\-I\-R/src/\hyperlink{ModelContextSummaryFunctions_8cpp}{Model\-Context\-Summary\-Functions.\-cpp}\end{DoxyCompactItemize}

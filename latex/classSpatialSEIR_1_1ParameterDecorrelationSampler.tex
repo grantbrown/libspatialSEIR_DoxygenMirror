@@ -1,0 +1,113 @@
+\hypertarget{classSpatialSEIR_1_1ParameterDecorrelationSampler}{\section{Spatial\-S\-E\-I\-R\-:\-:Parameter\-Decorrelation\-Sampler Class Reference}
+\label{classSpatialSEIR_1_1ParameterDecorrelationSampler}\index{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler}}
+}
+
+
+{\ttfamily \#include $<$L\-S\-S\-\_\-\-Samplers.\-hpp$>$}
+
+Inheritance diagram for Spatial\-S\-E\-I\-R\-:\-:Parameter\-Decorrelation\-Sampler\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSpatialSEIR_1_1ParameterDecorrelationSampler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSpatialSEIR_1_1ParameterDecorrelationSampler_af0361fd63d2070725aa4828b651375b7}{Parameter\-Decorrelation\-Sampler} (\hyperlink{classSpatialSEIR_1_1ModelContext}{Model\-Context} $\ast$\hyperlink{classSpatialSEIR_1_1ParameterDecorrelationSampler_a6d3abd37e28042269b7e46bd1dbf45f6}{context}, \hyperlink{classSpatialSEIR_1_1ParameterFullConditional}{Parameter\-Full\-Conditional} $\ast$\hyperlink{classSpatialSEIR_1_1ParameterDecorrelationSampler_a68fd577ec24b82e53d6f0e3db8227642}{param\-F\-C}, double $\ast$\hyperlink{classSpatialSEIR_1_1ParameterDecorrelationSampler_a4861d8e4ed1613da5b636535b1878ff5}{param}, \hyperlink{classSpatialSEIR_1_1CovariateMatrix}{Covariate\-Matrix} $\ast$\hyperlink{classSpatialSEIR_1_1ParameterDecorrelationSampler_afacba79f68960c5f287fe7551d39cb28}{proposal\-Matrix})
+\item 
+void \hyperlink{classSpatialSEIR_1_1ParameterDecorrelationSampler_ad1242cb40cf8a47667b3cbe82eff9c47}{draw\-Sample} ()
+\item 
+int \hyperlink{classSpatialSEIR_1_1ParameterDecorrelationSampler_ad3039ef7f917ec85fc210be2940b5da1}{get\-Sampler\-Type} ()
+\item 
+\hyperlink{classSpatialSEIR_1_1ParameterDecorrelationSampler_a5c10a71c09faa7026c2872a3cbc019d6}{$\sim$\-Parameter\-Decorrelation\-Sampler} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1ParameterDecorrelationSampler_a4861d8e4ed1613da5b636535b1878ff5}{param}
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1ParameterDecorrelationSampler_a11fa351008038a247d6d4277a1e4dfe7}{proposal\-Cache}
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1ParameterDecorrelationSampler_a4aee4558ad58aec311e280512acc8796}{proposal\-Cache2}
+\item 
+\hyperlink{classSpatialSEIR_1_1ModelContext}{Model\-Context} $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1ParameterDecorrelationSampler_a6d3abd37e28042269b7e46bd1dbf45f6}{context}
+\item 
+\hyperlink{classSpatialSEIR_1_1ParameterFullConditional}{Parameter\-Full\-Conditional} $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1ParameterDecorrelationSampler_a68fd577ec24b82e53d6f0e3db8227642}{param\-F\-C}
+\item 
+\hyperlink{classSpatialSEIR_1_1CovariateMatrix}{Covariate\-Matrix} $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1ParameterDecorrelationSampler_afacba79f68960c5f287fe7551d39cb28}{proposal\-Matrix}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The decorrelation sampler functions identically to the \hyperlink{classSpatialSEIR_1_1ParameterJointMetropolisSampler}{Parameter\-Joint\-Metropolis\-Sampler} class, except that proposals are drawn from the null space of the relevant design matrix. This can be useful when the explanatory variables are correlated. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSpatialSEIR_1_1ParameterDecorrelationSampler_af0361fd63d2070725aa4828b651375b7}{\index{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler}!Parameter\-Decorrelation\-Sampler@{Parameter\-Decorrelation\-Sampler}}
+\index{Parameter\-Decorrelation\-Sampler@{Parameter\-Decorrelation\-Sampler}!SpatialSEIR::ParameterDecorrelationSampler@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler}}
+\subsubsection[{Parameter\-Decorrelation\-Sampler}]{\setlength{\rightskip}{0pt plus 5cm}Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler\-::\-Parameter\-Decorrelation\-Sampler (
+\begin{DoxyParamCaption}
+\item[{{\bf Model\-Context} $\ast$}]{context, }
+\item[{{\bf Parameter\-Full\-Conditional} $\ast$}]{param\-F\-C, }
+\item[{double $\ast$}]{param, }
+\item[{{\bf Covariate\-Matrix} $\ast$}]{proposal\-Matrix}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ParameterDecorrelationSampler_af0361fd63d2070725aa4828b651375b7}
+\hypertarget{classSpatialSEIR_1_1ParameterDecorrelationSampler_a5c10a71c09faa7026c2872a3cbc019d6}{\index{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler}!$\sim$\-Parameter\-Decorrelation\-Sampler@{$\sim$\-Parameter\-Decorrelation\-Sampler}}
+\index{$\sim$\-Parameter\-Decorrelation\-Sampler@{$\sim$\-Parameter\-Decorrelation\-Sampler}!SpatialSEIR::ParameterDecorrelationSampler@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler}}
+\subsubsection[{$\sim$\-Parameter\-Decorrelation\-Sampler}]{\setlength{\rightskip}{0pt plus 5cm}Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler\-::$\sim$\-Parameter\-Decorrelation\-Sampler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ParameterDecorrelationSampler_a5c10a71c09faa7026c2872a3cbc019d6}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSpatialSEIR_1_1ParameterDecorrelationSampler_ad1242cb40cf8a47667b3cbe82eff9c47}{\index{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler}!draw\-Sample@{draw\-Sample}}
+\index{draw\-Sample@{draw\-Sample}!SpatialSEIR::ParameterDecorrelationSampler@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler}}
+\subsubsection[{draw\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler\-::draw\-Sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSpatialSEIR_1_1ParameterDecorrelationSampler_ad1242cb40cf8a47667b3cbe82eff9c47}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1Sampler_aa07a42b26cb62249c20c58e855a08657}{Spatial\-S\-E\-I\-R\-::\-Sampler}.
+
+\hypertarget{classSpatialSEIR_1_1ParameterDecorrelationSampler_ad3039ef7f917ec85fc210be2940b5da1}{\index{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler}!get\-Sampler\-Type@{get\-Sampler\-Type}}
+\index{get\-Sampler\-Type@{get\-Sampler\-Type}!SpatialSEIR::ParameterDecorrelationSampler@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler}}
+\subsubsection[{get\-Sampler\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler\-::get\-Sampler\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSpatialSEIR_1_1ParameterDecorrelationSampler_ad3039ef7f917ec85fc210be2940b5da1}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1Sampler_aaa79310ad809e6aeb25479849f322dda}{Spatial\-S\-E\-I\-R\-::\-Sampler}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSpatialSEIR_1_1ParameterDecorrelationSampler_a6d3abd37e28042269b7e46bd1dbf45f6}{\index{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler}!context@{context}}
+\index{context@{context}!SpatialSEIR::ParameterDecorrelationSampler@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler}}
+\subsubsection[{context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Model\-Context}$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler\-::context}}\label{classSpatialSEIR_1_1ParameterDecorrelationSampler_a6d3abd37e28042269b7e46bd1dbf45f6}
+\hypertarget{classSpatialSEIR_1_1ParameterDecorrelationSampler_a4861d8e4ed1613da5b636535b1878ff5}{\index{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler}!param@{param}}
+\index{param@{param}!SpatialSEIR::ParameterDecorrelationSampler@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler}}
+\subsubsection[{param}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler\-::param}}\label{classSpatialSEIR_1_1ParameterDecorrelationSampler_a4861d8e4ed1613da5b636535b1878ff5}
+\hypertarget{classSpatialSEIR_1_1ParameterDecorrelationSampler_a68fd577ec24b82e53d6f0e3db8227642}{\index{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler}!param\-F\-C@{param\-F\-C}}
+\index{param\-F\-C@{param\-F\-C}!SpatialSEIR::ParameterDecorrelationSampler@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler}}
+\subsubsection[{param\-F\-C}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parameter\-Full\-Conditional}$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler\-::param\-F\-C}}\label{classSpatialSEIR_1_1ParameterDecorrelationSampler_a68fd577ec24b82e53d6f0e3db8227642}
+\hypertarget{classSpatialSEIR_1_1ParameterDecorrelationSampler_a11fa351008038a247d6d4277a1e4dfe7}{\index{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler}!proposal\-Cache@{proposal\-Cache}}
+\index{proposal\-Cache@{proposal\-Cache}!SpatialSEIR::ParameterDecorrelationSampler@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler}}
+\subsubsection[{proposal\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler\-::proposal\-Cache}}\label{classSpatialSEIR_1_1ParameterDecorrelationSampler_a11fa351008038a247d6d4277a1e4dfe7}
+\hypertarget{classSpatialSEIR_1_1ParameterDecorrelationSampler_a4aee4558ad58aec311e280512acc8796}{\index{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler}!proposal\-Cache2@{proposal\-Cache2}}
+\index{proposal\-Cache2@{proposal\-Cache2}!SpatialSEIR::ParameterDecorrelationSampler@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler}}
+\subsubsection[{proposal\-Cache2}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler\-::proposal\-Cache2}}\label{classSpatialSEIR_1_1ParameterDecorrelationSampler_a4aee4558ad58aec311e280512acc8796}
+\hypertarget{classSpatialSEIR_1_1ParameterDecorrelationSampler_afacba79f68960c5f287fe7551d39cb28}{\index{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler}!proposal\-Matrix@{proposal\-Matrix}}
+\index{proposal\-Matrix@{proposal\-Matrix}!SpatialSEIR::ParameterDecorrelationSampler@{Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler}}
+\subsubsection[{proposal\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Covariate\-Matrix}$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Parameter\-Decorrelation\-Sampler\-::proposal\-Matrix}}\label{classSpatialSEIR_1_1ParameterDecorrelationSampler_afacba79f68960c5f287fe7551d39cb28}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+lib\-Spatial\-S\-E\-I\-R/include/\hyperlink{LSS__Samplers_8hpp}{L\-S\-S\-\_\-\-Samplers.\-hpp}\end{DoxyCompactItemize}

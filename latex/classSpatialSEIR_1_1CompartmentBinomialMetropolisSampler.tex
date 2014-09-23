@@ -1,0 +1,130 @@
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler}{\section{Spatial\-S\-E\-I\-R\-:\-:Compartment\-Binomial\-Metropolis\-Sampler Class Reference}
+\label{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler}\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}}
+}
+
+
+{\ttfamily \#include $<$L\-S\-S\-\_\-\-Samplers.\-hpp$>$}
+
+Inheritance diagram for Spatial\-S\-E\-I\-R\-:\-:Compartment\-Binomial\-Metropolis\-Sampler\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a8098fe4333db437ebd754d67040fc758}{Compartment\-Binomial\-Metropolis\-Sampler} (\hyperlink{classSpatialSEIR_1_1ModelContext}{Model\-Context} $\ast$\hyperlink{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_aa8e8332272c23e296ff8f3f6d9b6b9a2}{context}, \hyperlink{classSpatialSEIR_1_1CompartmentFullConditional}{Compartment\-Full\-Conditional} $\ast$\hyperlink{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a5ba83648853edd9ccf7e0e33e22b1d93}{compartment\-F\-C}, int $\ast$\hyperlink{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a05f080ab0846309ba240b1819249cb9c}{compartment\-Data}, int $\ast$\hyperlink{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a2927a09c8c50447fe863506c1e6e1a10}{compartment\-From}, int $\ast$\hyperlink{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a4b6410cc9b98d13ef261497292ba6518}{compartment\-To}, double $\ast$\hyperlink{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a6a93966308715d47f53c972b5f7e385b}{probability\-Vector}, int \hyperlink{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_adad677ace3b19726b377834fcd78b857}{probability\-Vector\-Len})
+\item 
+void \hyperlink{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a11d2900ff89a59f71e2ff5695432e036}{draw\-Sample} ()
+\item 
+int \hyperlink{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_aa84f51d4d02943be01c6309581ecc17a}{get\-Sampler\-Type} ()
+\item 
+void \hyperlink{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a3ba10e64272f38123df2963e9d52cdab}{gen\-Proposal} ()
+\item 
+\hyperlink{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_aae485cd96f34f762416337db11da1f54}{$\sim$\-Compartment\-Binomial\-Metropolis\-Sampler} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSpatialSEIR_1_1ModelContext}{Model\-Context} $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_aa8e8332272c23e296ff8f3f6d9b6b9a2}{context}
+\item 
+\hyperlink{classSpatialSEIR_1_1CompartmentFullConditional}{Compartment\-Full\-Conditional} $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a5ba83648853edd9ccf7e0e33e22b1d93}{compartment\-F\-C}
+\item 
+int $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a05f080ab0846309ba240b1819249cb9c}{compartment\-Data}
+\item 
+int $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a2927a09c8c50447fe863506c1e6e1a10}{compartment\-From}
+\item 
+int $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a4b6410cc9b98d13ef261497292ba6518}{compartment\-To}
+\item 
+double $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a6a93966308715d47f53c972b5f7e385b}{probability\-Vector}
+\item 
+int $\ast$ \hyperlink{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_adad677ace3b19726b377834fcd78b857}{probability\-Vector\-Len}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler}{Compartment\-Binomial\-Metropolis\-Sampler} class is child of the \hyperlink{classSpatialSEIR_1_1Sampler}{Sampler} class which draws samples from the posterior distribution of the various transition compartments using a chain binomial proposal based on the parameters. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a8098fe4333db437ebd754d67040fc758}{\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}!Compartment\-Binomial\-Metropolis\-Sampler@{Compartment\-Binomial\-Metropolis\-Sampler}}
+\index{Compartment\-Binomial\-Metropolis\-Sampler@{Compartment\-Binomial\-Metropolis\-Sampler}!SpatialSEIR::CompartmentBinomialMetropolisSampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}}
+\subsubsection[{Compartment\-Binomial\-Metropolis\-Sampler}]{\setlength{\rightskip}{0pt plus 5cm}Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler\-::\-Compartment\-Binomial\-Metropolis\-Sampler (
+\begin{DoxyParamCaption}
+\item[{{\bf Model\-Context} $\ast$}]{context, }
+\item[{{\bf Compartment\-Full\-Conditional} $\ast$}]{compartment\-F\-C, }
+\item[{int $\ast$}]{compartment\-Data, }
+\item[{int $\ast$}]{compartment\-From, }
+\item[{int $\ast$}]{compartment\-To, }
+\item[{double $\ast$}]{probability\-Vector, }
+\item[{int}]{probability\-Vector\-Len}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a8098fe4333db437ebd754d67040fc758}
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_aae485cd96f34f762416337db11da1f54}{\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}!$\sim$\-Compartment\-Binomial\-Metropolis\-Sampler@{$\sim$\-Compartment\-Binomial\-Metropolis\-Sampler}}
+\index{$\sim$\-Compartment\-Binomial\-Metropolis\-Sampler@{$\sim$\-Compartment\-Binomial\-Metropolis\-Sampler}!SpatialSEIR::CompartmentBinomialMetropolisSampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}}
+\subsubsection[{$\sim$\-Compartment\-Binomial\-Metropolis\-Sampler}]{\setlength{\rightskip}{0pt plus 5cm}Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler\-::$\sim$\-Compartment\-Binomial\-Metropolis\-Sampler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_aae485cd96f34f762416337db11da1f54}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a11d2900ff89a59f71e2ff5695432e036}{\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}!draw\-Sample@{draw\-Sample}}
+\index{draw\-Sample@{draw\-Sample}!SpatialSEIR::CompartmentBinomialMetropolisSampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}}
+\subsubsection[{draw\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler\-::draw\-Sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a11d2900ff89a59f71e2ff5695432e036}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1Sampler_aa07a42b26cb62249c20c58e855a08657}{Spatial\-S\-E\-I\-R\-::\-Sampler}.
+
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a3ba10e64272f38123df2963e9d52cdab}{\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}!gen\-Proposal@{gen\-Proposal}}
+\index{gen\-Proposal@{gen\-Proposal}!SpatialSEIR::CompartmentBinomialMetropolisSampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}}
+\subsubsection[{gen\-Proposal}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler\-::gen\-Proposal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a3ba10e64272f38123df2963e9d52cdab}
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_aa84f51d4d02943be01c6309581ecc17a}{\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}!get\-Sampler\-Type@{get\-Sampler\-Type}}
+\index{get\-Sampler\-Type@{get\-Sampler\-Type}!SpatialSEIR::CompartmentBinomialMetropolisSampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}}
+\subsubsection[{get\-Sampler\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler\-::get\-Sampler\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_aa84f51d4d02943be01c6309581ecc17a}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1Sampler_aaa79310ad809e6aeb25479849f322dda}{Spatial\-S\-E\-I\-R\-::\-Sampler}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a05f080ab0846309ba240b1819249cb9c}{\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}!compartment\-Data@{compartment\-Data}}
+\index{compartment\-Data@{compartment\-Data}!SpatialSEIR::CompartmentBinomialMetropolisSampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}}
+\subsubsection[{compartment\-Data}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler\-::compartment\-Data}}\label{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a05f080ab0846309ba240b1819249cb9c}
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a5ba83648853edd9ccf7e0e33e22b1d93}{\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}!compartment\-F\-C@{compartment\-F\-C}}
+\index{compartment\-F\-C@{compartment\-F\-C}!SpatialSEIR::CompartmentBinomialMetropolisSampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}}
+\subsubsection[{compartment\-F\-C}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Compartment\-Full\-Conditional}$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler\-::compartment\-F\-C}}\label{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a5ba83648853edd9ccf7e0e33e22b1d93}
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a2927a09c8c50447fe863506c1e6e1a10}{\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}!compartment\-From@{compartment\-From}}
+\index{compartment\-From@{compartment\-From}!SpatialSEIR::CompartmentBinomialMetropolisSampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}}
+\subsubsection[{compartment\-From}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler\-::compartment\-From}}\label{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a2927a09c8c50447fe863506c1e6e1a10}
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a4b6410cc9b98d13ef261497292ba6518}{\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}!compartment\-To@{compartment\-To}}
+\index{compartment\-To@{compartment\-To}!SpatialSEIR::CompartmentBinomialMetropolisSampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}}
+\subsubsection[{compartment\-To}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler\-::compartment\-To}}\label{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a4b6410cc9b98d13ef261497292ba6518}
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_aa8e8332272c23e296ff8f3f6d9b6b9a2}{\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}!context@{context}}
+\index{context@{context}!SpatialSEIR::CompartmentBinomialMetropolisSampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}}
+\subsubsection[{context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Model\-Context}$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler\-::context}}\label{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_aa8e8332272c23e296ff8f3f6d9b6b9a2}
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a6a93966308715d47f53c972b5f7e385b}{\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}!probability\-Vector@{probability\-Vector}}
+\index{probability\-Vector@{probability\-Vector}!SpatialSEIR::CompartmentBinomialMetropolisSampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}}
+\subsubsection[{probability\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler\-::probability\-Vector}}\label{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_a6a93966308715d47f53c972b5f7e385b}
+\hypertarget{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_adad677ace3b19726b377834fcd78b857}{\index{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}!probability\-Vector\-Len@{probability\-Vector\-Len}}
+\index{probability\-Vector\-Len@{probability\-Vector\-Len}!SpatialSEIR::CompartmentBinomialMetropolisSampler@{Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler}}
+\subsubsection[{probability\-Vector\-Len}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Spatial\-S\-E\-I\-R\-::\-Compartment\-Binomial\-Metropolis\-Sampler\-::probability\-Vector\-Len}}\label{classSpatialSEIR_1_1CompartmentBinomialMetropolisSampler_adad677ace3b19726b377834fcd78b857}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+lib\-Spatial\-S\-E\-I\-R/include/\hyperlink{LSS__Samplers_8hpp}{L\-S\-S\-\_\-\-Samplers.\-hpp}\end{DoxyCompactItemize}

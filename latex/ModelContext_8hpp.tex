@@ -1,0 +1,55 @@
+\hypertarget{ModelContext_8hpp}{\section{lib\-Spatial\-S\-E\-I\-R/include/\-Model\-Context.hpp File Reference}
+\label{ModelContext_8hpp}\index{lib\-Spatial\-S\-E\-I\-R/include/\-Model\-Context.\-hpp@{lib\-Spatial\-S\-E\-I\-R/include/\-Model\-Context.\-hpp}}
+}
+{\ttfamily \#include $<$Eigen/\-Core$>$}\\*
+{\ttfamily \#include $<$cstring$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSpatialSEIR_1_1modelConfiguration}{Spatial\-S\-E\-I\-R\-::model\-Configuration}
+\item 
+class \hyperlink{classSpatialSEIR_1_1ModelContext}{Spatial\-S\-E\-I\-R\-::\-Model\-Context}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceSpatialSEIR}{Spatial\-S\-E\-I\-R}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ModelContext_8hpp_a9a75963459a910d3e39826dcd734d944}{M\-O\-D\-E\-L\-\_\-\-C\-O\-N\-T\-E\-X\-T\-\_\-\-I\-N\-C}
+\item 
+\#define \hyperlink{ModelContext_8hpp_a5333c3f98fdcb505114c67ba0ae2c344}{L\-S\-S\-\_\-\-D\-E\-G\-E\-N\-E\-R\-A\-T\-E\-\_\-\-D\-A\-T\-A\-\_\-\-M\-O\-D\-E\-L}~1
+\item 
+\#define \hyperlink{ModelContext_8hpp_a522c8e83e559414582049f45e2a042cf}{L\-S\-S\-\_\-\-O\-V\-E\-R\-D\-I\-S\-P\-E\-R\-S\-E\-D\-\_\-\-D\-A\-T\-A\-\_\-\-M\-O\-D\-E\-L}~2
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Eigen\-::\-Matrix$<$ double, \\*
+Eigen\-::\-Dynamic, Eigen\-::\-Dynamic $>$ \hyperlink{namespaceSpatialSEIR_a998a0502213346d0f88197c232de3331}{Spatial\-S\-E\-I\-R\-::\-Matrix\-Type}
+\item 
+typedef Eigen\-::\-Map$<$ Matrix\-Type, \\*
+Eigen\-::\-Col\-Major $>$ \hyperlink{namespaceSpatialSEIR_a56ce20bdcae25d006d2ddc637596dbd3}{Spatial\-S\-E\-I\-R\-::\-Matrix\-Map\-Type}
+\item 
+typedef Eigen\-::\-Matrix$<$ int, \\*
+Eigen\-::\-Dynamic, Eigen\-::\-Dynamic $>$ \hyperlink{namespaceSpatialSEIR_a61e75b01f74b5a08c1528ac3bce40efd}{Spatial\-S\-E\-I\-R\-::\-Int\-Matrix\-Type}
+\item 
+typedef Eigen\-::\-Map\\*
+$<$ Int\-Matrix\-Type, \\*
+Eigen\-::\-Col\-Major $>$ \hyperlink{namespaceSpatialSEIR_aef5eeacdd778eee57264f9ca171dd505}{Spatial\-S\-E\-I\-R\-::\-Int\-Matrix\-Map\-Type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{ModelContext_8hpp_a5333c3f98fdcb505114c67ba0ae2c344}{\index{Model\-Context.\-hpp@{Model\-Context.\-hpp}!L\-S\-S\-\_\-\-D\-E\-G\-E\-N\-E\-R\-A\-T\-E\-\_\-\-D\-A\-T\-A\-\_\-\-M\-O\-D\-E\-L@{L\-S\-S\-\_\-\-D\-E\-G\-E\-N\-E\-R\-A\-T\-E\-\_\-\-D\-A\-T\-A\-\_\-\-M\-O\-D\-E\-L}}
+\index{L\-S\-S\-\_\-\-D\-E\-G\-E\-N\-E\-R\-A\-T\-E\-\_\-\-D\-A\-T\-A\-\_\-\-M\-O\-D\-E\-L@{L\-S\-S\-\_\-\-D\-E\-G\-E\-N\-E\-R\-A\-T\-E\-\_\-\-D\-A\-T\-A\-\_\-\-M\-O\-D\-E\-L}!ModelContext.hpp@{Model\-Context.\-hpp}}
+\subsubsection[{L\-S\-S\-\_\-\-D\-E\-G\-E\-N\-E\-R\-A\-T\-E\-\_\-\-D\-A\-T\-A\-\_\-\-M\-O\-D\-E\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-S\-S\-\_\-\-D\-E\-G\-E\-N\-E\-R\-A\-T\-E\-\_\-\-D\-A\-T\-A\-\_\-\-M\-O\-D\-E\-L~1}}\label{ModelContext_8hpp_a5333c3f98fdcb505114c67ba0ae2c344}
+\hypertarget{ModelContext_8hpp_a522c8e83e559414582049f45e2a042cf}{\index{Model\-Context.\-hpp@{Model\-Context.\-hpp}!L\-S\-S\-\_\-\-O\-V\-E\-R\-D\-I\-S\-P\-E\-R\-S\-E\-D\-\_\-\-D\-A\-T\-A\-\_\-\-M\-O\-D\-E\-L@{L\-S\-S\-\_\-\-O\-V\-E\-R\-D\-I\-S\-P\-E\-R\-S\-E\-D\-\_\-\-D\-A\-T\-A\-\_\-\-M\-O\-D\-E\-L}}
+\index{L\-S\-S\-\_\-\-O\-V\-E\-R\-D\-I\-S\-P\-E\-R\-S\-E\-D\-\_\-\-D\-A\-T\-A\-\_\-\-M\-O\-D\-E\-L@{L\-S\-S\-\_\-\-O\-V\-E\-R\-D\-I\-S\-P\-E\-R\-S\-E\-D\-\_\-\-D\-A\-T\-A\-\_\-\-M\-O\-D\-E\-L}!ModelContext.hpp@{Model\-Context.\-hpp}}
+\subsubsection[{L\-S\-S\-\_\-\-O\-V\-E\-R\-D\-I\-S\-P\-E\-R\-S\-E\-D\-\_\-\-D\-A\-T\-A\-\_\-\-M\-O\-D\-E\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-S\-S\-\_\-\-O\-V\-E\-R\-D\-I\-S\-P\-E\-R\-S\-E\-D\-\_\-\-D\-A\-T\-A\-\_\-\-M\-O\-D\-E\-L~2}}\label{ModelContext_8hpp_a522c8e83e559414582049f45e2a042cf}
+\hypertarget{ModelContext_8hpp_a9a75963459a910d3e39826dcd734d944}{\index{Model\-Context.\-hpp@{Model\-Context.\-hpp}!M\-O\-D\-E\-L\-\_\-\-C\-O\-N\-T\-E\-X\-T\-\_\-\-I\-N\-C@{M\-O\-D\-E\-L\-\_\-\-C\-O\-N\-T\-E\-X\-T\-\_\-\-I\-N\-C}}
+\index{M\-O\-D\-E\-L\-\_\-\-C\-O\-N\-T\-E\-X\-T\-\_\-\-I\-N\-C@{M\-O\-D\-E\-L\-\_\-\-C\-O\-N\-T\-E\-X\-T\-\_\-\-I\-N\-C}!ModelContext.hpp@{Model\-Context.\-hpp}}
+\subsubsection[{M\-O\-D\-E\-L\-\_\-\-C\-O\-N\-T\-E\-X\-T\-\_\-\-I\-N\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-O\-D\-E\-L\-\_\-\-C\-O\-N\-T\-E\-X\-T\-\_\-\-I\-N\-C}}\label{ModelContext_8hpp_a9a75963459a910d3e39826dcd734d944}

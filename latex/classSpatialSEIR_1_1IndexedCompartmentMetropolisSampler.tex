@@ -1,0 +1,107 @@
+\hypertarget{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler}{\section{Spatial\-S\-E\-I\-R\-:\-:Indexed\-Compartment\-Metropolis\-Sampler Class Reference}
+\label{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler}\index{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler}}
+}
+
+
+{\ttfamily \#include $<$L\-S\-S\-\_\-\-Samplers.\-hpp$>$}
+
+Inheritance diagram for Spatial\-S\-E\-I\-R\-:\-:Indexed\-Compartment\-Metropolis\-Sampler\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_ab854404a8d8d53fc77be7a7a90937e43}{Indexed\-Compartment\-Metropolis\-Sampler} (\hyperlink{classSpatialSEIR_1_1ModelContext}{Model\-Context} $\ast$\hyperlink{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_a83b05275c5b6e2da4d336eb09d7bb2b5}{context}, \hyperlink{classSpatialSEIR_1_1CompartmentFullConditional}{Compartment\-Full\-Conditional} $\ast$\hyperlink{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_a67e3744835088d5612fbc3caf85dbac2}{compartment\-F\-C}, int $\ast$\hyperlink{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_ad82e142ca51ec5b9099d4fce0ceed7c3}{compartment\-Data})
+\item 
+void \hyperlink{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_a98bcf6dc5e426a45ef11bf04c1e178dd}{draw\-Sample} ()
+\item 
+int \hyperlink{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_a87fe511f9a9fd517c4bafad59c296986}{get\-Sampler\-Type} ()
+\item 
+\hyperlink{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_a9196ae6955cec850a05b1d6f7784e941}{$\sim$\-Indexed\-Compartment\-Metropolis\-Sampler} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSpatialSEIR_1_1ModelContext}{Model\-Context} $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_a83b05275c5b6e2da4d336eb09d7bb2b5}{context}
+\item 
+\hyperlink{classSpatialSEIR_1_1CompartmentFullConditional}{Compartment\-Full\-Conditional} $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_a67e3744835088d5612fbc3caf85dbac2}{compartment\-F\-C}
+\item 
+int $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_adb184082c1e6f3a4065edee600f69c1b}{index\-Length}
+\item 
+int $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_ad82e142ca51ec5b9099d4fce0ceed7c3}{compartment\-Data}
+\item 
+int $\ast$$\ast$ \hyperlink{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_a69b2f84b4fe8bbb44831a106b3d55bfe}{index\-List}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler}{Indexed\-Compartment\-Metropolis\-Sampler} class is child of the \hyperlink{classSpatialSEIR_1_1Sampler}{Sampler} class which draws samples from the posterior distribution of the various transition compartments using a partial Metropolis proposal, with proposal indices determined by the \hyperlink{classSpatialSEIR_1_1ModelContext}{Model\-Context} to which it belongs. This sampler is designed to reduce autocorrelation by letting all compartments move together using the same indices. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_ab854404a8d8d53fc77be7a7a90937e43}{\index{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler}!Indexed\-Compartment\-Metropolis\-Sampler@{Indexed\-Compartment\-Metropolis\-Sampler}}
+\index{Indexed\-Compartment\-Metropolis\-Sampler@{Indexed\-Compartment\-Metropolis\-Sampler}!SpatialSEIR::IndexedCompartmentMetropolisSampler@{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler}}
+\subsubsection[{Indexed\-Compartment\-Metropolis\-Sampler}]{\setlength{\rightskip}{0pt plus 5cm}Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler\-::\-Indexed\-Compartment\-Metropolis\-Sampler (
+\begin{DoxyParamCaption}
+\item[{{\bf Model\-Context} $\ast$}]{context, }
+\item[{{\bf Compartment\-Full\-Conditional} $\ast$}]{compartment\-F\-C, }
+\item[{int $\ast$}]{compartment\-Data}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_ab854404a8d8d53fc77be7a7a90937e43}
+\hypertarget{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_a9196ae6955cec850a05b1d6f7784e941}{\index{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler}!$\sim$\-Indexed\-Compartment\-Metropolis\-Sampler@{$\sim$\-Indexed\-Compartment\-Metropolis\-Sampler}}
+\index{$\sim$\-Indexed\-Compartment\-Metropolis\-Sampler@{$\sim$\-Indexed\-Compartment\-Metropolis\-Sampler}!SpatialSEIR::IndexedCompartmentMetropolisSampler@{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler}}
+\subsubsection[{$\sim$\-Indexed\-Compartment\-Metropolis\-Sampler}]{\setlength{\rightskip}{0pt plus 5cm}Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler\-::$\sim$\-Indexed\-Compartment\-Metropolis\-Sampler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_a9196ae6955cec850a05b1d6f7784e941}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_a98bcf6dc5e426a45ef11bf04c1e178dd}{\index{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler}!draw\-Sample@{draw\-Sample}}
+\index{draw\-Sample@{draw\-Sample}!SpatialSEIR::IndexedCompartmentMetropolisSampler@{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler}}
+\subsubsection[{draw\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler\-::draw\-Sample (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_a98bcf6dc5e426a45ef11bf04c1e178dd}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1Sampler_aa07a42b26cb62249c20c58e855a08657}{Spatial\-S\-E\-I\-R\-::\-Sampler}.
+
+\hypertarget{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_a87fe511f9a9fd517c4bafad59c296986}{\index{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler}!get\-Sampler\-Type@{get\-Sampler\-Type}}
+\index{get\-Sampler\-Type@{get\-Sampler\-Type}!SpatialSEIR::IndexedCompartmentMetropolisSampler@{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler}}
+\subsubsection[{get\-Sampler\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler\-::get\-Sampler\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_a87fe511f9a9fd517c4bafad59c296986}
+
+
+Implements \hyperlink{classSpatialSEIR_1_1Sampler_aaa79310ad809e6aeb25479849f322dda}{Spatial\-S\-E\-I\-R\-::\-Sampler}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_ad82e142ca51ec5b9099d4fce0ceed7c3}{\index{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler}!compartment\-Data@{compartment\-Data}}
+\index{compartment\-Data@{compartment\-Data}!SpatialSEIR::IndexedCompartmentMetropolisSampler@{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler}}
+\subsubsection[{compartment\-Data}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler\-::compartment\-Data}}\label{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_ad82e142ca51ec5b9099d4fce0ceed7c3}
+\hypertarget{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_a67e3744835088d5612fbc3caf85dbac2}{\index{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler}!compartment\-F\-C@{compartment\-F\-C}}
+\index{compartment\-F\-C@{compartment\-F\-C}!SpatialSEIR::IndexedCompartmentMetropolisSampler@{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler}}
+\subsubsection[{compartment\-F\-C}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Compartment\-Full\-Conditional}$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler\-::compartment\-F\-C}}\label{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_a67e3744835088d5612fbc3caf85dbac2}
+\hypertarget{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_a83b05275c5b6e2da4d336eb09d7bb2b5}{\index{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler}!context@{context}}
+\index{context@{context}!SpatialSEIR::IndexedCompartmentMetropolisSampler@{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler}}
+\subsubsection[{context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Model\-Context}$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler\-::context}}\label{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_a83b05275c5b6e2da4d336eb09d7bb2b5}
+\hypertarget{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_adb184082c1e6f3a4065edee600f69c1b}{\index{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler}!index\-Length@{index\-Length}}
+\index{index\-Length@{index\-Length}!SpatialSEIR::IndexedCompartmentMetropolisSampler@{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler}}
+\subsubsection[{index\-Length}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler\-::index\-Length}}\label{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_adb184082c1e6f3a4065edee600f69c1b}
+\hypertarget{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_a69b2f84b4fe8bbb44831a106b3d55bfe}{\index{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler@{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler}!index\-List@{index\-List}}
+\index{index\-List@{index\-List}!SpatialSEIR::IndexedCompartmentMetropolisSampler@{Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler}}
+\subsubsection[{index\-List}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ Spatial\-S\-E\-I\-R\-::\-Indexed\-Compartment\-Metropolis\-Sampler\-::index\-List}}\label{classSpatialSEIR_1_1IndexedCompartmentMetropolisSampler_a69b2f84b4fe8bbb44831a106b3d55bfe}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+lib\-Spatial\-S\-E\-I\-R/include/\hyperlink{LSS__Samplers_8hpp}{L\-S\-S\-\_\-\-Samplers.\-hpp}\end{DoxyCompactItemize}

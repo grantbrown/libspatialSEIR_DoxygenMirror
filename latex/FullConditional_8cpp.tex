@@ -1,0 +1,27 @@
+\hypertarget{FullConditional_8cpp}{\section{lib\-Spatial\-S\-E\-I\-R/src/\-Full\-Conditionals/\-Full\-Conditional.cpp File Reference}
+\label{FullConditional_8cpp}\index{lib\-Spatial\-S\-E\-I\-R/src/\-Full\-Conditionals/\-Full\-Conditional.\-cpp@{lib\-Spatial\-S\-E\-I\-R/src/\-Full\-Conditionals/\-Full\-Conditional.\-cpp}}
+}
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$cstring$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$cblas.\-h$>$}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$L\-S\-S\-\_\-\-Samplers.\-hpp$>$}\\*
+{\ttfamily \#include $<$L\-S\-S\-\_\-\-Full\-Conditional.\-hpp$>$}\\*
+{\ttfamily \#include $<$Model\-Context.\-hpp$>$}\\*
+{\ttfamily \#include $<$O\-C\-L\-Provider.\-hpp$>$}\\*
+{\ttfamily \#include $<$Compartmental\-Model\-Matrix.\-hpp$>$}\\*
+{\ttfamily \#include $<$Covariate\-Matrix.\-hpp$>$}\\*
+{\ttfamily \#include $<$Random\-Number\-Provider.\-hpp$>$}\\*
+{\ttfamily \#include $<$I\-O\-Provider.\-hpp$>$}\\*
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceSpatialSEIR}{Spatial\-S\-E\-I\-R}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{namespaceSpatialSEIR_ae9956198541f82c6e0ba7cd8221fee88}{Spatial\-S\-E\-I\-R\-::mat\-Mult} (double $\ast$output, double $\ast$A, double $\ast$B, int Arow, int Acol, int Brow, int Bcol, bool Trans\-A, bool Trans\-B, int ld\-A, int ld\-B, int ld\-C)
+\begin{DoxyCompactList}\small\item\em Wrapper for cblas\-::dgemm. \end{DoxyCompactList}\end{DoxyCompactItemize}

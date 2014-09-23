@@ -1,0 +1,58 @@
+\hypertarget{LSS__FullConditional_8hpp}{\section{lib\-Spatial\-S\-E\-I\-R/include/\-Full\-Conditionals/\-L\-S\-S\-\_\-\-Full\-Conditional.hpp File Reference}
+\label{LSS__FullConditional_8hpp}\index{lib\-Spatial\-S\-E\-I\-R/include/\-Full\-Conditionals/\-L\-S\-S\-\_\-\-Full\-Conditional.\-hpp@{lib\-Spatial\-S\-E\-I\-R/include/\-Full\-Conditionals/\-L\-S\-S\-\_\-\-Full\-Conditional.\-hpp}}
+}
+{\ttfamily \#include $<$cstring$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSpatialSEIR_1_1priorControl}{Spatial\-S\-E\-I\-R\-::prior\-Control}
+\begin{DoxyCompactList}\small\item\em struct containing hyperparameters for beta, beta\-P\-\_\-\-R\-S, P\-\_\-\-E\-I, and P\-\_\-\-I\-R \end{DoxyCompactList}\item 
+struct \hyperlink{structSpatialSEIR_1_1sliceParameters}{Spatial\-S\-E\-I\-R\-::slice\-Parameters}
+\begin{DoxyCompactList}\small\item\em struct containing initial slice sampling tuning parameters. \end{DoxyCompactList}\item 
+class \hyperlink{classSpatialSEIR_1_1InitData}{Spatial\-S\-E\-I\-R\-::\-Init\-Data}
+\begin{DoxyCompactList}\small\item\em Simple class containing the starting compartment sizes. \end{DoxyCompactList}\item 
+class \hyperlink{classSpatialSEIR_1_1FullConditional}{Spatial\-S\-E\-I\-R\-::\-Full\-Conditional}
+\item 
+class \hyperlink{classSpatialSEIR_1_1CompartmentFullConditional}{Spatial\-S\-E\-I\-R\-::\-Compartment\-Full\-Conditional}
+\item 
+class \hyperlink{classSpatialSEIR_1_1ParameterFullConditional}{Spatial\-S\-E\-I\-R\-::\-Parameter\-Full\-Conditional}
+\item 
+class \hyperlink{classSpatialSEIR_1_1InitCompartmentFullConditional}{Spatial\-S\-E\-I\-R\-::\-Init\-Compartment\-Full\-Conditional}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceSpatialSEIR}{Spatial\-S\-E\-I\-R}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{LSS__FullConditional_8hpp_a6368400c5ff34c5c223963744d3ed0bd}{F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-I\-N\-C}
+\item 
+\#define \hyperlink{LSS__FullConditional_8hpp_aab750433d783cd917c3e5af76d7e0420}{L\-S\-S\-\_\-\-C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-T\-Y\-P\-E}~1
+\item 
+\#define \hyperlink{LSS__FullConditional_8hpp_a57955af041922db2dcbf31073517c4d9}{L\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-T\-Y\-P\-E}~2
+\item 
+\#define \hyperlink{LSS__FullConditional_8hpp_a6dbe3cefabb580e57858e3ccd15b575d}{L\-S\-S\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-T\-Y\-P\-E}~3
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{namespaceSpatialSEIR_ae9956198541f82c6e0ba7cd8221fee88}{Spatial\-S\-E\-I\-R\-::mat\-Mult} (double $\ast$output, double $\ast$A, double $\ast$B, int Arow, int Acol, int Brow, int Bcol, bool Trans\-A, bool Trans\-B, int ld\-A, int ld\-B, int ld\-C)
+\begin{DoxyCompactList}\small\item\em Wrapper for cblas\-::dgemm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{LSS__FullConditional_8hpp_a6368400c5ff34c5c223963744d3ed0bd}{\index{L\-S\-S\-\_\-\-Full\-Conditional.\-hpp@{L\-S\-S\-\_\-\-Full\-Conditional.\-hpp}!F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-I\-N\-C@{F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-I\-N\-C}}
+\index{F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-I\-N\-C@{F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-I\-N\-C}!LSS_FullConditional.hpp@{L\-S\-S\-\_\-\-Full\-Conditional.\-hpp}}
+\subsubsection[{F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-I\-N\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-I\-N\-C}}\label{LSS__FullConditional_8hpp_a6368400c5ff34c5c223963744d3ed0bd}
+\hypertarget{LSS__FullConditional_8hpp_aab750433d783cd917c3e5af76d7e0420}{\index{L\-S\-S\-\_\-\-Full\-Conditional.\-hpp@{L\-S\-S\-\_\-\-Full\-Conditional.\-hpp}!L\-S\-S\-\_\-\-C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-T\-Y\-P\-E@{L\-S\-S\-\_\-\-C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-T\-Y\-P\-E}}
+\index{L\-S\-S\-\_\-\-C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-T\-Y\-P\-E@{L\-S\-S\-\_\-\-C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-T\-Y\-P\-E}!LSS_FullConditional.hpp@{L\-S\-S\-\_\-\-Full\-Conditional.\-hpp}}
+\subsubsection[{L\-S\-S\-\_\-\-C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-S\-S\-\_\-\-C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-T\-Y\-P\-E~1}}\label{LSS__FullConditional_8hpp_aab750433d783cd917c3e5af76d7e0420}
+\hypertarget{LSS__FullConditional_8hpp_a57955af041922db2dcbf31073517c4d9}{\index{L\-S\-S\-\_\-\-Full\-Conditional.\-hpp@{L\-S\-S\-\_\-\-Full\-Conditional.\-hpp}!L\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-T\-Y\-P\-E@{L\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-T\-Y\-P\-E}}
+\index{L\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-T\-Y\-P\-E@{L\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-T\-Y\-P\-E}!LSS_FullConditional.hpp@{L\-S\-S\-\_\-\-Full\-Conditional.\-hpp}}
+\subsubsection[{L\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-S\-S\-\_\-\-I\-N\-I\-T\-\_\-\-C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-T\-Y\-P\-E~2}}\label{LSS__FullConditional_8hpp_a57955af041922db2dcbf31073517c4d9}
+\hypertarget{LSS__FullConditional_8hpp_a6dbe3cefabb580e57858e3ccd15b575d}{\index{L\-S\-S\-\_\-\-Full\-Conditional.\-hpp@{L\-S\-S\-\_\-\-Full\-Conditional.\-hpp}!L\-S\-S\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-T\-Y\-P\-E@{L\-S\-S\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-T\-Y\-P\-E}}
+\index{L\-S\-S\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-T\-Y\-P\-E@{L\-S\-S\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-T\-Y\-P\-E}!LSS_FullConditional.hpp@{L\-S\-S\-\_\-\-Full\-Conditional.\-hpp}}
+\subsubsection[{L\-S\-S\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-S\-S\-\_\-\-P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-F\-U\-L\-L\-\_\-\-C\-O\-N\-D\-I\-T\-I\-O\-N\-A\-L\-\_\-\-T\-Y\-P\-E~3}}\label{LSS__FullConditional_8hpp_a6dbe3cefabb580e57858e3ccd15b575d}

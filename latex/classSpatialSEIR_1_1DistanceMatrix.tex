@@ -1,0 +1,137 @@
+\hypertarget{classSpatialSEIR_1_1DistanceMatrix}{\section{Spatial\-S\-E\-I\-R\-:\-:Distance\-Matrix Class Reference}
+\label{classSpatialSEIR_1_1DistanceMatrix}\index{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}}
+}
+
+
+{\ttfamily \#include $<$Distance\-Matrix.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSpatialSEIR_1_1DistanceMatrix_aca08e8d8d4eb9343cfe76504e6919eb1}{Distance\-Matrix} ()
+\item 
+int \hyperlink{classSpatialSEIR_1_1DistanceMatrix_aded67777dcd95c9bf0fb3ddb56d7dfb4}{gen\-From\-Data\-Stream} (double $\ast$indata, int $\ast$dim)
+\item 
+int \hyperlink{classSpatialSEIR_1_1DistanceMatrix_ab35ab14a7e1aed23606233d1dbe1ceab}{scaled\-Inv\-Func\-\_\-\-C\-P\-U} (double phi)
+\item 
+int \hyperlink{classSpatialSEIR_1_1DistanceMatrix_ae1b36a58e2863f2e118a8ec62ef54e34}{scaled\-Inv\-Func\-\_\-\-O\-C\-L} (double phi)
+\item 
+void \hyperlink{classSpatialSEIR_1_1DistanceMatrix_a55c0d0a8fdae58e8f556cdeaefc773ed}{make\-Row\-Stochastic} ()
+\item 
+int \hyperlink{classSpatialSEIR_1_1DistanceMatrix_aff218ad03f6d91386dd9db4c7abdc22f}{scaled\-Inv\-Func\-\_\-\-C\-P\-U} (double phi, double $\ast$indata, int $\ast$dim)
+\item 
+int \hyperlink{classSpatialSEIR_1_1DistanceMatrix_a142a89fcc6609ff4e994889472bab675}{scaled\-Inv\-Func\-\_\-\-O\-C\-L} (double phi, double $\ast$indata, int $\ast$dim)
+\item 
+int \hyperlink{classSpatialSEIR_1_1DistanceMatrix_a5035e87c8f600767304739df5cc63cfa}{gravity\-Func\-\_\-\-C\-P\-U} (double phi, double $\ast$indata, int $\ast$dim)
+\item 
+int \hyperlink{classSpatialSEIR_1_1DistanceMatrix_aec266e110000a5095dba70bb4f9650dd}{gravity\-Func\-\_\-\-O\-C\-L} (double phi, double $\ast$indata, int $\ast$dim)
+\item 
+\hyperlink{classSpatialSEIR_1_1DistanceMatrix_ab41476e0b1ad79fc549c40d2e1dbf850}{$\sim$\-Distance\-Matrix} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1DistanceMatrix_a9d55c558325f820a6b581c096464b4ac}{data}
+\item 
+int $\ast$ \hyperlink{classSpatialSEIR_1_1DistanceMatrix_ad4efa9884c0b6fa2bd8dcc61ed17263f}{num\-Locations}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSpatialSEIR_1_1DistanceMatrix_aca08e8d8d4eb9343cfe76504e6919eb1}{\index{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}!Distance\-Matrix@{Distance\-Matrix}}
+\index{Distance\-Matrix@{Distance\-Matrix}!SpatialSEIR::DistanceMatrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}}
+\subsubsection[{Distance\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix\-::\-Distance\-Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1DistanceMatrix_aca08e8d8d4eb9343cfe76504e6919eb1}
+\hypertarget{classSpatialSEIR_1_1DistanceMatrix_ab41476e0b1ad79fc549c40d2e1dbf850}{\index{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}!$\sim$\-Distance\-Matrix@{$\sim$\-Distance\-Matrix}}
+\index{$\sim$\-Distance\-Matrix@{$\sim$\-Distance\-Matrix}!SpatialSEIR::DistanceMatrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}}
+\subsubsection[{$\sim$\-Distance\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix\-::$\sim$\-Distance\-Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1DistanceMatrix_ab41476e0b1ad79fc549c40d2e1dbf850}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSpatialSEIR_1_1DistanceMatrix_aded67777dcd95c9bf0fb3ddb56d7dfb4}{\index{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}!gen\-From\-Data\-Stream@{gen\-From\-Data\-Stream}}
+\index{gen\-From\-Data\-Stream@{gen\-From\-Data\-Stream}!SpatialSEIR::DistanceMatrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}}
+\subsubsection[{gen\-From\-Data\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix\-::gen\-From\-Data\-Stream (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{indata, }
+\item[{int $\ast$}]{dim}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1DistanceMatrix_aded67777dcd95c9bf0fb3ddb56d7dfb4}
+\hypertarget{classSpatialSEIR_1_1DistanceMatrix_a5035e87c8f600767304739df5cc63cfa}{\index{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}!gravity\-Func\-\_\-\-C\-P\-U@{gravity\-Func\-\_\-\-C\-P\-U}}
+\index{gravity\-Func\-\_\-\-C\-P\-U@{gravity\-Func\-\_\-\-C\-P\-U}!SpatialSEIR::DistanceMatrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}}
+\subsubsection[{gravity\-Func\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix\-::gravity\-Func\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+\item[{double}]{phi, }
+\item[{double $\ast$}]{indata, }
+\item[{int $\ast$}]{dim}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1DistanceMatrix_a5035e87c8f600767304739df5cc63cfa}
+\hypertarget{classSpatialSEIR_1_1DistanceMatrix_aec266e110000a5095dba70bb4f9650dd}{\index{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}!gravity\-Func\-\_\-\-O\-C\-L@{gravity\-Func\-\_\-\-O\-C\-L}}
+\index{gravity\-Func\-\_\-\-O\-C\-L@{gravity\-Func\-\_\-\-O\-C\-L}!SpatialSEIR::DistanceMatrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}}
+\subsubsection[{gravity\-Func\-\_\-\-O\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix\-::gravity\-Func\-\_\-\-O\-C\-L (
+\begin{DoxyParamCaption}
+\item[{double}]{phi, }
+\item[{double $\ast$}]{indata, }
+\item[{int $\ast$}]{dim}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1DistanceMatrix_aec266e110000a5095dba70bb4f9650dd}
+\hypertarget{classSpatialSEIR_1_1DistanceMatrix_a55c0d0a8fdae58e8f556cdeaefc773ed}{\index{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}!make\-Row\-Stochastic@{make\-Row\-Stochastic}}
+\index{make\-Row\-Stochastic@{make\-Row\-Stochastic}!SpatialSEIR::DistanceMatrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}}
+\subsubsection[{make\-Row\-Stochastic}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix\-::make\-Row\-Stochastic (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1DistanceMatrix_a55c0d0a8fdae58e8f556cdeaefc773ed}
+\hypertarget{classSpatialSEIR_1_1DistanceMatrix_ab35ab14a7e1aed23606233d1dbe1ceab}{\index{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}!scaled\-Inv\-Func\-\_\-\-C\-P\-U@{scaled\-Inv\-Func\-\_\-\-C\-P\-U}}
+\index{scaled\-Inv\-Func\-\_\-\-C\-P\-U@{scaled\-Inv\-Func\-\_\-\-C\-P\-U}!SpatialSEIR::DistanceMatrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}}
+\subsubsection[{scaled\-Inv\-Func\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix\-::scaled\-Inv\-Func\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+\item[{double}]{phi}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1DistanceMatrix_ab35ab14a7e1aed23606233d1dbe1ceab}
+\hypertarget{classSpatialSEIR_1_1DistanceMatrix_aff218ad03f6d91386dd9db4c7abdc22f}{\index{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}!scaled\-Inv\-Func\-\_\-\-C\-P\-U@{scaled\-Inv\-Func\-\_\-\-C\-P\-U}}
+\index{scaled\-Inv\-Func\-\_\-\-C\-P\-U@{scaled\-Inv\-Func\-\_\-\-C\-P\-U}!SpatialSEIR::DistanceMatrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}}
+\subsubsection[{scaled\-Inv\-Func\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix\-::scaled\-Inv\-Func\-\_\-\-C\-P\-U (
+\begin{DoxyParamCaption}
+\item[{double}]{phi, }
+\item[{double $\ast$}]{indata, }
+\item[{int $\ast$}]{dim}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1DistanceMatrix_aff218ad03f6d91386dd9db4c7abdc22f}
+\hypertarget{classSpatialSEIR_1_1DistanceMatrix_ae1b36a58e2863f2e118a8ec62ef54e34}{\index{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}!scaled\-Inv\-Func\-\_\-\-O\-C\-L@{scaled\-Inv\-Func\-\_\-\-O\-C\-L}}
+\index{scaled\-Inv\-Func\-\_\-\-O\-C\-L@{scaled\-Inv\-Func\-\_\-\-O\-C\-L}!SpatialSEIR::DistanceMatrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}}
+\subsubsection[{scaled\-Inv\-Func\-\_\-\-O\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix\-::scaled\-Inv\-Func\-\_\-\-O\-C\-L (
+\begin{DoxyParamCaption}
+\item[{double}]{phi}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1DistanceMatrix_ae1b36a58e2863f2e118a8ec62ef54e34}
+\hypertarget{classSpatialSEIR_1_1DistanceMatrix_a142a89fcc6609ff4e994889472bab675}{\index{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}!scaled\-Inv\-Func\-\_\-\-O\-C\-L@{scaled\-Inv\-Func\-\_\-\-O\-C\-L}}
+\index{scaled\-Inv\-Func\-\_\-\-O\-C\-L@{scaled\-Inv\-Func\-\_\-\-O\-C\-L}!SpatialSEIR::DistanceMatrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}}
+\subsubsection[{scaled\-Inv\-Func\-\_\-\-O\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix\-::scaled\-Inv\-Func\-\_\-\-O\-C\-L (
+\begin{DoxyParamCaption}
+\item[{double}]{phi, }
+\item[{double $\ast$}]{indata, }
+\item[{int $\ast$}]{dim}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1DistanceMatrix_a142a89fcc6609ff4e994889472bab675}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSpatialSEIR_1_1DistanceMatrix_a9d55c558325f820a6b581c096464b4ac}{\index{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}!data@{data}}
+\index{data@{data}!SpatialSEIR::DistanceMatrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix\-::data}}\label{classSpatialSEIR_1_1DistanceMatrix_a9d55c558325f820a6b581c096464b4ac}
+\hypertarget{classSpatialSEIR_1_1DistanceMatrix_ad4efa9884c0b6fa2bd8dcc61ed17263f}{\index{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}!num\-Locations@{num\-Locations}}
+\index{num\-Locations@{num\-Locations}!SpatialSEIR::DistanceMatrix@{Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix}}
+\subsubsection[{num\-Locations}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Spatial\-S\-E\-I\-R\-::\-Distance\-Matrix\-::num\-Locations}}\label{classSpatialSEIR_1_1DistanceMatrix_ad4efa9884c0b6fa2bd8dcc61ed17263f}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+lib\-Spatial\-S\-E\-I\-R/include/\-Data\-Structures/\hyperlink{DistanceMatrix_8hpp}{Distance\-Matrix.\-hpp}\item 
+lib\-Spatial\-S\-E\-I\-R/src/\hyperlink{DistanceMatrix_8cpp}{Distance\-Matrix.\-cpp}\end{DoxyCompactItemize}
