@@ -30,7 +30,13 @@ class \hyperlink{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask}{Set\-Com
 \item 
 class \hyperlink{classSpatialSEIR_1_1PerformDecorrelationStep}{Perform\-Decorrelation\-Step}
 \item 
+class \hyperlink{classSpatialSEIR_1_1PerformHybridSE__EI__UpdateStep}{Perform\-Hybrid\-S\-E\-\_\-\-E\-I\-\_\-\-Update\-Step}
+\item 
 class \hyperlink{classSpatialSEIR_1_1Sampler}{Sampler}
+\item 
+class \hyperlink{classSpatialSEIR_1_1ParameterNullSampler}{Parameter\-Null\-Sampler}
+\item 
+class \hyperlink{classSpatialSEIR_1_1ParameterHybridSampler}{Parameter\-Hybrid\-Sampler}
 \item 
 class \hyperlink{classSpatialSEIR_1_1CompartmentMetropolisSampler}{Compartment\-Metropolis\-Sampler}
 \item 
@@ -133,8 +139,6 @@ Eigen\-::\-Col\-Major $>$ \hyperlink{namespaceSpatialSEIR_aef5eeacdd778eee57264f
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \hyperlink{namespaceSpatialSEIR_ae9956198541f82c6e0ba7cd8221fee88}{mat\-Mult} (double $\ast$output, double $\ast$A, double $\ast$B, int Arow, int Acol, int Brow, int Bcol, bool Trans\-A, bool Trans\-B, int ld\-A, int ld\-B, int ld\-C)
-\begin{DoxyCompactList}\small\item\em Wrapper for cblas\-::dgemm. \end{DoxyCompactList}\item 
 double \hyperlink{namespaceSpatialSEIR_a5111a2bb19b97c248bbd9c39e8269f19}{dbeta} (double x, double a, double b)
 \end{DoxyCompactItemize}
 
@@ -167,25 +171,3 @@ L\-S\-S\-Cout wraps either std\-::cout or Rcpp\-::\-Rcout, depending on the buil
 \item[{double}]{b}
 \end{DoxyParamCaption}
 )}}\label{namespaceSpatialSEIR_a5111a2bb19b97c248bbd9c39e8269f19}
-\hypertarget{namespaceSpatialSEIR_ae9956198541f82c6e0ba7cd8221fee88}{\index{Spatial\-S\-E\-I\-R@{Spatial\-S\-E\-I\-R}!mat\-Mult@{mat\-Mult}}
-\index{mat\-Mult@{mat\-Mult}!SpatialSEIR@{Spatial\-S\-E\-I\-R}}
-\subsubsection[{mat\-Mult}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::mat\-Mult (
-\begin{DoxyParamCaption}
-\item[{double $\ast$}]{output, }
-\item[{double $\ast$}]{A, }
-\item[{double $\ast$}]{B, }
-\item[{int}]{Arow, }
-\item[{int}]{Acol, }
-\item[{int}]{Brow, }
-\item[{int}]{Bcol, }
-\item[{bool}]{Trans\-A, }
-\item[{bool}]{Trans\-B, }
-\item[{int}]{ld\-A, }
-\item[{int}]{ld\-B, }
-\item[{int}]{ld\-C}
-\end{DoxyParamCaption}
-)}}\label{namespaceSpatialSEIR_ae9956198541f82c6e0ba7cd8221fee88}
-
-
-Wrapper for cblas\-::dgemm. 
-

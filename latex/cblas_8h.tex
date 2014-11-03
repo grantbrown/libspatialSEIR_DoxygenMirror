@@ -1,0 +1,2493 @@
+\hypertarget{cblas_8h}{\section{lib\-Spatial\-S\-E\-I\-R/include/cblas.h File Reference}
+\label{cblas_8h}\index{lib\-Spatial\-S\-E\-I\-R/include/cblas.\-h@{lib\-Spatial\-S\-E\-I\-R/include/cblas.\-h}}
+}
+{\ttfamily \#include $<$stddef.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{cblas_8h_a0cc6c9831e05958bc66dc000e02f33b9}{C\-B\-L\-A\-S\-\_\-\-I\-N\-D\-E\-X}~size\-\_\-t  /$\ast$ this may vary between platforms $\ast$/
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} \{ \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6feac02c7e388901d8d297241db643467721}{Cblas\-Row\-Major} =101, 
+\hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fea36cca34e7a4808c97e4d234193dee127}{Cblas\-Col\-Major} =102
+ \}
+\item 
+enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} \{ \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9a078792a66863859407a99ddb06312e79}{Cblas\-No\-Trans} =111, 
+\hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9a267e1fb6eb583ddefd2923d95a944ec8}{Cblas\-Trans} =112, 
+\hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9a9f6c122ea555e68fef871c94bd58342f}{Cblas\-Conj\-Trans} =113
+ \}
+\item 
+enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} \{ \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892faca9d16a7c20129fcb9b5a9c8ab90b813}{Cblas\-Upper} =121, 
+\hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892fa68d86f377636767065ef016b13801c47}{Cblas\-Lower} =122
+ \}
+\item 
+enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} \{ \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3a82bfd6c5bb4a1b1361fc5d661a6c7a38}{Cblas\-Non\-Unit} =131, 
+\hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3a1fe5b22dd62df9d1b86e27b006b349a0}{Cblas\-Unit} =132
+ \}
+\item 
+enum \hyperlink{cblas_8h_a4eba77400344ce7896faccf423c7fd5d}{C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E} \{ \hyperlink{cblas_8h_a4eba77400344ce7896faccf423c7fd5daa40b040f8f2a954ad3f3b5f1b4573793}{Cblas\-Left} =141, 
+\hyperlink{cblas_8h_a4eba77400344ce7896faccf423c7fd5da69a5fc61edf60c56342e4baa15809c30}{Cblas\-Right} =142
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{cblas_8h_a903cbe0c2a837f3d4eea87c1a773dadf}{cblas\-\_\-sdsdot} (const int N, const float alpha, const float $\ast$X, const int inc\-X, const float $\ast$Y, const int inc\-Y)
+\item 
+double \hyperlink{cblas_8h_acc2f49b23e7aad1f8bbb02224dd34dc4}{cblas\-\_\-dsdot} (const int N, const float $\ast$X, const int inc\-X, const float $\ast$Y, const int inc\-Y)
+\item 
+float \hyperlink{cblas_8h_ac4fa969a8243124ef0f623defee2db4e}{cblas\-\_\-sdot} (const int N, const float $\ast$X, const int inc\-X, const float $\ast$Y, const int inc\-Y)
+\item 
+double \hyperlink{cblas_8h_a1c8aaf7ce5af2e91cdd4e33332fb3317}{cblas\-\_\-ddot} (const int N, const double $\ast$X, const int inc\-X, const double $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_af08af97ddefbf53c6ccd2c8aa050a3bb}{cblas\-\_\-cdotu\-\_\-sub} (const int N, const void $\ast$X, const int inc\-X, const void $\ast$Y, const int inc\-Y, void $\ast$dotu)
+\item 
+void \hyperlink{cblas_8h_a530c3770925c5192151a4b174a6d7964}{cblas\-\_\-cdotc\-\_\-sub} (const int N, const void $\ast$X, const int inc\-X, const void $\ast$Y, const int inc\-Y, void $\ast$dotc)
+\item 
+void \hyperlink{cblas_8h_aa7438584410310da772020b0ad38665b}{cblas\-\_\-zdotu\-\_\-sub} (const int N, const void $\ast$X, const int inc\-X, const void $\ast$Y, const int inc\-Y, void $\ast$dotu)
+\item 
+void \hyperlink{cblas_8h_a1ae4771110c2a0197c60858b5c0195ac}{cblas\-\_\-zdotc\-\_\-sub} (const int N, const void $\ast$X, const int inc\-X, const void $\ast$Y, const int inc\-Y, void $\ast$dotc)
+\item 
+float \hyperlink{cblas_8h_a3bca0a31bfa68c9ed3f05d29421cc202}{cblas\-\_\-snrm2} (const int N, const float $\ast$X, const int inc\-X)
+\item 
+float \hyperlink{cblas_8h_ac6a3fe684fd62b637ac65329a3bf04a0}{cblas\-\_\-sasum} (const int N, const float $\ast$X, const int inc\-X)
+\item 
+double \hyperlink{cblas_8h_a2e7d995100f18f9d4707e8f71cd00da6}{cblas\-\_\-dnrm2} (const int N, const double $\ast$X, const int inc\-X)
+\item 
+double \hyperlink{cblas_8h_ac4a360a9f1b8ddd5fcb0c16260e0ac2a}{cblas\-\_\-dasum} (const int N, const double $\ast$X, const int inc\-X)
+\item 
+float \hyperlink{cblas_8h_a2b1197ba627bb92dd46273ca582dfef0}{cblas\-\_\-scnrm2} (const int N, const void $\ast$X, const int inc\-X)
+\item 
+float \hyperlink{cblas_8h_a8cd3fc690c0f443ff49c1e8fe98cd979}{cblas\-\_\-scasum} (const int N, const void $\ast$X, const int inc\-X)
+\item 
+double \hyperlink{cblas_8h_a569351168db5d640bda1f389d8f548c2}{cblas\-\_\-dznrm2} (const int N, const void $\ast$X, const int inc\-X)
+\item 
+double \hyperlink{cblas_8h_a427b7bf01de9007be45ae9d815b7c6b2}{cblas\-\_\-dzasum} (const int N, const void $\ast$X, const int inc\-X)
+\item 
+\hyperlink{cblas_8h_a0cc6c9831e05958bc66dc000e02f33b9}{C\-B\-L\-A\-S\-\_\-\-I\-N\-D\-E\-X} \hyperlink{cblas_8h_a7ecf33f60f99f563254ffb4f79e3fb80}{cblas\-\_\-isamax} (const int N, const float $\ast$X, const int inc\-X)
+\item 
+\hyperlink{cblas_8h_a0cc6c9831e05958bc66dc000e02f33b9}{C\-B\-L\-A\-S\-\_\-\-I\-N\-D\-E\-X} \hyperlink{cblas_8h_ac71db37eb861b6f6e7c74ba7c135ecb0}{cblas\-\_\-idamax} (const int N, const double $\ast$X, const int inc\-X)
+\item 
+\hyperlink{cblas_8h_a0cc6c9831e05958bc66dc000e02f33b9}{C\-B\-L\-A\-S\-\_\-\-I\-N\-D\-E\-X} \hyperlink{cblas_8h_ada1c6f07482c48a3f5e9a1337913571a}{cblas\-\_\-icamax} (const int N, const void $\ast$X, const int inc\-X)
+\item 
+\hyperlink{cblas_8h_a0cc6c9831e05958bc66dc000e02f33b9}{C\-B\-L\-A\-S\-\_\-\-I\-N\-D\-E\-X} \hyperlink{cblas_8h_ab9375b2531aac2c277f836a2c0a3b35b}{cblas\-\_\-izamax} (const int N, const void $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_a5e148e8153da1b5c26b56a3e62ae4949}{cblas\-\_\-sswap} (const int N, float $\ast$X, const int inc\-X, float $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_a42fd5b4f4605edd4d1662ac09aad284d}{cblas\-\_\-scopy} (const int N, const float $\ast$X, const int inc\-X, float $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_a92219ca56e84fb1db72003d7614a62e8}{cblas\-\_\-saxpy} (const int N, const float alpha, const float $\ast$X, const int inc\-X, float $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_aa479b791c388bb4c9ec37824275b0ec4}{cblas\-\_\-dswap} (const int N, double $\ast$X, const int inc\-X, double $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_aae785f77866cecf54f5e337a009e21b8}{cblas\-\_\-dcopy} (const int N, const double $\ast$X, const int inc\-X, double $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_ab4a1f56c3fb097ae0879b1ff3746a5f4}{cblas\-\_\-daxpy} (const int N, const double alpha, const double $\ast$X, const int inc\-X, double $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_a883f7d262001f6c4afdb222cd1e6d110}{cblas\-\_\-cswap} (const int N, void $\ast$X, const int inc\-X, void $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_a999097bcfbb3deb53b48080cc870065d}{cblas\-\_\-ccopy} (const int N, const void $\ast$X, const int inc\-X, void $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_afe778838bd49f59be91526df764794bc}{cblas\-\_\-caxpy} (const int N, const void $\ast$alpha, const void $\ast$X, const int inc\-X, void $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_a5695f0afe890ea477407bcd2a5a8ca9b}{cblas\-\_\-zswap} (const int N, void $\ast$X, const int inc\-X, void $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_a95dc840a9c51a8e74ba4261775f8ab08}{cblas\-\_\-zcopy} (const int N, const void $\ast$X, const int inc\-X, void $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_a2b7b182b84c3f44f68adcf6b4fb12336}{cblas\-\_\-zaxpy} (const int N, const void $\ast$alpha, const void $\ast$X, const int inc\-X, void $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_aa9c8e8c02791bc4c1ea56d509bff5c82}{cblas\-\_\-srotg} (float $\ast$a, float $\ast$b, float $\ast$c, float $\ast$s)
+\item 
+void \hyperlink{cblas_8h_a39ccc24876547d238424c6e45883c42d}{cblas\-\_\-srotmg} (float $\ast$d1, float $\ast$d2, float $\ast$b1, const float b2, float $\ast$P)
+\item 
+void \hyperlink{cblas_8h_ae3b8195cf878a0649b3391722a1c4517}{cblas\-\_\-srot} (const int N, float $\ast$X, const int inc\-X, float $\ast$Y, const int inc\-Y, const float c, const float s)
+\item 
+void \hyperlink{cblas_8h_adf521dc2a6f8a06ad8624c18865abd02}{cblas\-\_\-srotm} (const int N, float $\ast$X, const int inc\-X, float $\ast$Y, const int inc\-Y, const float $\ast$P)
+\item 
+void \hyperlink{cblas_8h_ae9c72609641108287193098b5e3016fb}{cblas\-\_\-drotg} (double $\ast$a, double $\ast$b, double $\ast$c, double $\ast$s)
+\item 
+void \hyperlink{cblas_8h_a2d97f5e685f485bb5616ad0112a1cd8c}{cblas\-\_\-drotmg} (double $\ast$d1, double $\ast$d2, double $\ast$b1, const double b2, double $\ast$P)
+\item 
+void \hyperlink{cblas_8h_a8102f0292cc6db05c69cefd9b77e2b3b}{cblas\-\_\-drot} (const int N, double $\ast$X, const int inc\-X, double $\ast$Y, const int inc\-Y, const double c, const double s)
+\item 
+void \hyperlink{cblas_8h_a7dce66b70dbad84e35fcf4a8786492ff}{cblas\-\_\-drotm} (const int N, double $\ast$X, const int inc\-X, double $\ast$Y, const int inc\-Y, const double $\ast$P)
+\item 
+void \hyperlink{cblas_8h_a5b3ca82c14437efc3929439e43e42d71}{cblas\-\_\-sscal} (const int N, const float alpha, float $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_ab41b816dce4c54a31f759386d1424ac3}{cblas\-\_\-dscal} (const int N, const double alpha, double $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_af91ac072793013ae87510741605f3475}{cblas\-\_\-cscal} (const int N, const void $\ast$alpha, void $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_a1948af9bf4648950fd0d5af8c552ed32}{cblas\-\_\-zscal} (const int N, const void $\ast$alpha, void $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_aa78e552aa309959046117a7a6ed77fa8}{cblas\-\_\-csscal} (const int N, const float alpha, void $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_a0ecf105ed6aa38f47f180c0aed128876}{cblas\-\_\-zdscal} (const int N, const double alpha, void $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_a23ac27150577c29a7ad4ddb427f255f7}{cblas\-\_\-sgemv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const int M, const int N, const float alpha, const float $\ast$A, const int lda, const float $\ast$X, const int inc\-X, const float beta, float $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_af53f5f54faab73437b7a61ea0fb068c3}{cblas\-\_\-sgbmv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const int M, const int N, const int K\-L, const int K\-U, const float alpha, const float $\ast$A, const int lda, const float $\ast$X, const int inc\-X, const float beta, float $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_ab6cd9998d9e431a65a15cacc3e12b052}{cblas\-\_\-strmv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int N, const float $\ast$A, const int lda, float $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_ace634161595926af2be1231c0469217d}{cblas\-\_\-stbmv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int N, const int K, const float $\ast$A, const int lda, float $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_a8314096fc86d8df406de09b26087d5da}{cblas\-\_\-stpmv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int N, const float $\ast$Ap, float $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_a2798be7347823849df32f2f107f188c5}{cblas\-\_\-strsv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int N, const float $\ast$A, const int lda, float $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_a35eede3bdb7f9bc65496509141ca0e46}{cblas\-\_\-stbsv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int N, const int K, const float $\ast$A, const int lda, float $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_a54e9d5609eda9e93705701b39cecda34}{cblas\-\_\-stpsv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int N, const float $\ast$Ap, float $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_a74d1a65503a1fa90943cdf9d8f847aab}{cblas\-\_\-dgemv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const int M, const int N, const double alpha, const double $\ast$A, const int lda, const double $\ast$X, const int inc\-X, const double beta, double $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_a31d8c3e7739c0c9d84afa74ad17a1e72}{cblas\-\_\-dgbmv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const int M, const int N, const int K\-L, const int K\-U, const double alpha, const double $\ast$A, const int lda, const double $\ast$X, const int inc\-X, const double beta, double $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_a2abc4975ee06333580834a385a4e9c2f}{cblas\-\_\-dtrmv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int N, const double $\ast$A, const int lda, double $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_a7f9abd5965daec11dea9219271f93335}{cblas\-\_\-dtbmv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int N, const int K, const double $\ast$A, const int lda, double $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_a33d71705b46527d8a6a8a62750c1c96c}{cblas\-\_\-dtpmv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int N, const double $\ast$Ap, double $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_aa8f7fe6c62ac1e6d1fa12036e20b6a8d}{cblas\-\_\-dtrsv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int N, const double $\ast$A, const int lda, double $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_a348a8cb9f3a8401fac805eec1d2fd4e2}{cblas\-\_\-dtbsv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int N, const int K, const double $\ast$A, const int lda, double $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_a8e24e9ca80f853cdd8497283bd3af87c}{cblas\-\_\-dtpsv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int N, const double $\ast$Ap, double $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_a225d9a4f7a8f40f592cdfb004c1603e5}{cblas\-\_\-cgemv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const int M, const int N, const void $\ast$alpha, const void $\ast$A, const int lda, const void $\ast$X, const int inc\-X, const void $\ast$beta, void $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_a97e064ebedab7c0e7a4f269d457d7816}{cblas\-\_\-cgbmv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const int M, const int N, const int K\-L, const int K\-U, const void $\ast$alpha, const void $\ast$A, const int lda, const void $\ast$X, const int inc\-X, const void $\ast$beta, void $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_a764e7349a49f54dc0746127241644dc5}{cblas\-\_\-ctrmv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int N, const void $\ast$A, const int lda, void $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_a210c4c28b088821a62b2ec2f7b0e59d9}{cblas\-\_\-ctbmv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int N, const int K, const void $\ast$A, const int lda, void $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_a01b5131bf1e9a89843977e9385e53619}{cblas\-\_\-ctpmv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int N, const void $\ast$Ap, void $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_ab403b9f50c29ea4e146c072aad210931}{cblas\-\_\-ctrsv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int N, const void $\ast$A, const int lda, void $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_abc77f0ae4746a219c87548c89d4284fc}{cblas\-\_\-ctbsv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int N, const int K, const void $\ast$A, const int lda, void $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_aaf76ab383ce9587b0be0d5e6ae341361}{cblas\-\_\-ctpsv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int N, const void $\ast$Ap, void $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_af4db7adbf4d6af7ba452c1848cd04b2b}{cblas\-\_\-zgemv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const int M, const int N, const void $\ast$alpha, const void $\ast$A, const int lda, const void $\ast$X, const int inc\-X, const void $\ast$beta, void $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_ae9b554dd77895f2bb23c3ebe4aa5c20b}{cblas\-\_\-zgbmv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const int M, const int N, const int K\-L, const int K\-U, const void $\ast$alpha, const void $\ast$A, const int lda, const void $\ast$X, const int inc\-X, const void $\ast$beta, void $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_a1ad970222e5372436604fb78d3864b66}{cblas\-\_\-ztrmv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int N, const void $\ast$A, const int lda, void $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_a61c053460f1424f04206a4b4019d56c2}{cblas\-\_\-ztbmv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int N, const int K, const void $\ast$A, const int lda, void $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_afb60b16cec1011d45c3ef380f06b339e}{cblas\-\_\-ztpmv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int N, const void $\ast$Ap, void $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_a16369e6950e197bf63c0f4e7ea461405}{cblas\-\_\-ztrsv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int N, const void $\ast$A, const int lda, void $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_ae986d5da5bb3b36bb092b84b53e21179}{cblas\-\_\-ztbsv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int N, const int K, const void $\ast$A, const int lda, void $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_afa1286da5f69a14a1444ec81613836f1}{cblas\-\_\-ztpsv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int N, const void $\ast$Ap, void $\ast$X, const int inc\-X)
+\item 
+void \hyperlink{cblas_8h_a979ecf947869765e4ab834e435acda06}{cblas\-\_\-ssymv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const float alpha, const float $\ast$A, const int lda, const float $\ast$X, const int inc\-X, const float beta, float $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_ad23e3ebccc72659a7551b9d1545348ba}{cblas\-\_\-ssbmv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const int K, const float alpha, const float $\ast$A, const int lda, const float $\ast$X, const int inc\-X, const float beta, float $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_acd3221efa4a868f349c7ec653f61f2f2}{cblas\-\_\-sspmv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const float alpha, const float $\ast$Ap, const float $\ast$X, const int inc\-X, const float beta, float $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_afc42130a6fef266cd2ed72eec1736af0}{cblas\-\_\-sger} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const int M, const int N, const float alpha, const float $\ast$X, const int inc\-X, const float $\ast$Y, const int inc\-Y, float $\ast$A, const int lda)
+\item 
+void \hyperlink{cblas_8h_a53e64ceafe9b8f3cf2b8e919be9f3703}{cblas\-\_\-ssyr} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const float alpha, const float $\ast$X, const int inc\-X, float $\ast$A, const int lda)
+\item 
+void \hyperlink{cblas_8h_a1dd5f14ada77aaaf57c92ca86e53bd48}{cblas\-\_\-sspr} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const float alpha, const float $\ast$X, const int inc\-X, float $\ast$Ap)
+\item 
+void \hyperlink{cblas_8h_a5e5244ef9c8f9967f57ac1e74bef8f14}{cblas\-\_\-ssyr2} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const float alpha, const float $\ast$X, const int inc\-X, const float $\ast$Y, const int inc\-Y, float $\ast$A, const int lda)
+\item 
+void \hyperlink{cblas_8h_ab6922dff40e7d7e807ab332702c3c9c1}{cblas\-\_\-sspr2} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const float alpha, const float $\ast$X, const int inc\-X, const float $\ast$Y, const int inc\-Y, float $\ast$A)
+\item 
+void \hyperlink{cblas_8h_aa59eb41caf8302dfed0797e6144741a3}{cblas\-\_\-dsymv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const double alpha, const double $\ast$A, const int lda, const double $\ast$X, const int inc\-X, const double beta, double $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_af1b07c9df631554b91b91f81c8f09135}{cblas\-\_\-dsbmv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const int K, const double alpha, const double $\ast$A, const int lda, const double $\ast$X, const int inc\-X, const double beta, double $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_af7ec9d9b3027b4f9d72346949314d24b}{cblas\-\_\-dspmv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const double alpha, const double $\ast$Ap, const double $\ast$X, const int inc\-X, const double beta, double $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_a25061b48077f91aaebb54b3d11c79da4}{cblas\-\_\-dger} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const int M, const int N, const double alpha, const double $\ast$X, const int inc\-X, const double $\ast$Y, const int inc\-Y, double $\ast$A, const int lda)
+\item 
+void \hyperlink{cblas_8h_a28d8aa0fc741511260d4339c68980a0a}{cblas\-\_\-dsyr} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const double alpha, const double $\ast$X, const int inc\-X, double $\ast$A, const int lda)
+\item 
+void \hyperlink{cblas_8h_a61007c84271e1ff94ea6598d95332f36}{cblas\-\_\-dspr} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const double alpha, const double $\ast$X, const int inc\-X, double $\ast$Ap)
+\item 
+void \hyperlink{cblas_8h_adcdcdd812d0126f420c24201626484f1}{cblas\-\_\-dsyr2} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const double alpha, const double $\ast$X, const int inc\-X, const double $\ast$Y, const int inc\-Y, double $\ast$A, const int lda)
+\item 
+void \hyperlink{cblas_8h_a71c339afe97d115e6b191753e7731a10}{cblas\-\_\-dspr2} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const double alpha, const double $\ast$X, const int inc\-X, const double $\ast$Y, const int inc\-Y, double $\ast$A)
+\item 
+void \hyperlink{cblas_8h_a2bd3a30271e5be4556f4e13a3102eccb}{cblas\-\_\-chemv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const void $\ast$alpha, const void $\ast$A, const int lda, const void $\ast$X, const int inc\-X, const void $\ast$beta, void $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_ab5012d0c756bb726ad0203e8a0214413}{cblas\-\_\-chbmv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const int K, const void $\ast$alpha, const void $\ast$A, const int lda, const void $\ast$X, const int inc\-X, const void $\ast$beta, void $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_a7589ac2f4b79afc9e3a30279bb9e8bd2}{cblas\-\_\-chpmv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const void $\ast$alpha, const void $\ast$Ap, const void $\ast$X, const int inc\-X, const void $\ast$beta, void $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_a376143f969ddcb4de2baa2e49a9d84f9}{cblas\-\_\-cgeru} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const int M, const int N, const void $\ast$alpha, const void $\ast$X, const int inc\-X, const void $\ast$Y, const int inc\-Y, void $\ast$A, const int lda)
+\item 
+void \hyperlink{cblas_8h_af35832639183e698fcff232af9115eea}{cblas\-\_\-cgerc} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const int M, const int N, const void $\ast$alpha, const void $\ast$X, const int inc\-X, const void $\ast$Y, const int inc\-Y, void $\ast$A, const int lda)
+\item 
+void \hyperlink{cblas_8h_af30e2f8f70d6b13601bb6f82d91ac24b}{cblas\-\_\-cher} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const float alpha, const void $\ast$X, const int inc\-X, void $\ast$A, const int lda)
+\item 
+void \hyperlink{cblas_8h_a23bc3150625e1f4e7a17e9c32f3b433e}{cblas\-\_\-chpr} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const float alpha, const void $\ast$X, const int inc\-X, void $\ast$A)
+\item 
+void \hyperlink{cblas_8h_a9a7cb81a46fa2be720a93a1bc63a7a6a}{cblas\-\_\-cher2} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const void $\ast$alpha, const void $\ast$X, const int inc\-X, const void $\ast$Y, const int inc\-Y, void $\ast$A, const int lda)
+\item 
+void \hyperlink{cblas_8h_a2d90f63e17ebff4e00e71c717e45ed09}{cblas\-\_\-chpr2} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const void $\ast$alpha, const void $\ast$X, const int inc\-X, const void $\ast$Y, const int inc\-Y, void $\ast$Ap)
+\item 
+void \hyperlink{cblas_8h_af8e1eda5e4b27fdd6bf5480e9428bf2e}{cblas\-\_\-zhemv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const void $\ast$alpha, const void $\ast$A, const int lda, const void $\ast$X, const int inc\-X, const void $\ast$beta, void $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_a6ea702f5140763080f7db377430127bf}{cblas\-\_\-zhbmv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const int K, const void $\ast$alpha, const void $\ast$A, const int lda, const void $\ast$X, const int inc\-X, const void $\ast$beta, void $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_aa82093c7489f069e60b9a5e510a8a612}{cblas\-\_\-zhpmv} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const void $\ast$alpha, const void $\ast$Ap, const void $\ast$X, const int inc\-X, const void $\ast$beta, void $\ast$Y, const int inc\-Y)
+\item 
+void \hyperlink{cblas_8h_ab2dbf2a585614116d138ba553ecef3cd}{cblas\-\_\-zgeru} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const int M, const int N, const void $\ast$alpha, const void $\ast$X, const int inc\-X, const void $\ast$Y, const int inc\-Y, void $\ast$A, const int lda)
+\item 
+void \hyperlink{cblas_8h_a84e3f95d8aab8f8ab6bbe885073c8d07}{cblas\-\_\-zgerc} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const int M, const int N, const void $\ast$alpha, const void $\ast$X, const int inc\-X, const void $\ast$Y, const int inc\-Y, void $\ast$A, const int lda)
+\item 
+void \hyperlink{cblas_8h_a8909366a3dacb77b6cd8dcd083344a6e}{cblas\-\_\-zher} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const double alpha, const void $\ast$X, const int inc\-X, void $\ast$A, const int lda)
+\item 
+void \hyperlink{cblas_8h_a1f64429f0205173ea48b7988d48efb17}{cblas\-\_\-zhpr} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const double alpha, const void $\ast$X, const int inc\-X, void $\ast$A)
+\item 
+void \hyperlink{cblas_8h_ad87fec56c637b549fc61d6f60eac3b1e}{cblas\-\_\-zher2} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const void $\ast$alpha, const void $\ast$X, const int inc\-X, const void $\ast$Y, const int inc\-Y, void $\ast$A, const int lda)
+\item 
+void \hyperlink{cblas_8h_ae3acead88cefb7cf75ca09b5b521210a}{cblas\-\_\-zhpr2} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int N, const void $\ast$alpha, const void $\ast$X, const int inc\-X, const void $\ast$Y, const int inc\-Y, void $\ast$Ap)
+\item 
+void \hyperlink{cblas_8h_a7d42dfcb6073c56391fee28494809cc5}{cblas\-\_\-sgemm} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-B, const int M, const int N, const int K, const float alpha, const float $\ast$A, const int lda, const float $\ast$B, const int ldb, const float beta, float $\ast$C, const int ldc)
+\item 
+void \hyperlink{cblas_8h_aff12dc9eefab6f5d8f3a254551006250}{cblas\-\_\-ssymm} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a4eba77400344ce7896faccf423c7fd5d}{C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E} Side, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int M, const int N, const float alpha, const float $\ast$A, const int lda, const float $\ast$B, const int ldb, const float beta, float $\ast$C, const int ldc)
+\item 
+void \hyperlink{cblas_8h_a051d1897649fd8d6ed9e3bce535e1b61}{cblas\-\_\-ssyrk} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans, const int N, const int K, const float alpha, const float $\ast$A, const int lda, const float beta, float $\ast$C, const int ldc)
+\item 
+void \hyperlink{cblas_8h_a2ccc1bd38141a6777aaaa6ae454b0361}{cblas\-\_\-ssyr2k} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans, const int N, const int K, const float alpha, const float $\ast$A, const int lda, const float $\ast$B, const int ldb, const float beta, float $\ast$C, const int ldc)
+\item 
+void \hyperlink{cblas_8h_a96848c2dd359ac0bbfca8bd905c965d1}{cblas\-\_\-strmm} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a4eba77400344ce7896faccf423c7fd5d}{C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E} Side, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int M, const int N, const float alpha, const float $\ast$A, const int lda, float $\ast$B, const int ldb)
+\item 
+void \hyperlink{cblas_8h_a8b9090a4c0baddb2e20b013df3389a80}{cblas\-\_\-strsm} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a4eba77400344ce7896faccf423c7fd5d}{C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E} Side, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int M, const int N, const float alpha, const float $\ast$A, const int lda, float $\ast$B, const int ldb)
+\item 
+void \hyperlink{cblas_8h_acbc643095eb54edbffb0c5e9080a2450}{cblas\-\_\-dgemm} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-B, const int M, const int N, const int K, const double alpha, const double $\ast$A, const int lda, const double $\ast$B, const int ldb, const double beta, double $\ast$C, const int ldc)
+\item 
+void \hyperlink{cblas_8h_a6778e5e13450b4b9985a61de94eef045}{cblas\-\_\-dsymm} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a4eba77400344ce7896faccf423c7fd5d}{C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E} Side, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int M, const int N, const double alpha, const double $\ast$A, const int lda, const double $\ast$B, const int ldb, const double beta, double $\ast$C, const int ldc)
+\item 
+void \hyperlink{cblas_8h_afc41a66179be1471cfa8baa68217f87d}{cblas\-\_\-dsyrk} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans, const int N, const int K, const double alpha, const double $\ast$A, const int lda, const double beta, double $\ast$C, const int ldc)
+\item 
+void \hyperlink{cblas_8h_a73988537ff847b73be3c54a99dde88e6}{cblas\-\_\-dsyr2k} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans, const int N, const int K, const double alpha, const double $\ast$A, const int lda, const double $\ast$B, const int ldb, const double beta, double $\ast$C, const int ldc)
+\item 
+void \hyperlink{cblas_8h_ac1f92b814c44c4c1fafd5823c2de07fe}{cblas\-\_\-dtrmm} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a4eba77400344ce7896faccf423c7fd5d}{C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E} Side, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int M, const int N, const double alpha, const double $\ast$A, const int lda, double $\ast$B, const int ldb)
+\item 
+void \hyperlink{cblas_8h_acb9dff4064ae8370ae85430f36c64cbf}{cblas\-\_\-dtrsm} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a4eba77400344ce7896faccf423c7fd5d}{C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E} Side, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int M, const int N, const double alpha, const double $\ast$A, const int lda, double $\ast$B, const int ldb)
+\item 
+void \hyperlink{cblas_8h_a3407eb4a738bd6e888626b75bcabdd33}{cblas\-\_\-cgemm} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-B, const int M, const int N, const int K, const void $\ast$alpha, const void $\ast$A, const int lda, const void $\ast$B, const int ldb, const void $\ast$beta, void $\ast$C, const int ldc)
+\item 
+void \hyperlink{cblas_8h_a53744be092a9fd560a839e4ab1c87aff}{cblas\-\_\-csymm} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a4eba77400344ce7896faccf423c7fd5d}{C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E} Side, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int M, const int N, const void $\ast$alpha, const void $\ast$A, const int lda, const void $\ast$B, const int ldb, const void $\ast$beta, void $\ast$C, const int ldc)
+\item 
+void \hyperlink{cblas_8h_affe794d1fd4f825dab3f9095dcab6891}{cblas\-\_\-csyrk} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans, const int N, const int K, const void $\ast$alpha, const void $\ast$A, const int lda, const void $\ast$beta, void $\ast$C, const int ldc)
+\item 
+void \hyperlink{cblas_8h_af42234cec2bf8d14b09e0bb1b49fe662}{cblas\-\_\-csyr2k} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans, const int N, const int K, const void $\ast$alpha, const void $\ast$A, const int lda, const void $\ast$B, const int ldb, const void $\ast$beta, void $\ast$C, const int ldc)
+\item 
+void \hyperlink{cblas_8h_aa0eaf6ffbc0fd038dfe24b1434b914d5}{cblas\-\_\-ctrmm} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a4eba77400344ce7896faccf423c7fd5d}{C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E} Side, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int M, const int N, const void $\ast$alpha, const void $\ast$A, const int lda, void $\ast$B, const int ldb)
+\item 
+void \hyperlink{cblas_8h_ace197a988586cce9cd1c9a3de64ad2c3}{cblas\-\_\-ctrsm} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a4eba77400344ce7896faccf423c7fd5d}{C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E} Side, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int M, const int N, const void $\ast$alpha, const void $\ast$A, const int lda, void $\ast$B, const int ldb)
+\item 
+void \hyperlink{cblas_8h_a4e33f93b23914217bea67e9d3d9b08fe}{cblas\-\_\-zgemm} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-B, const int M, const int N, const int K, const void $\ast$alpha, const void $\ast$A, const int lda, const void $\ast$B, const int ldb, const void $\ast$beta, void $\ast$C, const int ldc)
+\item 
+void \hyperlink{cblas_8h_a9daee74ed0f5295c29c8c6c6ddcd7b46}{cblas\-\_\-zsymm} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a4eba77400344ce7896faccf423c7fd5d}{C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E} Side, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int M, const int N, const void $\ast$alpha, const void $\ast$A, const int lda, const void $\ast$B, const int ldb, const void $\ast$beta, void $\ast$C, const int ldc)
+\item 
+void \hyperlink{cblas_8h_a3501cedb5f49a445676f668965c01ab4}{cblas\-\_\-zsyrk} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans, const int N, const int K, const void $\ast$alpha, const void $\ast$A, const int lda, const void $\ast$beta, void $\ast$C, const int ldc)
+\item 
+void \hyperlink{cblas_8h_ad6cf2ef76816cddb6ea1d9605d79947b}{cblas\-\_\-zsyr2k} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans, const int N, const int K, const void $\ast$alpha, const void $\ast$A, const int lda, const void $\ast$B, const int ldb, const void $\ast$beta, void $\ast$C, const int ldc)
+\item 
+void \hyperlink{cblas_8h_abb62cb4c7c763ad00d048c8297e210d9}{cblas\-\_\-ztrmm} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a4eba77400344ce7896faccf423c7fd5d}{C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E} Side, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int M, const int N, const void $\ast$alpha, const void $\ast$A, const int lda, void $\ast$B, const int ldb)
+\item 
+void \hyperlink{cblas_8h_ae3417125bfedcfaa5a1f878abc6760e7}{cblas\-\_\-ztrsm} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a4eba77400344ce7896faccf423c7fd5d}{C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E} Side, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans\-A, const enum \hyperlink{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G} Diag, const int M, const int N, const void $\ast$alpha, const void $\ast$A, const int lda, void $\ast$B, const int ldb)
+\item 
+void \hyperlink{cblas_8h_aec3252a6e4fd5851a9280e3bfcadcc72}{cblas\-\_\-chemm} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a4eba77400344ce7896faccf423c7fd5d}{C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E} Side, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int M, const int N, const void $\ast$alpha, const void $\ast$A, const int lda, const void $\ast$B, const int ldb, const void $\ast$beta, void $\ast$C, const int ldc)
+\item 
+void \hyperlink{cblas_8h_a8ada352a895c212613655cfd08112973}{cblas\-\_\-cherk} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans, const int N, const int K, const float alpha, const void $\ast$A, const int lda, const float beta, void $\ast$C, const int ldc)
+\item 
+void \hyperlink{cblas_8h_a08172e3915a9ada136e1c88013683118}{cblas\-\_\-cher2k} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans, const int N, const int K, const void $\ast$alpha, const void $\ast$A, const int lda, const void $\ast$B, const int ldb, const float beta, void $\ast$C, const int ldc)
+\item 
+void \hyperlink{cblas_8h_a197090ab1f908592e3118dbda4f9eece}{cblas\-\_\-zhemm} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a4eba77400344ce7896faccf423c7fd5d}{C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E} Side, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const int M, const int N, const void $\ast$alpha, const void $\ast$A, const int lda, const void $\ast$B, const int ldb, const void $\ast$beta, void $\ast$C, const int ldc)
+\item 
+void \hyperlink{cblas_8h_aeefbb632665caa68d0dda3f99a784887}{cblas\-\_\-zherk} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans, const int N, const int K, const double alpha, const void $\ast$A, const int lda, const double beta, void $\ast$C, const int ldc)
+\item 
+void \hyperlink{cblas_8h_af28c56c642291f677ec5430e24620c92}{cblas\-\_\-zher2k} (const enum \hyperlink{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R} Order, const enum \hyperlink{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O} Uplo, const enum \hyperlink{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E} Trans, const int N, const int K, const void $\ast$alpha, const void $\ast$A, const int lda, const void $\ast$B, const int ldb, const double beta, void $\ast$C, const int ldc)
+\item 
+void \hyperlink{cblas_8h_ab39ee7e78e8218cf8bdc329ca3cc9cf7}{cblas\-\_\-xerbla} (int p, const char $\ast$rout, const char $\ast$form,...)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{cblas_8h_a0cc6c9831e05958bc66dc000e02f33b9}{\index{cblas.\-h@{cblas.\-h}!C\-B\-L\-A\-S\-\_\-\-I\-N\-D\-E\-X@{C\-B\-L\-A\-S\-\_\-\-I\-N\-D\-E\-X}}
+\index{C\-B\-L\-A\-S\-\_\-\-I\-N\-D\-E\-X@{C\-B\-L\-A\-S\-\_\-\-I\-N\-D\-E\-X}!cblas.h@{cblas.\-h}}
+\subsubsection[{C\-B\-L\-A\-S\-\_\-\-I\-N\-D\-E\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-B\-L\-A\-S\-\_\-\-I\-N\-D\-E\-X~size\-\_\-t  /$\ast$ this may vary between platforms $\ast$/}}\label{cblas_8h_a0cc6c9831e05958bc66dc000e02f33b9}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}{\index{cblas.\-h@{cblas.\-h}!C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G@{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}
+\index{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G@{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}!cblas.h@{cblas.\-h}}
+\subsubsection[{C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}}\label{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Cblas\-Non\-Unit@{Cblas\-Non\-Unit}!cblas.\-h@{cblas.\-h}}\index{cblas.\-h@{cblas.\-h}!Cblas\-Non\-Unit@{Cblas\-Non\-Unit}}\item[{\em 
+\hypertarget{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3a82bfd6c5bb4a1b1361fc5d661a6c7a38}{Cblas\-Non\-Unit}\label{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3a82bfd6c5bb4a1b1361fc5d661a6c7a38}
+}]\index{Cblas\-Unit@{Cblas\-Unit}!cblas.\-h@{cblas.\-h}}\index{cblas.\-h@{cblas.\-h}!Cblas\-Unit@{Cblas\-Unit}}\item[{\em 
+\hypertarget{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3a1fe5b22dd62df9d1b86e27b006b349a0}{Cblas\-Unit}\label{cblas_8h_aa03704b21f66a3d37d33a2cf65e2cbb3a1fe5b22dd62df9d1b86e27b006b349a0}
+}]\end{description}
+\end{Desc}
+\hypertarget{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}{\index{cblas.\-h@{cblas.\-h}!C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R@{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}
+\index{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R@{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}!cblas.h@{cblas.\-h}}
+\subsubsection[{C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}}\label{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fe}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Cblas\-Row\-Major@{Cblas\-Row\-Major}!cblas.\-h@{cblas.\-h}}\index{cblas.\-h@{cblas.\-h}!Cblas\-Row\-Major@{Cblas\-Row\-Major}}\item[{\em 
+\hypertarget{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6feac02c7e388901d8d297241db643467721}{Cblas\-Row\-Major}\label{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6feac02c7e388901d8d297241db643467721}
+}]\index{Cblas\-Col\-Major@{Cblas\-Col\-Major}!cblas.\-h@{cblas.\-h}}\index{cblas.\-h@{cblas.\-h}!Cblas\-Col\-Major@{Cblas\-Col\-Major}}\item[{\em 
+\hypertarget{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fea36cca34e7a4808c97e4d234193dee127}{Cblas\-Col\-Major}\label{cblas_8h_a1716cd55ff3d4e9dfa8491a3c177c6fea36cca34e7a4808c97e4d234193dee127}
+}]\end{description}
+\end{Desc}
+\hypertarget{cblas_8h_a4eba77400344ce7896faccf423c7fd5d}{\index{cblas.\-h@{cblas.\-h}!C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E@{C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E}}
+\index{C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E@{C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E}!cblas.h@{cblas.\-h}}
+\subsubsection[{C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E}}}\label{cblas_8h_a4eba77400344ce7896faccf423c7fd5d}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Cblas\-Left@{Cblas\-Left}!cblas.\-h@{cblas.\-h}}\index{cblas.\-h@{cblas.\-h}!Cblas\-Left@{Cblas\-Left}}\item[{\em 
+\hypertarget{cblas_8h_a4eba77400344ce7896faccf423c7fd5daa40b040f8f2a954ad3f3b5f1b4573793}{Cblas\-Left}\label{cblas_8h_a4eba77400344ce7896faccf423c7fd5daa40b040f8f2a954ad3f3b5f1b4573793}
+}]\index{Cblas\-Right@{Cblas\-Right}!cblas.\-h@{cblas.\-h}}\index{cblas.\-h@{cblas.\-h}!Cblas\-Right@{Cblas\-Right}}\item[{\em 
+\hypertarget{cblas_8h_a4eba77400344ce7896faccf423c7fd5da69a5fc61edf60c56342e4baa15809c30}{Cblas\-Right}\label{cblas_8h_a4eba77400344ce7896faccf423c7fd5da69a5fc61edf60c56342e4baa15809c30}
+}]\end{description}
+\end{Desc}
+\hypertarget{cblas_8h_a44dfaddb823648755b110dbad849c5a9}{\index{cblas.\-h@{cblas.\-h}!C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E@{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}
+\index{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E@{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}!cblas.h@{cblas.\-h}}
+\subsubsection[{C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}}\label{cblas_8h_a44dfaddb823648755b110dbad849c5a9}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Cblas\-No\-Trans@{Cblas\-No\-Trans}!cblas.\-h@{cblas.\-h}}\index{cblas.\-h@{cblas.\-h}!Cblas\-No\-Trans@{Cblas\-No\-Trans}}\item[{\em 
+\hypertarget{cblas_8h_a44dfaddb823648755b110dbad849c5a9a078792a66863859407a99ddb06312e79}{Cblas\-No\-Trans}\label{cblas_8h_a44dfaddb823648755b110dbad849c5a9a078792a66863859407a99ddb06312e79}
+}]\index{Cblas\-Trans@{Cblas\-Trans}!cblas.\-h@{cblas.\-h}}\index{cblas.\-h@{cblas.\-h}!Cblas\-Trans@{Cblas\-Trans}}\item[{\em 
+\hypertarget{cblas_8h_a44dfaddb823648755b110dbad849c5a9a267e1fb6eb583ddefd2923d95a944ec8}{Cblas\-Trans}\label{cblas_8h_a44dfaddb823648755b110dbad849c5a9a267e1fb6eb583ddefd2923d95a944ec8}
+}]\index{Cblas\-Conj\-Trans@{Cblas\-Conj\-Trans}!cblas.\-h@{cblas.\-h}}\index{cblas.\-h@{cblas.\-h}!Cblas\-Conj\-Trans@{Cblas\-Conj\-Trans}}\item[{\em 
+\hypertarget{cblas_8h_a44dfaddb823648755b110dbad849c5a9a9f6c122ea555e68fef871c94bd58342f}{Cblas\-Conj\-Trans}\label{cblas_8h_a44dfaddb823648755b110dbad849c5a9a9f6c122ea555e68fef871c94bd58342f}
+}]\end{description}
+\end{Desc}
+\hypertarget{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}{\index{cblas.\-h@{cblas.\-h}!C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O@{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}
+\index{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O@{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}!cblas.h@{cblas.\-h}}
+\subsubsection[{C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}}\label{cblas_8h_a1e6fa56583dce4a18e619688ff08892f}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Cblas\-Upper@{Cblas\-Upper}!cblas.\-h@{cblas.\-h}}\index{cblas.\-h@{cblas.\-h}!Cblas\-Upper@{Cblas\-Upper}}\item[{\em 
+\hypertarget{cblas_8h_a1e6fa56583dce4a18e619688ff08892faca9d16a7c20129fcb9b5a9c8ab90b813}{Cblas\-Upper}\label{cblas_8h_a1e6fa56583dce4a18e619688ff08892faca9d16a7c20129fcb9b5a9c8ab90b813}
+}]\index{Cblas\-Lower@{Cblas\-Lower}!cblas.\-h@{cblas.\-h}}\index{cblas.\-h@{cblas.\-h}!Cblas\-Lower@{Cblas\-Lower}}\item[{\em 
+\hypertarget{cblas_8h_a1e6fa56583dce4a18e619688ff08892fa68d86f377636767065ef016b13801c47}{Cblas\-Lower}\label{cblas_8h_a1e6fa56583dce4a18e619688ff08892fa68d86f377636767065ef016b13801c47}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{cblas_8h_afe778838bd49f59be91526df764794bc}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-caxpy@{cblas\-\_\-caxpy}}
+\index{cblas\-\_\-caxpy@{cblas\-\_\-caxpy}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-caxpy}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-caxpy (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_afe778838bd49f59be91526df764794bc}
+\hypertarget{cblas_8h_a999097bcfbb3deb53b48080cc870065d}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ccopy@{cblas\-\_\-ccopy}}
+\index{cblas\-\_\-ccopy@{cblas\-\_\-ccopy}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ccopy}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-ccopy (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a999097bcfbb3deb53b48080cc870065d}
+\hypertarget{cblas_8h_a530c3770925c5192151a4b174a6d7964}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-cdotc\-\_\-sub@{cblas\-\_\-cdotc\-\_\-sub}}
+\index{cblas\-\_\-cdotc\-\_\-sub@{cblas\-\_\-cdotc\-\_\-sub}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-cdotc\-\_\-sub}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-cdotc\-\_\-sub (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y, }
+\item[{void $\ast$}]{dotc}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a530c3770925c5192151a4b174a6d7964}
+\hypertarget{cblas_8h_af08af97ddefbf53c6ccd2c8aa050a3bb}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-cdotu\-\_\-sub@{cblas\-\_\-cdotu\-\_\-sub}}
+\index{cblas\-\_\-cdotu\-\_\-sub@{cblas\-\_\-cdotu\-\_\-sub}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-cdotu\-\_\-sub}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-cdotu\-\_\-sub (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y, }
+\item[{void $\ast$}]{dotu}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_af08af97ddefbf53c6ccd2c8aa050a3bb}
+\hypertarget{cblas_8h_a97e064ebedab7c0e7a4f269d457d7816}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-cgbmv@{cblas\-\_\-cgbmv}}
+\index{cblas\-\_\-cgbmv@{cblas\-\_\-cgbmv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-cgbmv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-cgbmv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const int}]{K\-L, }
+\item[{const int}]{K\-U, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const void $\ast$}]{beta, }
+\item[{void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a97e064ebedab7c0e7a4f269d457d7816}
+\hypertarget{cblas_8h_a3407eb4a738bd6e888626b75bcabdd33}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-cgemm@{cblas\-\_\-cgemm}}
+\index{cblas\-\_\-cgemm@{cblas\-\_\-cgemm}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-cgemm}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-cgemm (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-B, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const void $\ast$}]{B, }
+\item[{const int}]{ldb, }
+\item[{const void $\ast$}]{beta, }
+\item[{void $\ast$}]{C, }
+\item[{const int}]{ldc}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a3407eb4a738bd6e888626b75bcabdd33}
+\hypertarget{cblas_8h_a225d9a4f7a8f40f592cdfb004c1603e5}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-cgemv@{cblas\-\_\-cgemv}}
+\index{cblas\-\_\-cgemv@{cblas\-\_\-cgemv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-cgemv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-cgemv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const void $\ast$}]{beta, }
+\item[{void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a225d9a4f7a8f40f592cdfb004c1603e5}
+\hypertarget{cblas_8h_af35832639183e698fcff232af9115eea}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-cgerc@{cblas\-\_\-cgerc}}
+\index{cblas\-\_\-cgerc@{cblas\-\_\-cgerc}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-cgerc}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-cgerc (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y, }
+\item[{void $\ast$}]{A, }
+\item[{const int}]{lda}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_af35832639183e698fcff232af9115eea}
+\hypertarget{cblas_8h_a376143f969ddcb4de2baa2e49a9d84f9}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-cgeru@{cblas\-\_\-cgeru}}
+\index{cblas\-\_\-cgeru@{cblas\-\_\-cgeru}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-cgeru}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-cgeru (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y, }
+\item[{void $\ast$}]{A, }
+\item[{const int}]{lda}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a376143f969ddcb4de2baa2e49a9d84f9}
+\hypertarget{cblas_8h_ab5012d0c756bb726ad0203e8a0214413}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-chbmv@{cblas\-\_\-chbmv}}
+\index{cblas\-\_\-chbmv@{cblas\-\_\-chbmv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-chbmv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-chbmv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const void $\ast$}]{beta, }
+\item[{void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ab5012d0c756bb726ad0203e8a0214413}
+\hypertarget{cblas_8h_aec3252a6e4fd5851a9280e3bfcadcc72}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-chemm@{cblas\-\_\-chemm}}
+\index{cblas\-\_\-chemm@{cblas\-\_\-chemm}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-chemm}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-chemm (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E}}]{Side, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const void $\ast$}]{B, }
+\item[{const int}]{ldb, }
+\item[{const void $\ast$}]{beta, }
+\item[{void $\ast$}]{C, }
+\item[{const int}]{ldc}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_aec3252a6e4fd5851a9280e3bfcadcc72}
+\hypertarget{cblas_8h_a2bd3a30271e5be4556f4e13a3102eccb}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-chemv@{cblas\-\_\-chemv}}
+\index{cblas\-\_\-chemv@{cblas\-\_\-chemv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-chemv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-chemv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const void $\ast$}]{beta, }
+\item[{void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a2bd3a30271e5be4556f4e13a3102eccb}
+\hypertarget{cblas_8h_af30e2f8f70d6b13601bb6f82d91ac24b}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-cher@{cblas\-\_\-cher}}
+\index{cblas\-\_\-cher@{cblas\-\_\-cher}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-cher}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-cher (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const float}]{alpha, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{void $\ast$}]{A, }
+\item[{const int}]{lda}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_af30e2f8f70d6b13601bb6f82d91ac24b}
+\hypertarget{cblas_8h_a9a7cb81a46fa2be720a93a1bc63a7a6a}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-cher2@{cblas\-\_\-cher2}}
+\index{cblas\-\_\-cher2@{cblas\-\_\-cher2}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-cher2}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-cher2 (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y, }
+\item[{void $\ast$}]{A, }
+\item[{const int}]{lda}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a9a7cb81a46fa2be720a93a1bc63a7a6a}
+\hypertarget{cblas_8h_a08172e3915a9ada136e1c88013683118}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-cher2k@{cblas\-\_\-cher2k}}
+\index{cblas\-\_\-cher2k@{cblas\-\_\-cher2k}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-cher2k}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-cher2k (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const void $\ast$}]{B, }
+\item[{const int}]{ldb, }
+\item[{const float}]{beta, }
+\item[{void $\ast$}]{C, }
+\item[{const int}]{ldc}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a08172e3915a9ada136e1c88013683118}
+\hypertarget{cblas_8h_a8ada352a895c212613655cfd08112973}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-cherk@{cblas\-\_\-cherk}}
+\index{cblas\-\_\-cherk@{cblas\-\_\-cherk}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-cherk}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-cherk (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const float}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const float}]{beta, }
+\item[{void $\ast$}]{C, }
+\item[{const int}]{ldc}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a8ada352a895c212613655cfd08112973}
+\hypertarget{cblas_8h_a7589ac2f4b79afc9e3a30279bb9e8bd2}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-chpmv@{cblas\-\_\-chpmv}}
+\index{cblas\-\_\-chpmv@{cblas\-\_\-chpmv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-chpmv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-chpmv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{Ap, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const void $\ast$}]{beta, }
+\item[{void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a7589ac2f4b79afc9e3a30279bb9e8bd2}
+\hypertarget{cblas_8h_a23bc3150625e1f4e7a17e9c32f3b433e}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-chpr@{cblas\-\_\-chpr}}
+\index{cblas\-\_\-chpr@{cblas\-\_\-chpr}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-chpr}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-chpr (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const float}]{alpha, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{void $\ast$}]{A}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a23bc3150625e1f4e7a17e9c32f3b433e}
+\hypertarget{cblas_8h_a2d90f63e17ebff4e00e71c717e45ed09}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-chpr2@{cblas\-\_\-chpr2}}
+\index{cblas\-\_\-chpr2@{cblas\-\_\-chpr2}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-chpr2}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-chpr2 (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y, }
+\item[{void $\ast$}]{Ap}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a2d90f63e17ebff4e00e71c717e45ed09}
+\hypertarget{cblas_8h_af91ac072793013ae87510741605f3475}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-cscal@{cblas\-\_\-cscal}}
+\index{cblas\-\_\-cscal@{cblas\-\_\-cscal}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-cscal}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-cscal (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{void $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_af91ac072793013ae87510741605f3475}
+\hypertarget{cblas_8h_aa78e552aa309959046117a7a6ed77fa8}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-csscal@{cblas\-\_\-csscal}}
+\index{cblas\-\_\-csscal@{cblas\-\_\-csscal}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-csscal}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-csscal (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const float}]{alpha, }
+\item[{void $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_aa78e552aa309959046117a7a6ed77fa8}
+\hypertarget{cblas_8h_a883f7d262001f6c4afdb222cd1e6d110}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-cswap@{cblas\-\_\-cswap}}
+\index{cblas\-\_\-cswap@{cblas\-\_\-cswap}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-cswap}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-cswap (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a883f7d262001f6c4afdb222cd1e6d110}
+\hypertarget{cblas_8h_a53744be092a9fd560a839e4ab1c87aff}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-csymm@{cblas\-\_\-csymm}}
+\index{cblas\-\_\-csymm@{cblas\-\_\-csymm}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-csymm}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-csymm (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E}}]{Side, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const void $\ast$}]{B, }
+\item[{const int}]{ldb, }
+\item[{const void $\ast$}]{beta, }
+\item[{void $\ast$}]{C, }
+\item[{const int}]{ldc}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a53744be092a9fd560a839e4ab1c87aff}
+\hypertarget{cblas_8h_af42234cec2bf8d14b09e0bb1b49fe662}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-csyr2k@{cblas\-\_\-csyr2k}}
+\index{cblas\-\_\-csyr2k@{cblas\-\_\-csyr2k}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-csyr2k}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-csyr2k (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const void $\ast$}]{B, }
+\item[{const int}]{ldb, }
+\item[{const void $\ast$}]{beta, }
+\item[{void $\ast$}]{C, }
+\item[{const int}]{ldc}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_af42234cec2bf8d14b09e0bb1b49fe662}
+\hypertarget{cblas_8h_affe794d1fd4f825dab3f9095dcab6891}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-csyrk@{cblas\-\_\-csyrk}}
+\index{cblas\-\_\-csyrk@{cblas\-\_\-csyrk}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-csyrk}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-csyrk (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const void $\ast$}]{beta, }
+\item[{void $\ast$}]{C, }
+\item[{const int}]{ldc}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_affe794d1fd4f825dab3f9095dcab6891}
+\hypertarget{cblas_8h_a210c4c28b088821a62b2ec2f7b0e59d9}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ctbmv@{cblas\-\_\-ctbmv}}
+\index{cblas\-\_\-ctbmv@{cblas\-\_\-ctbmv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ctbmv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-ctbmv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{void $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a210c4c28b088821a62b2ec2f7b0e59d9}
+\hypertarget{cblas_8h_abc77f0ae4746a219c87548c89d4284fc}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ctbsv@{cblas\-\_\-ctbsv}}
+\index{cblas\-\_\-ctbsv@{cblas\-\_\-ctbsv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ctbsv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-ctbsv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{void $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_abc77f0ae4746a219c87548c89d4284fc}
+\hypertarget{cblas_8h_a01b5131bf1e9a89843977e9385e53619}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ctpmv@{cblas\-\_\-ctpmv}}
+\index{cblas\-\_\-ctpmv@{cblas\-\_\-ctpmv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ctpmv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-ctpmv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{Ap, }
+\item[{void $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a01b5131bf1e9a89843977e9385e53619}
+\hypertarget{cblas_8h_aaf76ab383ce9587b0be0d5e6ae341361}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ctpsv@{cblas\-\_\-ctpsv}}
+\index{cblas\-\_\-ctpsv@{cblas\-\_\-ctpsv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ctpsv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-ctpsv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{Ap, }
+\item[{void $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_aaf76ab383ce9587b0be0d5e6ae341361}
+\hypertarget{cblas_8h_aa0eaf6ffbc0fd038dfe24b1434b914d5}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ctrmm@{cblas\-\_\-ctrmm}}
+\index{cblas\-\_\-ctrmm@{cblas\-\_\-ctrmm}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ctrmm}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-ctrmm (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E}}]{Side, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{void $\ast$}]{B, }
+\item[{const int}]{ldb}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_aa0eaf6ffbc0fd038dfe24b1434b914d5}
+\hypertarget{cblas_8h_a764e7349a49f54dc0746127241644dc5}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ctrmv@{cblas\-\_\-ctrmv}}
+\index{cblas\-\_\-ctrmv@{cblas\-\_\-ctrmv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ctrmv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-ctrmv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{void $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a764e7349a49f54dc0746127241644dc5}
+\hypertarget{cblas_8h_ace197a988586cce9cd1c9a3de64ad2c3}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ctrsm@{cblas\-\_\-ctrsm}}
+\index{cblas\-\_\-ctrsm@{cblas\-\_\-ctrsm}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ctrsm}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-ctrsm (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E}}]{Side, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{void $\ast$}]{B, }
+\item[{const int}]{ldb}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ace197a988586cce9cd1c9a3de64ad2c3}
+\hypertarget{cblas_8h_ab403b9f50c29ea4e146c072aad210931}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ctrsv@{cblas\-\_\-ctrsv}}
+\index{cblas\-\_\-ctrsv@{cblas\-\_\-ctrsv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ctrsv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-ctrsv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{void $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ab403b9f50c29ea4e146c072aad210931}
+\hypertarget{cblas_8h_ac4a360a9f1b8ddd5fcb0c16260e0ac2a}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dasum@{cblas\-\_\-dasum}}
+\index{cblas\-\_\-dasum@{cblas\-\_\-dasum}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dasum}]{\setlength{\rightskip}{0pt plus 5cm}double cblas\-\_\-dasum (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const double $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ac4a360a9f1b8ddd5fcb0c16260e0ac2a}
+\hypertarget{cblas_8h_ab4a1f56c3fb097ae0879b1ff3746a5f4}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-daxpy@{cblas\-\_\-daxpy}}
+\index{cblas\-\_\-daxpy@{cblas\-\_\-daxpy}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-daxpy}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-daxpy (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const double}]{alpha, }
+\item[{const double $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{double $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ab4a1f56c3fb097ae0879b1ff3746a5f4}
+\hypertarget{cblas_8h_aae785f77866cecf54f5e337a009e21b8}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dcopy@{cblas\-\_\-dcopy}}
+\index{cblas\-\_\-dcopy@{cblas\-\_\-dcopy}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dcopy}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dcopy (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const double $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{double $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_aae785f77866cecf54f5e337a009e21b8}
+\hypertarget{cblas_8h_a1c8aaf7ce5af2e91cdd4e33332fb3317}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ddot@{cblas\-\_\-ddot}}
+\index{cblas\-\_\-ddot@{cblas\-\_\-ddot}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ddot}]{\setlength{\rightskip}{0pt plus 5cm}double cblas\-\_\-ddot (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const double $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const double $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a1c8aaf7ce5af2e91cdd4e33332fb3317}
+\hypertarget{cblas_8h_a31d8c3e7739c0c9d84afa74ad17a1e72}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dgbmv@{cblas\-\_\-dgbmv}}
+\index{cblas\-\_\-dgbmv@{cblas\-\_\-dgbmv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dgbmv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dgbmv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const int}]{K\-L, }
+\item[{const int}]{K\-U, }
+\item[{const double}]{alpha, }
+\item[{const double $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const double $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const double}]{beta, }
+\item[{double $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a31d8c3e7739c0c9d84afa74ad17a1e72}
+\hypertarget{cblas_8h_acbc643095eb54edbffb0c5e9080a2450}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dgemm@{cblas\-\_\-dgemm}}
+\index{cblas\-\_\-dgemm@{cblas\-\_\-dgemm}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dgemm}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dgemm (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-B, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const double}]{alpha, }
+\item[{const double $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const double $\ast$}]{B, }
+\item[{const int}]{ldb, }
+\item[{const double}]{beta, }
+\item[{double $\ast$}]{C, }
+\item[{const int}]{ldc}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_acbc643095eb54edbffb0c5e9080a2450}
+\hypertarget{cblas_8h_a74d1a65503a1fa90943cdf9d8f847aab}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dgemv@{cblas\-\_\-dgemv}}
+\index{cblas\-\_\-dgemv@{cblas\-\_\-dgemv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dgemv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dgemv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const double}]{alpha, }
+\item[{const double $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const double $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const double}]{beta, }
+\item[{double $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a74d1a65503a1fa90943cdf9d8f847aab}
+\hypertarget{cblas_8h_a25061b48077f91aaebb54b3d11c79da4}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dger@{cblas\-\_\-dger}}
+\index{cblas\-\_\-dger@{cblas\-\_\-dger}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dger}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dger (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const double}]{alpha, }
+\item[{const double $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const double $\ast$}]{Y, }
+\item[{const int}]{inc\-Y, }
+\item[{double $\ast$}]{A, }
+\item[{const int}]{lda}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a25061b48077f91aaebb54b3d11c79da4}
+\hypertarget{cblas_8h_a2e7d995100f18f9d4707e8f71cd00da6}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dnrm2@{cblas\-\_\-dnrm2}}
+\index{cblas\-\_\-dnrm2@{cblas\-\_\-dnrm2}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dnrm2}]{\setlength{\rightskip}{0pt plus 5cm}double cblas\-\_\-dnrm2 (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const double $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a2e7d995100f18f9d4707e8f71cd00da6}
+\hypertarget{cblas_8h_a8102f0292cc6db05c69cefd9b77e2b3b}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-drot@{cblas\-\_\-drot}}
+\index{cblas\-\_\-drot@{cblas\-\_\-drot}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-drot}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-drot (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{double $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{double $\ast$}]{Y, }
+\item[{const int}]{inc\-Y, }
+\item[{const double}]{c, }
+\item[{const double}]{s}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a8102f0292cc6db05c69cefd9b77e2b3b}
+\hypertarget{cblas_8h_ae9c72609641108287193098b5e3016fb}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-drotg@{cblas\-\_\-drotg}}
+\index{cblas\-\_\-drotg@{cblas\-\_\-drotg}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-drotg}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-drotg (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{a, }
+\item[{double $\ast$}]{b, }
+\item[{double $\ast$}]{c, }
+\item[{double $\ast$}]{s}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ae9c72609641108287193098b5e3016fb}
+\hypertarget{cblas_8h_a7dce66b70dbad84e35fcf4a8786492ff}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-drotm@{cblas\-\_\-drotm}}
+\index{cblas\-\_\-drotm@{cblas\-\_\-drotm}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-drotm}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-drotm (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{double $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{double $\ast$}]{Y, }
+\item[{const int}]{inc\-Y, }
+\item[{const double $\ast$}]{P}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a7dce66b70dbad84e35fcf4a8786492ff}
+\hypertarget{cblas_8h_a2d97f5e685f485bb5616ad0112a1cd8c}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-drotmg@{cblas\-\_\-drotmg}}
+\index{cblas\-\_\-drotmg@{cblas\-\_\-drotmg}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-drotmg}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-drotmg (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{d1, }
+\item[{double $\ast$}]{d2, }
+\item[{double $\ast$}]{b1, }
+\item[{const double}]{b2, }
+\item[{double $\ast$}]{P}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a2d97f5e685f485bb5616ad0112a1cd8c}
+\hypertarget{cblas_8h_af1b07c9df631554b91b91f81c8f09135}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dsbmv@{cblas\-\_\-dsbmv}}
+\index{cblas\-\_\-dsbmv@{cblas\-\_\-dsbmv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dsbmv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dsbmv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const double}]{alpha, }
+\item[{const double $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const double $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const double}]{beta, }
+\item[{double $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_af1b07c9df631554b91b91f81c8f09135}
+\hypertarget{cblas_8h_ab41b816dce4c54a31f759386d1424ac3}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dscal@{cblas\-\_\-dscal}}
+\index{cblas\-\_\-dscal@{cblas\-\_\-dscal}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dscal}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dscal (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const double}]{alpha, }
+\item[{double $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ab41b816dce4c54a31f759386d1424ac3}
+\hypertarget{cblas_8h_acc2f49b23e7aad1f8bbb02224dd34dc4}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dsdot@{cblas\-\_\-dsdot}}
+\index{cblas\-\_\-dsdot@{cblas\-\_\-dsdot}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dsdot}]{\setlength{\rightskip}{0pt plus 5cm}double cblas\-\_\-dsdot (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const float $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const float $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_acc2f49b23e7aad1f8bbb02224dd34dc4}
+\hypertarget{cblas_8h_af7ec9d9b3027b4f9d72346949314d24b}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dspmv@{cblas\-\_\-dspmv}}
+\index{cblas\-\_\-dspmv@{cblas\-\_\-dspmv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dspmv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dspmv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const double}]{alpha, }
+\item[{const double $\ast$}]{Ap, }
+\item[{const double $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const double}]{beta, }
+\item[{double $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_af7ec9d9b3027b4f9d72346949314d24b}
+\hypertarget{cblas_8h_a61007c84271e1ff94ea6598d95332f36}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dspr@{cblas\-\_\-dspr}}
+\index{cblas\-\_\-dspr@{cblas\-\_\-dspr}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dspr}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dspr (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const double}]{alpha, }
+\item[{const double $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{double $\ast$}]{Ap}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a61007c84271e1ff94ea6598d95332f36}
+\hypertarget{cblas_8h_a71c339afe97d115e6b191753e7731a10}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dspr2@{cblas\-\_\-dspr2}}
+\index{cblas\-\_\-dspr2@{cblas\-\_\-dspr2}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dspr2}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dspr2 (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const double}]{alpha, }
+\item[{const double $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const double $\ast$}]{Y, }
+\item[{const int}]{inc\-Y, }
+\item[{double $\ast$}]{A}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a71c339afe97d115e6b191753e7731a10}
+\hypertarget{cblas_8h_aa479b791c388bb4c9ec37824275b0ec4}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dswap@{cblas\-\_\-dswap}}
+\index{cblas\-\_\-dswap@{cblas\-\_\-dswap}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dswap}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dswap (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{double $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{double $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_aa479b791c388bb4c9ec37824275b0ec4}
+\hypertarget{cblas_8h_a6778e5e13450b4b9985a61de94eef045}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dsymm@{cblas\-\_\-dsymm}}
+\index{cblas\-\_\-dsymm@{cblas\-\_\-dsymm}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dsymm}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dsymm (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E}}]{Side, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const double}]{alpha, }
+\item[{const double $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const double $\ast$}]{B, }
+\item[{const int}]{ldb, }
+\item[{const double}]{beta, }
+\item[{double $\ast$}]{C, }
+\item[{const int}]{ldc}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a6778e5e13450b4b9985a61de94eef045}
+\hypertarget{cblas_8h_aa59eb41caf8302dfed0797e6144741a3}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dsymv@{cblas\-\_\-dsymv}}
+\index{cblas\-\_\-dsymv@{cblas\-\_\-dsymv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dsymv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dsymv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const double}]{alpha, }
+\item[{const double $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const double $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const double}]{beta, }
+\item[{double $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_aa59eb41caf8302dfed0797e6144741a3}
+\hypertarget{cblas_8h_a28d8aa0fc741511260d4339c68980a0a}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dsyr@{cblas\-\_\-dsyr}}
+\index{cblas\-\_\-dsyr@{cblas\-\_\-dsyr}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dsyr}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dsyr (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const double}]{alpha, }
+\item[{const double $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{double $\ast$}]{A, }
+\item[{const int}]{lda}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a28d8aa0fc741511260d4339c68980a0a}
+\hypertarget{cblas_8h_adcdcdd812d0126f420c24201626484f1}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dsyr2@{cblas\-\_\-dsyr2}}
+\index{cblas\-\_\-dsyr2@{cblas\-\_\-dsyr2}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dsyr2}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dsyr2 (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const double}]{alpha, }
+\item[{const double $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const double $\ast$}]{Y, }
+\item[{const int}]{inc\-Y, }
+\item[{double $\ast$}]{A, }
+\item[{const int}]{lda}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_adcdcdd812d0126f420c24201626484f1}
+\hypertarget{cblas_8h_a73988537ff847b73be3c54a99dde88e6}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dsyr2k@{cblas\-\_\-dsyr2k}}
+\index{cblas\-\_\-dsyr2k@{cblas\-\_\-dsyr2k}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dsyr2k}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dsyr2k (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const double}]{alpha, }
+\item[{const double $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const double $\ast$}]{B, }
+\item[{const int}]{ldb, }
+\item[{const double}]{beta, }
+\item[{double $\ast$}]{C, }
+\item[{const int}]{ldc}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a73988537ff847b73be3c54a99dde88e6}
+\hypertarget{cblas_8h_afc41a66179be1471cfa8baa68217f87d}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dsyrk@{cblas\-\_\-dsyrk}}
+\index{cblas\-\_\-dsyrk@{cblas\-\_\-dsyrk}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dsyrk}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dsyrk (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const double}]{alpha, }
+\item[{const double $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const double}]{beta, }
+\item[{double $\ast$}]{C, }
+\item[{const int}]{ldc}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_afc41a66179be1471cfa8baa68217f87d}
+\hypertarget{cblas_8h_a7f9abd5965daec11dea9219271f93335}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dtbmv@{cblas\-\_\-dtbmv}}
+\index{cblas\-\_\-dtbmv@{cblas\-\_\-dtbmv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dtbmv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dtbmv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const double $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{double $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a7f9abd5965daec11dea9219271f93335}
+\hypertarget{cblas_8h_a348a8cb9f3a8401fac805eec1d2fd4e2}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dtbsv@{cblas\-\_\-dtbsv}}
+\index{cblas\-\_\-dtbsv@{cblas\-\_\-dtbsv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dtbsv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dtbsv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const double $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{double $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a348a8cb9f3a8401fac805eec1d2fd4e2}
+\hypertarget{cblas_8h_a33d71705b46527d8a6a8a62750c1c96c}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dtpmv@{cblas\-\_\-dtpmv}}
+\index{cblas\-\_\-dtpmv@{cblas\-\_\-dtpmv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dtpmv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dtpmv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{N, }
+\item[{const double $\ast$}]{Ap, }
+\item[{double $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a33d71705b46527d8a6a8a62750c1c96c}
+\hypertarget{cblas_8h_a8e24e9ca80f853cdd8497283bd3af87c}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dtpsv@{cblas\-\_\-dtpsv}}
+\index{cblas\-\_\-dtpsv@{cblas\-\_\-dtpsv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dtpsv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dtpsv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{N, }
+\item[{const double $\ast$}]{Ap, }
+\item[{double $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a8e24e9ca80f853cdd8497283bd3af87c}
+\hypertarget{cblas_8h_ac1f92b814c44c4c1fafd5823c2de07fe}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dtrmm@{cblas\-\_\-dtrmm}}
+\index{cblas\-\_\-dtrmm@{cblas\-\_\-dtrmm}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dtrmm}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dtrmm (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E}}]{Side, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const double}]{alpha, }
+\item[{const double $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{double $\ast$}]{B, }
+\item[{const int}]{ldb}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ac1f92b814c44c4c1fafd5823c2de07fe}
+\hypertarget{cblas_8h_a2abc4975ee06333580834a385a4e9c2f}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dtrmv@{cblas\-\_\-dtrmv}}
+\index{cblas\-\_\-dtrmv@{cblas\-\_\-dtrmv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dtrmv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dtrmv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{N, }
+\item[{const double $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{double $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a2abc4975ee06333580834a385a4e9c2f}
+\hypertarget{cblas_8h_acb9dff4064ae8370ae85430f36c64cbf}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dtrsm@{cblas\-\_\-dtrsm}}
+\index{cblas\-\_\-dtrsm@{cblas\-\_\-dtrsm}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dtrsm}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dtrsm (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E}}]{Side, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const double}]{alpha, }
+\item[{const double $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{double $\ast$}]{B, }
+\item[{const int}]{ldb}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_acb9dff4064ae8370ae85430f36c64cbf}
+\hypertarget{cblas_8h_aa8f7fe6c62ac1e6d1fa12036e20b6a8d}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dtrsv@{cblas\-\_\-dtrsv}}
+\index{cblas\-\_\-dtrsv@{cblas\-\_\-dtrsv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dtrsv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-dtrsv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{N, }
+\item[{const double $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{double $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_aa8f7fe6c62ac1e6d1fa12036e20b6a8d}
+\hypertarget{cblas_8h_a427b7bf01de9007be45ae9d815b7c6b2}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dzasum@{cblas\-\_\-dzasum}}
+\index{cblas\-\_\-dzasum@{cblas\-\_\-dzasum}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dzasum}]{\setlength{\rightskip}{0pt plus 5cm}double cblas\-\_\-dzasum (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a427b7bf01de9007be45ae9d815b7c6b2}
+\hypertarget{cblas_8h_a569351168db5d640bda1f389d8f548c2}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-dznrm2@{cblas\-\_\-dznrm2}}
+\index{cblas\-\_\-dznrm2@{cblas\-\_\-dznrm2}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-dznrm2}]{\setlength{\rightskip}{0pt plus 5cm}double cblas\-\_\-dznrm2 (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a569351168db5d640bda1f389d8f548c2}
+\hypertarget{cblas_8h_ada1c6f07482c48a3f5e9a1337913571a}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-icamax@{cblas\-\_\-icamax}}
+\index{cblas\-\_\-icamax@{cblas\-\_\-icamax}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-icamax}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-B\-L\-A\-S\-\_\-\-I\-N\-D\-E\-X} cblas\-\_\-icamax (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ada1c6f07482c48a3f5e9a1337913571a}
+\hypertarget{cblas_8h_ac71db37eb861b6f6e7c74ba7c135ecb0}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-idamax@{cblas\-\_\-idamax}}
+\index{cblas\-\_\-idamax@{cblas\-\_\-idamax}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-idamax}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-B\-L\-A\-S\-\_\-\-I\-N\-D\-E\-X} cblas\-\_\-idamax (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const double $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ac71db37eb861b6f6e7c74ba7c135ecb0}
+\hypertarget{cblas_8h_a7ecf33f60f99f563254ffb4f79e3fb80}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-isamax@{cblas\-\_\-isamax}}
+\index{cblas\-\_\-isamax@{cblas\-\_\-isamax}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-isamax}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-B\-L\-A\-S\-\_\-\-I\-N\-D\-E\-X} cblas\-\_\-isamax (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const float $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a7ecf33f60f99f563254ffb4f79e3fb80}
+\hypertarget{cblas_8h_ab9375b2531aac2c277f836a2c0a3b35b}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-izamax@{cblas\-\_\-izamax}}
+\index{cblas\-\_\-izamax@{cblas\-\_\-izamax}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-izamax}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\-B\-L\-A\-S\-\_\-\-I\-N\-D\-E\-X} cblas\-\_\-izamax (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ab9375b2531aac2c277f836a2c0a3b35b}
+\hypertarget{cblas_8h_ac6a3fe684fd62b637ac65329a3bf04a0}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-sasum@{cblas\-\_\-sasum}}
+\index{cblas\-\_\-sasum@{cblas\-\_\-sasum}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-sasum}]{\setlength{\rightskip}{0pt plus 5cm}float cblas\-\_\-sasum (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const float $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ac6a3fe684fd62b637ac65329a3bf04a0}
+\hypertarget{cblas_8h_a92219ca56e84fb1db72003d7614a62e8}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-saxpy@{cblas\-\_\-saxpy}}
+\index{cblas\-\_\-saxpy@{cblas\-\_\-saxpy}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-saxpy}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-saxpy (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const float}]{alpha, }
+\item[{const float $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{float $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a92219ca56e84fb1db72003d7614a62e8}
+\hypertarget{cblas_8h_a8cd3fc690c0f443ff49c1e8fe98cd979}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-scasum@{cblas\-\_\-scasum}}
+\index{cblas\-\_\-scasum@{cblas\-\_\-scasum}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-scasum}]{\setlength{\rightskip}{0pt plus 5cm}float cblas\-\_\-scasum (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a8cd3fc690c0f443ff49c1e8fe98cd979}
+\hypertarget{cblas_8h_a2b1197ba627bb92dd46273ca582dfef0}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-scnrm2@{cblas\-\_\-scnrm2}}
+\index{cblas\-\_\-scnrm2@{cblas\-\_\-scnrm2}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-scnrm2}]{\setlength{\rightskip}{0pt plus 5cm}float cblas\-\_\-scnrm2 (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a2b1197ba627bb92dd46273ca582dfef0}
+\hypertarget{cblas_8h_a42fd5b4f4605edd4d1662ac09aad284d}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-scopy@{cblas\-\_\-scopy}}
+\index{cblas\-\_\-scopy@{cblas\-\_\-scopy}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-scopy}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-scopy (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const float $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{float $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a42fd5b4f4605edd4d1662ac09aad284d}
+\hypertarget{cblas_8h_ac4fa969a8243124ef0f623defee2db4e}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-sdot@{cblas\-\_\-sdot}}
+\index{cblas\-\_\-sdot@{cblas\-\_\-sdot}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-sdot}]{\setlength{\rightskip}{0pt plus 5cm}float cblas\-\_\-sdot (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const float $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const float $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ac4fa969a8243124ef0f623defee2db4e}
+\hypertarget{cblas_8h_a903cbe0c2a837f3d4eea87c1a773dadf}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-sdsdot@{cblas\-\_\-sdsdot}}
+\index{cblas\-\_\-sdsdot@{cblas\-\_\-sdsdot}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-sdsdot}]{\setlength{\rightskip}{0pt plus 5cm}float cblas\-\_\-sdsdot (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const float}]{alpha, }
+\item[{const float $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const float $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a903cbe0c2a837f3d4eea87c1a773dadf}
+\hypertarget{cblas_8h_af53f5f54faab73437b7a61ea0fb068c3}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-sgbmv@{cblas\-\_\-sgbmv}}
+\index{cblas\-\_\-sgbmv@{cblas\-\_\-sgbmv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-sgbmv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-sgbmv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const int}]{K\-L, }
+\item[{const int}]{K\-U, }
+\item[{const float}]{alpha, }
+\item[{const float $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const float $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const float}]{beta, }
+\item[{float $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_af53f5f54faab73437b7a61ea0fb068c3}
+\hypertarget{cblas_8h_a7d42dfcb6073c56391fee28494809cc5}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-sgemm@{cblas\-\_\-sgemm}}
+\index{cblas\-\_\-sgemm@{cblas\-\_\-sgemm}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-sgemm}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-sgemm (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-B, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const float}]{alpha, }
+\item[{const float $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const float $\ast$}]{B, }
+\item[{const int}]{ldb, }
+\item[{const float}]{beta, }
+\item[{float $\ast$}]{C, }
+\item[{const int}]{ldc}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a7d42dfcb6073c56391fee28494809cc5}
+\hypertarget{cblas_8h_a23ac27150577c29a7ad4ddb427f255f7}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-sgemv@{cblas\-\_\-sgemv}}
+\index{cblas\-\_\-sgemv@{cblas\-\_\-sgemv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-sgemv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-sgemv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const float}]{alpha, }
+\item[{const float $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const float $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const float}]{beta, }
+\item[{float $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a23ac27150577c29a7ad4ddb427f255f7}
+\hypertarget{cblas_8h_afc42130a6fef266cd2ed72eec1736af0}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-sger@{cblas\-\_\-sger}}
+\index{cblas\-\_\-sger@{cblas\-\_\-sger}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-sger}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-sger (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const float}]{alpha, }
+\item[{const float $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const float $\ast$}]{Y, }
+\item[{const int}]{inc\-Y, }
+\item[{float $\ast$}]{A, }
+\item[{const int}]{lda}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_afc42130a6fef266cd2ed72eec1736af0}
+\hypertarget{cblas_8h_a3bca0a31bfa68c9ed3f05d29421cc202}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-snrm2@{cblas\-\_\-snrm2}}
+\index{cblas\-\_\-snrm2@{cblas\-\_\-snrm2}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-snrm2}]{\setlength{\rightskip}{0pt plus 5cm}float cblas\-\_\-snrm2 (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const float $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a3bca0a31bfa68c9ed3f05d29421cc202}
+\hypertarget{cblas_8h_ae3b8195cf878a0649b3391722a1c4517}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-srot@{cblas\-\_\-srot}}
+\index{cblas\-\_\-srot@{cblas\-\_\-srot}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-srot}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-srot (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{float $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{float $\ast$}]{Y, }
+\item[{const int}]{inc\-Y, }
+\item[{const float}]{c, }
+\item[{const float}]{s}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ae3b8195cf878a0649b3391722a1c4517}
+\hypertarget{cblas_8h_aa9c8e8c02791bc4c1ea56d509bff5c82}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-srotg@{cblas\-\_\-srotg}}
+\index{cblas\-\_\-srotg@{cblas\-\_\-srotg}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-srotg}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-srotg (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{a, }
+\item[{float $\ast$}]{b, }
+\item[{float $\ast$}]{c, }
+\item[{float $\ast$}]{s}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_aa9c8e8c02791bc4c1ea56d509bff5c82}
+\hypertarget{cblas_8h_adf521dc2a6f8a06ad8624c18865abd02}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-srotm@{cblas\-\_\-srotm}}
+\index{cblas\-\_\-srotm@{cblas\-\_\-srotm}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-srotm}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-srotm (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{float $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{float $\ast$}]{Y, }
+\item[{const int}]{inc\-Y, }
+\item[{const float $\ast$}]{P}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_adf521dc2a6f8a06ad8624c18865abd02}
+\hypertarget{cblas_8h_a39ccc24876547d238424c6e45883c42d}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-srotmg@{cblas\-\_\-srotmg}}
+\index{cblas\-\_\-srotmg@{cblas\-\_\-srotmg}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-srotmg}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-srotmg (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{d1, }
+\item[{float $\ast$}]{d2, }
+\item[{float $\ast$}]{b1, }
+\item[{const float}]{b2, }
+\item[{float $\ast$}]{P}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a39ccc24876547d238424c6e45883c42d}
+\hypertarget{cblas_8h_ad23e3ebccc72659a7551b9d1545348ba}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ssbmv@{cblas\-\_\-ssbmv}}
+\index{cblas\-\_\-ssbmv@{cblas\-\_\-ssbmv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ssbmv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-ssbmv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const float}]{alpha, }
+\item[{const float $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const float $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const float}]{beta, }
+\item[{float $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ad23e3ebccc72659a7551b9d1545348ba}
+\hypertarget{cblas_8h_a5b3ca82c14437efc3929439e43e42d71}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-sscal@{cblas\-\_\-sscal}}
+\index{cblas\-\_\-sscal@{cblas\-\_\-sscal}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-sscal}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-sscal (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const float}]{alpha, }
+\item[{float $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a5b3ca82c14437efc3929439e43e42d71}
+\hypertarget{cblas_8h_acd3221efa4a868f349c7ec653f61f2f2}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-sspmv@{cblas\-\_\-sspmv}}
+\index{cblas\-\_\-sspmv@{cblas\-\_\-sspmv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-sspmv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-sspmv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const float}]{alpha, }
+\item[{const float $\ast$}]{Ap, }
+\item[{const float $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const float}]{beta, }
+\item[{float $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_acd3221efa4a868f349c7ec653f61f2f2}
+\hypertarget{cblas_8h_a1dd5f14ada77aaaf57c92ca86e53bd48}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-sspr@{cblas\-\_\-sspr}}
+\index{cblas\-\_\-sspr@{cblas\-\_\-sspr}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-sspr}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-sspr (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const float}]{alpha, }
+\item[{const float $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{float $\ast$}]{Ap}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a1dd5f14ada77aaaf57c92ca86e53bd48}
+\hypertarget{cblas_8h_ab6922dff40e7d7e807ab332702c3c9c1}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-sspr2@{cblas\-\_\-sspr2}}
+\index{cblas\-\_\-sspr2@{cblas\-\_\-sspr2}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-sspr2}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-sspr2 (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const float}]{alpha, }
+\item[{const float $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const float $\ast$}]{Y, }
+\item[{const int}]{inc\-Y, }
+\item[{float $\ast$}]{A}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ab6922dff40e7d7e807ab332702c3c9c1}
+\hypertarget{cblas_8h_a5e148e8153da1b5c26b56a3e62ae4949}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-sswap@{cblas\-\_\-sswap}}
+\index{cblas\-\_\-sswap@{cblas\-\_\-sswap}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-sswap}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-sswap (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{float $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{float $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a5e148e8153da1b5c26b56a3e62ae4949}
+\hypertarget{cblas_8h_aff12dc9eefab6f5d8f3a254551006250}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ssymm@{cblas\-\_\-ssymm}}
+\index{cblas\-\_\-ssymm@{cblas\-\_\-ssymm}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ssymm}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-ssymm (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E}}]{Side, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const float}]{alpha, }
+\item[{const float $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const float $\ast$}]{B, }
+\item[{const int}]{ldb, }
+\item[{const float}]{beta, }
+\item[{float $\ast$}]{C, }
+\item[{const int}]{ldc}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_aff12dc9eefab6f5d8f3a254551006250}
+\hypertarget{cblas_8h_a979ecf947869765e4ab834e435acda06}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ssymv@{cblas\-\_\-ssymv}}
+\index{cblas\-\_\-ssymv@{cblas\-\_\-ssymv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ssymv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-ssymv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const float}]{alpha, }
+\item[{const float $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const float $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const float}]{beta, }
+\item[{float $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a979ecf947869765e4ab834e435acda06}
+\hypertarget{cblas_8h_a53e64ceafe9b8f3cf2b8e919be9f3703}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ssyr@{cblas\-\_\-ssyr}}
+\index{cblas\-\_\-ssyr@{cblas\-\_\-ssyr}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ssyr}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-ssyr (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const float}]{alpha, }
+\item[{const float $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{float $\ast$}]{A, }
+\item[{const int}]{lda}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a53e64ceafe9b8f3cf2b8e919be9f3703}
+\hypertarget{cblas_8h_a5e5244ef9c8f9967f57ac1e74bef8f14}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ssyr2@{cblas\-\_\-ssyr2}}
+\index{cblas\-\_\-ssyr2@{cblas\-\_\-ssyr2}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ssyr2}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-ssyr2 (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const float}]{alpha, }
+\item[{const float $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const float $\ast$}]{Y, }
+\item[{const int}]{inc\-Y, }
+\item[{float $\ast$}]{A, }
+\item[{const int}]{lda}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a5e5244ef9c8f9967f57ac1e74bef8f14}
+\hypertarget{cblas_8h_a2ccc1bd38141a6777aaaa6ae454b0361}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ssyr2k@{cblas\-\_\-ssyr2k}}
+\index{cblas\-\_\-ssyr2k@{cblas\-\_\-ssyr2k}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ssyr2k}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-ssyr2k (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const float}]{alpha, }
+\item[{const float $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const float $\ast$}]{B, }
+\item[{const int}]{ldb, }
+\item[{const float}]{beta, }
+\item[{float $\ast$}]{C, }
+\item[{const int}]{ldc}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a2ccc1bd38141a6777aaaa6ae454b0361}
+\hypertarget{cblas_8h_a051d1897649fd8d6ed9e3bce535e1b61}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ssyrk@{cblas\-\_\-ssyrk}}
+\index{cblas\-\_\-ssyrk@{cblas\-\_\-ssyrk}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ssyrk}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-ssyrk (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const float}]{alpha, }
+\item[{const float $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const float}]{beta, }
+\item[{float $\ast$}]{C, }
+\item[{const int}]{ldc}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a051d1897649fd8d6ed9e3bce535e1b61}
+\hypertarget{cblas_8h_ace634161595926af2be1231c0469217d}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-stbmv@{cblas\-\_\-stbmv}}
+\index{cblas\-\_\-stbmv@{cblas\-\_\-stbmv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-stbmv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-stbmv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const float $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{float $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ace634161595926af2be1231c0469217d}
+\hypertarget{cblas_8h_a35eede3bdb7f9bc65496509141ca0e46}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-stbsv@{cblas\-\_\-stbsv}}
+\index{cblas\-\_\-stbsv@{cblas\-\_\-stbsv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-stbsv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-stbsv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const float $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{float $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a35eede3bdb7f9bc65496509141ca0e46}
+\hypertarget{cblas_8h_a8314096fc86d8df406de09b26087d5da}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-stpmv@{cblas\-\_\-stpmv}}
+\index{cblas\-\_\-stpmv@{cblas\-\_\-stpmv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-stpmv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-stpmv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{N, }
+\item[{const float $\ast$}]{Ap, }
+\item[{float $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a8314096fc86d8df406de09b26087d5da}
+\hypertarget{cblas_8h_a54e9d5609eda9e93705701b39cecda34}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-stpsv@{cblas\-\_\-stpsv}}
+\index{cblas\-\_\-stpsv@{cblas\-\_\-stpsv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-stpsv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-stpsv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{N, }
+\item[{const float $\ast$}]{Ap, }
+\item[{float $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a54e9d5609eda9e93705701b39cecda34}
+\hypertarget{cblas_8h_a96848c2dd359ac0bbfca8bd905c965d1}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-strmm@{cblas\-\_\-strmm}}
+\index{cblas\-\_\-strmm@{cblas\-\_\-strmm}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-strmm}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-strmm (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E}}]{Side, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const float}]{alpha, }
+\item[{const float $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{float $\ast$}]{B, }
+\item[{const int}]{ldb}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a96848c2dd359ac0bbfca8bd905c965d1}
+\hypertarget{cblas_8h_ab6cd9998d9e431a65a15cacc3e12b052}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-strmv@{cblas\-\_\-strmv}}
+\index{cblas\-\_\-strmv@{cblas\-\_\-strmv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-strmv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-strmv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{N, }
+\item[{const float $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{float $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ab6cd9998d9e431a65a15cacc3e12b052}
+\hypertarget{cblas_8h_a8b9090a4c0baddb2e20b013df3389a80}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-strsm@{cblas\-\_\-strsm}}
+\index{cblas\-\_\-strsm@{cblas\-\_\-strsm}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-strsm}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-strsm (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E}}]{Side, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const float}]{alpha, }
+\item[{const float $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{float $\ast$}]{B, }
+\item[{const int}]{ldb}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a8b9090a4c0baddb2e20b013df3389a80}
+\hypertarget{cblas_8h_a2798be7347823849df32f2f107f188c5}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-strsv@{cblas\-\_\-strsv}}
+\index{cblas\-\_\-strsv@{cblas\-\_\-strsv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-strsv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-strsv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{N, }
+\item[{const float $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{float $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a2798be7347823849df32f2f107f188c5}
+\hypertarget{cblas_8h_ab39ee7e78e8218cf8bdc329ca3cc9cf7}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-xerbla@{cblas\-\_\-xerbla}}
+\index{cblas\-\_\-xerbla@{cblas\-\_\-xerbla}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-xerbla}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-xerbla (
+\begin{DoxyParamCaption}
+\item[{int}]{p, }
+\item[{const char $\ast$}]{rout, }
+\item[{const char $\ast$}]{form, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ab39ee7e78e8218cf8bdc329ca3cc9cf7}
+\hypertarget{cblas_8h_a2b7b182b84c3f44f68adcf6b4fb12336}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zaxpy@{cblas\-\_\-zaxpy}}
+\index{cblas\-\_\-zaxpy@{cblas\-\_\-zaxpy}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zaxpy}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zaxpy (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a2b7b182b84c3f44f68adcf6b4fb12336}
+\hypertarget{cblas_8h_a95dc840a9c51a8e74ba4261775f8ab08}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zcopy@{cblas\-\_\-zcopy}}
+\index{cblas\-\_\-zcopy@{cblas\-\_\-zcopy}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zcopy}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zcopy (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a95dc840a9c51a8e74ba4261775f8ab08}
+\hypertarget{cblas_8h_a1ae4771110c2a0197c60858b5c0195ac}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zdotc\-\_\-sub@{cblas\-\_\-zdotc\-\_\-sub}}
+\index{cblas\-\_\-zdotc\-\_\-sub@{cblas\-\_\-zdotc\-\_\-sub}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zdotc\-\_\-sub}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zdotc\-\_\-sub (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y, }
+\item[{void $\ast$}]{dotc}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a1ae4771110c2a0197c60858b5c0195ac}
+\hypertarget{cblas_8h_aa7438584410310da772020b0ad38665b}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zdotu\-\_\-sub@{cblas\-\_\-zdotu\-\_\-sub}}
+\index{cblas\-\_\-zdotu\-\_\-sub@{cblas\-\_\-zdotu\-\_\-sub}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zdotu\-\_\-sub}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zdotu\-\_\-sub (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y, }
+\item[{void $\ast$}]{dotu}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_aa7438584410310da772020b0ad38665b}
+\hypertarget{cblas_8h_a0ecf105ed6aa38f47f180c0aed128876}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zdscal@{cblas\-\_\-zdscal}}
+\index{cblas\-\_\-zdscal@{cblas\-\_\-zdscal}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zdscal}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zdscal (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const double}]{alpha, }
+\item[{void $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a0ecf105ed6aa38f47f180c0aed128876}
+\hypertarget{cblas_8h_ae9b554dd77895f2bb23c3ebe4aa5c20b}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zgbmv@{cblas\-\_\-zgbmv}}
+\index{cblas\-\_\-zgbmv@{cblas\-\_\-zgbmv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zgbmv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zgbmv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const int}]{K\-L, }
+\item[{const int}]{K\-U, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const void $\ast$}]{beta, }
+\item[{void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ae9b554dd77895f2bb23c3ebe4aa5c20b}
+\hypertarget{cblas_8h_a4e33f93b23914217bea67e9d3d9b08fe}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zgemm@{cblas\-\_\-zgemm}}
+\index{cblas\-\_\-zgemm@{cblas\-\_\-zgemm}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zgemm}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zgemm (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-B, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const void $\ast$}]{B, }
+\item[{const int}]{ldb, }
+\item[{const void $\ast$}]{beta, }
+\item[{void $\ast$}]{C, }
+\item[{const int}]{ldc}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a4e33f93b23914217bea67e9d3d9b08fe}
+\hypertarget{cblas_8h_af4db7adbf4d6af7ba452c1848cd04b2b}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zgemv@{cblas\-\_\-zgemv}}
+\index{cblas\-\_\-zgemv@{cblas\-\_\-zgemv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zgemv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zgemv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const void $\ast$}]{beta, }
+\item[{void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_af4db7adbf4d6af7ba452c1848cd04b2b}
+\hypertarget{cblas_8h_a84e3f95d8aab8f8ab6bbe885073c8d07}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zgerc@{cblas\-\_\-zgerc}}
+\index{cblas\-\_\-zgerc@{cblas\-\_\-zgerc}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zgerc}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zgerc (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y, }
+\item[{void $\ast$}]{A, }
+\item[{const int}]{lda}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a84e3f95d8aab8f8ab6bbe885073c8d07}
+\hypertarget{cblas_8h_ab2dbf2a585614116d138ba553ecef3cd}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zgeru@{cblas\-\_\-zgeru}}
+\index{cblas\-\_\-zgeru@{cblas\-\_\-zgeru}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zgeru}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zgeru (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y, }
+\item[{void $\ast$}]{A, }
+\item[{const int}]{lda}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ab2dbf2a585614116d138ba553ecef3cd}
+\hypertarget{cblas_8h_a6ea702f5140763080f7db377430127bf}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zhbmv@{cblas\-\_\-zhbmv}}
+\index{cblas\-\_\-zhbmv@{cblas\-\_\-zhbmv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zhbmv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zhbmv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const void $\ast$}]{beta, }
+\item[{void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a6ea702f5140763080f7db377430127bf}
+\hypertarget{cblas_8h_a197090ab1f908592e3118dbda4f9eece}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zhemm@{cblas\-\_\-zhemm}}
+\index{cblas\-\_\-zhemm@{cblas\-\_\-zhemm}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zhemm}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zhemm (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E}}]{Side, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const void $\ast$}]{B, }
+\item[{const int}]{ldb, }
+\item[{const void $\ast$}]{beta, }
+\item[{void $\ast$}]{C, }
+\item[{const int}]{ldc}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a197090ab1f908592e3118dbda4f9eece}
+\hypertarget{cblas_8h_af8e1eda5e4b27fdd6bf5480e9428bf2e}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zhemv@{cblas\-\_\-zhemv}}
+\index{cblas\-\_\-zhemv@{cblas\-\_\-zhemv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zhemv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zhemv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const void $\ast$}]{beta, }
+\item[{void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_af8e1eda5e4b27fdd6bf5480e9428bf2e}
+\hypertarget{cblas_8h_a8909366a3dacb77b6cd8dcd083344a6e}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zher@{cblas\-\_\-zher}}
+\index{cblas\-\_\-zher@{cblas\-\_\-zher}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zher}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zher (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const double}]{alpha, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{void $\ast$}]{A, }
+\item[{const int}]{lda}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a8909366a3dacb77b6cd8dcd083344a6e}
+\hypertarget{cblas_8h_ad87fec56c637b549fc61d6f60eac3b1e}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zher2@{cblas\-\_\-zher2}}
+\index{cblas\-\_\-zher2@{cblas\-\_\-zher2}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zher2}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zher2 (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y, }
+\item[{void $\ast$}]{A, }
+\item[{const int}]{lda}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ad87fec56c637b549fc61d6f60eac3b1e}
+\hypertarget{cblas_8h_af28c56c642291f677ec5430e24620c92}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zher2k@{cblas\-\_\-zher2k}}
+\index{cblas\-\_\-zher2k@{cblas\-\_\-zher2k}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zher2k}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zher2k (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const void $\ast$}]{B, }
+\item[{const int}]{ldb, }
+\item[{const double}]{beta, }
+\item[{void $\ast$}]{C, }
+\item[{const int}]{ldc}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_af28c56c642291f677ec5430e24620c92}
+\hypertarget{cblas_8h_aeefbb632665caa68d0dda3f99a784887}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zherk@{cblas\-\_\-zherk}}
+\index{cblas\-\_\-zherk@{cblas\-\_\-zherk}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zherk}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zherk (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const double}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const double}]{beta, }
+\item[{void $\ast$}]{C, }
+\item[{const int}]{ldc}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_aeefbb632665caa68d0dda3f99a784887}
+\hypertarget{cblas_8h_aa82093c7489f069e60b9a5e510a8a612}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zhpmv@{cblas\-\_\-zhpmv}}
+\index{cblas\-\_\-zhpmv@{cblas\-\_\-zhpmv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zhpmv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zhpmv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{Ap, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const void $\ast$}]{beta, }
+\item[{void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_aa82093c7489f069e60b9a5e510a8a612}
+\hypertarget{cblas_8h_a1f64429f0205173ea48b7988d48efb17}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zhpr@{cblas\-\_\-zhpr}}
+\index{cblas\-\_\-zhpr@{cblas\-\_\-zhpr}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zhpr}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zhpr (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const double}]{alpha, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{void $\ast$}]{A}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a1f64429f0205173ea48b7988d48efb17}
+\hypertarget{cblas_8h_ae3acead88cefb7cf75ca09b5b521210a}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zhpr2@{cblas\-\_\-zhpr2}}
+\index{cblas\-\_\-zhpr2@{cblas\-\_\-zhpr2}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zhpr2}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zhpr2 (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{const void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y, }
+\item[{void $\ast$}]{Ap}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ae3acead88cefb7cf75ca09b5b521210a}
+\hypertarget{cblas_8h_a1948af9bf4648950fd0d5af8c552ed32}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zscal@{cblas\-\_\-zscal}}
+\index{cblas\-\_\-zscal@{cblas\-\_\-zscal}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zscal}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zscal (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{void $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a1948af9bf4648950fd0d5af8c552ed32}
+\hypertarget{cblas_8h_a5695f0afe890ea477407bcd2a5a8ca9b}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zswap@{cblas\-\_\-zswap}}
+\index{cblas\-\_\-zswap@{cblas\-\_\-zswap}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zswap}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zswap (
+\begin{DoxyParamCaption}
+\item[{const int}]{N, }
+\item[{void $\ast$}]{X, }
+\item[{const int}]{inc\-X, }
+\item[{void $\ast$}]{Y, }
+\item[{const int}]{inc\-Y}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a5695f0afe890ea477407bcd2a5a8ca9b}
+\hypertarget{cblas_8h_a9daee74ed0f5295c29c8c6c6ddcd7b46}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zsymm@{cblas\-\_\-zsymm}}
+\index{cblas\-\_\-zsymm@{cblas\-\_\-zsymm}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zsymm}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zsymm (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E}}]{Side, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const void $\ast$}]{B, }
+\item[{const int}]{ldb, }
+\item[{const void $\ast$}]{beta, }
+\item[{void $\ast$}]{C, }
+\item[{const int}]{ldc}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a9daee74ed0f5295c29c8c6c6ddcd7b46}
+\hypertarget{cblas_8h_ad6cf2ef76816cddb6ea1d9605d79947b}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zsyr2k@{cblas\-\_\-zsyr2k}}
+\index{cblas\-\_\-zsyr2k@{cblas\-\_\-zsyr2k}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zsyr2k}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zsyr2k (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const void $\ast$}]{B, }
+\item[{const int}]{ldb, }
+\item[{const void $\ast$}]{beta, }
+\item[{void $\ast$}]{C, }
+\item[{const int}]{ldc}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ad6cf2ef76816cddb6ea1d9605d79947b}
+\hypertarget{cblas_8h_a3501cedb5f49a445676f668965c01ab4}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-zsyrk@{cblas\-\_\-zsyrk}}
+\index{cblas\-\_\-zsyrk@{cblas\-\_\-zsyrk}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-zsyrk}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-zsyrk (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{const void $\ast$}]{beta, }
+\item[{void $\ast$}]{C, }
+\item[{const int}]{ldc}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a3501cedb5f49a445676f668965c01ab4}
+\hypertarget{cblas_8h_a61c053460f1424f04206a4b4019d56c2}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ztbmv@{cblas\-\_\-ztbmv}}
+\index{cblas\-\_\-ztbmv@{cblas\-\_\-ztbmv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ztbmv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-ztbmv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{void $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a61c053460f1424f04206a4b4019d56c2}
+\hypertarget{cblas_8h_ae986d5da5bb3b36bb092b84b53e21179}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ztbsv@{cblas\-\_\-ztbsv}}
+\index{cblas\-\_\-ztbsv@{cblas\-\_\-ztbsv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ztbsv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-ztbsv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{N, }
+\item[{const int}]{K, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{void $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ae986d5da5bb3b36bb092b84b53e21179}
+\hypertarget{cblas_8h_afb60b16cec1011d45c3ef380f06b339e}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ztpmv@{cblas\-\_\-ztpmv}}
+\index{cblas\-\_\-ztpmv@{cblas\-\_\-ztpmv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ztpmv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-ztpmv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{Ap, }
+\item[{void $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_afb60b16cec1011d45c3ef380f06b339e}
+\hypertarget{cblas_8h_afa1286da5f69a14a1444ec81613836f1}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ztpsv@{cblas\-\_\-ztpsv}}
+\index{cblas\-\_\-ztpsv@{cblas\-\_\-ztpsv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ztpsv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-ztpsv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{Ap, }
+\item[{void $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_afa1286da5f69a14a1444ec81613836f1}
+\hypertarget{cblas_8h_abb62cb4c7c763ad00d048c8297e210d9}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ztrmm@{cblas\-\_\-ztrmm}}
+\index{cblas\-\_\-ztrmm@{cblas\-\_\-ztrmm}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ztrmm}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-ztrmm (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E}}]{Side, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{void $\ast$}]{B, }
+\item[{const int}]{ldb}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_abb62cb4c7c763ad00d048c8297e210d9}
+\hypertarget{cblas_8h_a1ad970222e5372436604fb78d3864b66}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ztrmv@{cblas\-\_\-ztrmv}}
+\index{cblas\-\_\-ztrmv@{cblas\-\_\-ztrmv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ztrmv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-ztrmv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{void $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a1ad970222e5372436604fb78d3864b66}
+\hypertarget{cblas_8h_ae3417125bfedcfaa5a1f878abc6760e7}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ztrsm@{cblas\-\_\-ztrsm}}
+\index{cblas\-\_\-ztrsm@{cblas\-\_\-ztrsm}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ztrsm}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-ztrsm (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{Order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-S\-I\-D\-E}}]{Side, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{M, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{alpha, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{void $\ast$}]{B, }
+\item[{const int}]{ldb}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_ae3417125bfedcfaa5a1f878abc6760e7}
+\hypertarget{cblas_8h_a16369e6950e197bf63c0f4e7ea461405}{\index{cblas.\-h@{cblas.\-h}!cblas\-\_\-ztrsv@{cblas\-\_\-ztrsv}}
+\index{cblas\-\_\-ztrsv@{cblas\-\_\-ztrsv}!cblas.h@{cblas.\-h}}
+\subsubsection[{cblas\-\_\-ztrsv}]{\setlength{\rightskip}{0pt plus 5cm}void cblas\-\_\-ztrsv (
+\begin{DoxyParamCaption}
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-O\-R\-D\-E\-R}}]{order, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-U\-P\-L\-O}}]{Uplo, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-T\-R\-A\-N\-S\-P\-O\-S\-E}}]{Trans\-A, }
+\item[{const enum {\bf C\-B\-L\-A\-S\-\_\-\-D\-I\-A\-G}}]{Diag, }
+\item[{const int}]{N, }
+\item[{const void $\ast$}]{A, }
+\item[{const int}]{lda, }
+\item[{void $\ast$}]{X, }
+\item[{const int}]{inc\-X}
+\end{DoxyParamCaption}
+)}}\label{cblas_8h_a16369e6950e197bf63c0f4e7ea461405}

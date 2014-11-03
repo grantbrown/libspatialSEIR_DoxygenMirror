@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['oclprovider',['OCLProvider',['../classSpatialSEIR_1_1OCLProvider.html#a09cfbb1c69ee8427af6f20c94b4939e3',1,'SpatialSEIR::OCLProvider']]]
+  ['normal',['normal',['../classSpatialSEIR_1_1RandomNumberProvider.html#a06dbed8db603b3c6d8dd6aafba9ab030',1,'SpatialSEIR::RandomNumberProvider']]]
 ];

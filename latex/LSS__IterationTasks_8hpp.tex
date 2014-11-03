@@ -11,6 +11,8 @@ class \hyperlink{classSpatialSEIR_1_1IterationTask}{Spatial\-S\-E\-I\-R\-::\-Ite
 class \hyperlink{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask}{Spatial\-S\-E\-I\-R\-::\-Set\-Compartment\-Sampling\-Indices\-Task}
 \item 
 class \hyperlink{classSpatialSEIR_1_1PerformDecorrelationStep}{Spatial\-S\-E\-I\-R\-::\-Perform\-Decorrelation\-Step}
+\item 
+class \hyperlink{classSpatialSEIR_1_1PerformHybridSE__EI__UpdateStep}{Spatial\-S\-E\-I\-R\-::\-Perform\-Hybrid\-S\-E\-\_\-\-E\-I\-\_\-\-Update\-Step}
 \end{DoxyCompactItemize}
 \subsection*{Namespaces}
 \begin{DoxyCompactItemize}
@@ -25,6 +27,8 @@ class \hyperlink{classSpatialSEIR_1_1PerformDecorrelationStep}{Spatial\-S\-E\-I\
 \#define \hyperlink{LSS__IterationTasks_8hpp_a2cfcd3bee1888ac937405f3e4a796ba9}{L\-S\-S\-\_\-\-S\-A\-M\-P\-L\-I\-N\-G\-\_\-\-I\-N\-D\-E\-X\-\_\-\-T\-A\-S\-K\-\_\-\-T\-Y\-P\-E}~1
 \item 
 \#define \hyperlink{LSS__IterationTasks_8hpp_a69145546cd82fe739ec34a9506498a01}{L\-S\-S\-\_\-\-D\-E\-C\-O\-R\-R\-E\-L\-A\-T\-I\-O\-N\-\_\-\-S\-T\-E\-P\-\_\-\-T\-A\-S\-K\-\_\-\-T\-Y\-P\-E}~2
+\item 
+\#define \hyperlink{LSS__IterationTasks_8hpp_aca1bbd4ac7458d8d6bb52b6a85f9903f}{L\-S\-S\-\_\-\-H\-Y\-B\-R\-I\-D\-\_\-\-S\-E\-\_\-\-E\-I\-\_\-\-U\-P\-D\-A\-T\-E\-\_\-\-S\-T\-E\-P\-\_\-\-T\-A\-S\-K\-\_\-\-T\-Y\-P\-E}~3
 \end{DoxyCompactItemize}
 
 
@@ -32,6 +36,9 @@ class \hyperlink{classSpatialSEIR_1_1PerformDecorrelationStep}{Spatial\-S\-E\-I\
 \hypertarget{LSS__IterationTasks_8hpp_a69145546cd82fe739ec34a9506498a01}{\index{L\-S\-S\-\_\-\-Iteration\-Tasks.\-hpp@{L\-S\-S\-\_\-\-Iteration\-Tasks.\-hpp}!L\-S\-S\-\_\-\-D\-E\-C\-O\-R\-R\-E\-L\-A\-T\-I\-O\-N\-\_\-\-S\-T\-E\-P\-\_\-\-T\-A\-S\-K\-\_\-\-T\-Y\-P\-E@{L\-S\-S\-\_\-\-D\-E\-C\-O\-R\-R\-E\-L\-A\-T\-I\-O\-N\-\_\-\-S\-T\-E\-P\-\_\-\-T\-A\-S\-K\-\_\-\-T\-Y\-P\-E}}
 \index{L\-S\-S\-\_\-\-D\-E\-C\-O\-R\-R\-E\-L\-A\-T\-I\-O\-N\-\_\-\-S\-T\-E\-P\-\_\-\-T\-A\-S\-K\-\_\-\-T\-Y\-P\-E@{L\-S\-S\-\_\-\-D\-E\-C\-O\-R\-R\-E\-L\-A\-T\-I\-O\-N\-\_\-\-S\-T\-E\-P\-\_\-\-T\-A\-S\-K\-\_\-\-T\-Y\-P\-E}!LSS_IterationTasks.hpp@{L\-S\-S\-\_\-\-Iteration\-Tasks.\-hpp}}
 \subsubsection[{L\-S\-S\-\_\-\-D\-E\-C\-O\-R\-R\-E\-L\-A\-T\-I\-O\-N\-\_\-\-S\-T\-E\-P\-\_\-\-T\-A\-S\-K\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-S\-S\-\_\-\-D\-E\-C\-O\-R\-R\-E\-L\-A\-T\-I\-O\-N\-\_\-\-S\-T\-E\-P\-\_\-\-T\-A\-S\-K\-\_\-\-T\-Y\-P\-E~2}}\label{LSS__IterationTasks_8hpp_a69145546cd82fe739ec34a9506498a01}
+\hypertarget{LSS__IterationTasks_8hpp_aca1bbd4ac7458d8d6bb52b6a85f9903f}{\index{L\-S\-S\-\_\-\-Iteration\-Tasks.\-hpp@{L\-S\-S\-\_\-\-Iteration\-Tasks.\-hpp}!L\-S\-S\-\_\-\-H\-Y\-B\-R\-I\-D\-\_\-\-S\-E\-\_\-\-E\-I\-\_\-\-U\-P\-D\-A\-T\-E\-\_\-\-S\-T\-E\-P\-\_\-\-T\-A\-S\-K\-\_\-\-T\-Y\-P\-E@{L\-S\-S\-\_\-\-H\-Y\-B\-R\-I\-D\-\_\-\-S\-E\-\_\-\-E\-I\-\_\-\-U\-P\-D\-A\-T\-E\-\_\-\-S\-T\-E\-P\-\_\-\-T\-A\-S\-K\-\_\-\-T\-Y\-P\-E}}
+\index{L\-S\-S\-\_\-\-H\-Y\-B\-R\-I\-D\-\_\-\-S\-E\-\_\-\-E\-I\-\_\-\-U\-P\-D\-A\-T\-E\-\_\-\-S\-T\-E\-P\-\_\-\-T\-A\-S\-K\-\_\-\-T\-Y\-P\-E@{L\-S\-S\-\_\-\-H\-Y\-B\-R\-I\-D\-\_\-\-S\-E\-\_\-\-E\-I\-\_\-\-U\-P\-D\-A\-T\-E\-\_\-\-S\-T\-E\-P\-\_\-\-T\-A\-S\-K\-\_\-\-T\-Y\-P\-E}!LSS_IterationTasks.hpp@{L\-S\-S\-\_\-\-Iteration\-Tasks.\-hpp}}
+\subsubsection[{L\-S\-S\-\_\-\-H\-Y\-B\-R\-I\-D\-\_\-\-S\-E\-\_\-\-E\-I\-\_\-\-U\-P\-D\-A\-T\-E\-\_\-\-S\-T\-E\-P\-\_\-\-T\-A\-S\-K\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-S\-S\-\_\-\-H\-Y\-B\-R\-I\-D\-\_\-\-S\-E\-\_\-\-E\-I\-\_\-\-U\-P\-D\-A\-T\-E\-\_\-\-S\-T\-E\-P\-\_\-\-T\-A\-S\-K\-\_\-\-T\-Y\-P\-E~3}}\label{LSS__IterationTasks_8hpp_aca1bbd4ac7458d8d6bb52b6a85f9903f}
 \hypertarget{LSS__IterationTasks_8hpp_a908934c8ef6f865572835aab3547145f}{\index{L\-S\-S\-\_\-\-Iteration\-Tasks.\-hpp@{L\-S\-S\-\_\-\-Iteration\-Tasks.\-hpp}!L\-S\-S\-\_\-\-I\-T\-E\-R\-A\-T\-I\-O\-N\-\_\-\-T\-A\-S\-K\-S\-\_\-\-I\-N\-C@{L\-S\-S\-\_\-\-I\-T\-E\-R\-A\-T\-I\-O\-N\-\_\-\-T\-A\-S\-K\-S\-\_\-\-I\-N\-C}}
 \index{L\-S\-S\-\_\-\-I\-T\-E\-R\-A\-T\-I\-O\-N\-\_\-\-T\-A\-S\-K\-S\-\_\-\-I\-N\-C@{L\-S\-S\-\_\-\-I\-T\-E\-R\-A\-T\-I\-O\-N\-\_\-\-T\-A\-S\-K\-S\-\_\-\-I\-N\-C}!LSS_IterationTasks.hpp@{L\-S\-S\-\_\-\-Iteration\-Tasks.\-hpp}}
 \subsubsection[{L\-S\-S\-\_\-\-I\-T\-E\-R\-A\-T\-I\-O\-N\-\_\-\-T\-A\-S\-K\-S\-\_\-\-I\-N\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-S\-S\-\_\-\-I\-T\-E\-R\-A\-T\-I\-O\-N\-\_\-\-T\-A\-S\-K\-S\-\_\-\-I\-N\-C}}\label{LSS__IterationTasks_8hpp_a908934c8ef6f865572835aab3547145f}

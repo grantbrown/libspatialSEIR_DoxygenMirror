@@ -22,7 +22,7 @@ var searchData=
   ['inrow_5fz',['inRow_z',['../structSpatialSEIR_1_1covariateArgs.html#a669bcd8ad82576664761bb25bfaba53e',1,'SpatialSEIR::covariateArgs']]],
   ['isopen',['isOpen',['../classSpatialSEIR_1_1IOProvider.html#ac482c0b2eccc9c587a08ae61f588e23e',1,'SpatialSEIR::IOProvider']]],
   ['ispopulated',['isPopulated',['../classSpatialSEIR_1_1ModelContext.html#a698a8889db239e919323d764775a2148',1,'SpatialSEIR::ModelContext']]],
-  ['iterationcount',['iterationCount',['../classSpatialSEIR_1_1PerformDecorrelationStep.html#a78eb6b88ca3e77d7cb482ad30bbfa552',1,'SpatialSEIR::PerformDecorrelationStep']]],
+  ['iterationcount',['iterationCount',['../classSpatialSEIR_1_1PerformDecorrelationStep.html#a78eb6b88ca3e77d7cb482ad30bbfa552',1,'SpatialSEIR::PerformDecorrelationStep::iterationCount()'],['../classSpatialSEIR_1_1PerformHybridSE__EI__UpdateStep.html#adba72b268c525551ffd68721cfe766e1',1,'SpatialSEIR::PerformHybridSE_EI_UpdateStep::iterationCount()']]],
   ['iterationstride',['iterationStride',['../classSpatialSEIR_1_1IOProvider.html#a756afb68ee349d9715566fa9fdc4d37e',1,'SpatialSEIR::IOProvider']]],
   ['iterationtasks',['iterationTasks',['../classSpatialSEIR_1_1ModelContext.html#a681f80cc35dd7a8bf8784710a9175d47',1,'SpatialSEIR::ModelContext']]]
 ];

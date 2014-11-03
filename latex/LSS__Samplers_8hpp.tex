@@ -8,6 +8,10 @@
 \item 
 class \hyperlink{classSpatialSEIR_1_1Sampler}{Spatial\-S\-E\-I\-R\-::\-Sampler}
 \item 
+class \hyperlink{classSpatialSEIR_1_1ParameterNullSampler}{Spatial\-S\-E\-I\-R\-::\-Parameter\-Null\-Sampler}
+\item 
+class \hyperlink{classSpatialSEIR_1_1ParameterHybridSampler}{Spatial\-S\-E\-I\-R\-::\-Parameter\-Hybrid\-Sampler}
+\item 
 class \hyperlink{classSpatialSEIR_1_1CompartmentMetropolisSampler}{Spatial\-S\-E\-I\-R\-::\-Compartment\-Metropolis\-Sampler}
 \item 
 class \hyperlink{classSpatialSEIR_1_1CompartmentMetropolisSampler__OCL}{Spatial\-S\-E\-I\-R\-::\-Compartment\-Metropolis\-Sampler\-\_\-\-O\-C\-L}
@@ -81,6 +85,10 @@ class \hyperlink{classSpatialSEIR_1_1ParameterDecorrelationSampler}{Spatial\-S\-
 \#define \hyperlink{LSS__Samplers_8hpp_ab2963a6a899d704821aef7f1e73c8060}{I\-N\-I\-T\-C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-M\-E\-T\-R\-O\-P\-O\-L\-I\-S\-\_\-\-S\-A\-M\-P\-L\-E\-R\-\_\-\-O\-C\-L}~12
 \item 
 \#define \hyperlink{LSS__Samplers_8hpp_a521acbf9b805b99ae1c5534d8a8ad94b}{P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-J\-O\-I\-N\-T\-\_\-\-M\-E\-T\-R\-O\-P\-O\-L\-I\-S\-\_\-\-S\-A\-M\-P\-L\-E\-R\-\_\-\-O\-C\-L}~13
+\item 
+\#define \hyperlink{LSS__Samplers_8hpp_a0f34829a1248cdcb52004eb1e93fb5b4}{P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-N\-U\-L\-L\-\_\-\-S\-A\-M\-P\-L\-E\-R}~17
+\item 
+\#define \hyperlink{LSS__Samplers_8hpp_a12f15b8595ae049dea1724c3643b7de1}{H\-Y\-B\-R\-I\-D\-\_\-\-S\-A\-M\-P\-L\-E\-R\-\_\-\-B\-E\-T\-A\-\_\-\-P\-\_\-\-E\-I}~18
 \end{DoxyCompactItemize}
 
 
@@ -106,6 +114,9 @@ class \hyperlink{classSpatialSEIR_1_1ParameterDecorrelationSampler}{Spatial\-S\-
 \hypertarget{LSS__Samplers_8hpp_a68258b8f6f41eb3f0e003366e75e4254}{\index{L\-S\-S\-\_\-\-Samplers.\-hpp@{L\-S\-S\-\_\-\-Samplers.\-hpp}!C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-M\-E\-T\-R\-O\-P\-O\-L\-I\-S\-\_\-\-S\-A\-M\-P\-L\-E\-R\-\_\-\-O\-C\-L@{C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-M\-E\-T\-R\-O\-P\-O\-L\-I\-S\-\_\-\-S\-A\-M\-P\-L\-E\-R\-\_\-\-O\-C\-L}}
 \index{C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-M\-E\-T\-R\-O\-P\-O\-L\-I\-S\-\_\-\-S\-A\-M\-P\-L\-E\-R\-\_\-\-O\-C\-L@{C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-M\-E\-T\-R\-O\-P\-O\-L\-I\-S\-\_\-\-S\-A\-M\-P\-L\-E\-R\-\_\-\-O\-C\-L}!LSS_Samplers.hpp@{L\-S\-S\-\_\-\-Samplers.\-hpp}}
 \subsubsection[{C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-M\-E\-T\-R\-O\-P\-O\-L\-I\-S\-\_\-\-S\-A\-M\-P\-L\-E\-R\-\_\-\-O\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-M\-E\-T\-R\-O\-P\-O\-L\-I\-S\-\_\-\-S\-A\-M\-P\-L\-E\-R\-\_\-\-O\-C\-L~11}}\label{LSS__Samplers_8hpp_a68258b8f6f41eb3f0e003366e75e4254}
+\hypertarget{LSS__Samplers_8hpp_a12f15b8595ae049dea1724c3643b7de1}{\index{L\-S\-S\-\_\-\-Samplers.\-hpp@{L\-S\-S\-\_\-\-Samplers.\-hpp}!H\-Y\-B\-R\-I\-D\-\_\-\-S\-A\-M\-P\-L\-E\-R\-\_\-\-B\-E\-T\-A\-\_\-\-P\-\_\-\-E\-I@{H\-Y\-B\-R\-I\-D\-\_\-\-S\-A\-M\-P\-L\-E\-R\-\_\-\-B\-E\-T\-A\-\_\-\-P\-\_\-\-E\-I}}
+\index{H\-Y\-B\-R\-I\-D\-\_\-\-S\-A\-M\-P\-L\-E\-R\-\_\-\-B\-E\-T\-A\-\_\-\-P\-\_\-\-E\-I@{H\-Y\-B\-R\-I\-D\-\_\-\-S\-A\-M\-P\-L\-E\-R\-\_\-\-B\-E\-T\-A\-\_\-\-P\-\_\-\-E\-I}!LSS_Samplers.hpp@{L\-S\-S\-\_\-\-Samplers.\-hpp}}
+\subsubsection[{H\-Y\-B\-R\-I\-D\-\_\-\-S\-A\-M\-P\-L\-E\-R\-\_\-\-B\-E\-T\-A\-\_\-\-P\-\_\-\-E\-I}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\-Y\-B\-R\-I\-D\-\_\-\-S\-A\-M\-P\-L\-E\-R\-\_\-\-B\-E\-T\-A\-\_\-\-P\-\_\-\-E\-I~18}}\label{LSS__Samplers_8hpp_a12f15b8595ae049dea1724c3643b7de1}
 \hypertarget{LSS__Samplers_8hpp_a149be7241f9f075e03fdcfc5aae3cd76}{\index{L\-S\-S\-\_\-\-Samplers.\-hpp@{L\-S\-S\-\_\-\-Samplers.\-hpp}!I\-N\-I\-T\-C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-I\-D\-X\-\_\-\-M\-E\-T\-R\-O\-P\-O\-L\-I\-S\-\_\-\-S\-A\-M\-P\-L\-E\-R@{I\-N\-I\-T\-C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-I\-D\-X\-\_\-\-M\-E\-T\-R\-O\-P\-O\-L\-I\-S\-\_\-\-S\-A\-M\-P\-L\-E\-R}}
 \index{I\-N\-I\-T\-C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-I\-D\-X\-\_\-\-M\-E\-T\-R\-O\-P\-O\-L\-I\-S\-\_\-\-S\-A\-M\-P\-L\-E\-R@{I\-N\-I\-T\-C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-I\-D\-X\-\_\-\-M\-E\-T\-R\-O\-P\-O\-L\-I\-S\-\_\-\-S\-A\-M\-P\-L\-E\-R}!LSS_Samplers.hpp@{L\-S\-S\-\_\-\-Samplers.\-hpp}}
 \subsubsection[{I\-N\-I\-T\-C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-I\-D\-X\-\_\-\-M\-E\-T\-R\-O\-P\-O\-L\-I\-S\-\_\-\-S\-A\-M\-P\-L\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-N\-I\-T\-C\-O\-M\-P\-A\-R\-T\-M\-E\-N\-T\-\_\-\-I\-D\-X\-\_\-\-M\-E\-T\-R\-O\-P\-O\-L\-I\-S\-\_\-\-S\-A\-M\-P\-L\-E\-R~5}}\label{LSS__Samplers_8hpp_a149be7241f9f075e03fdcfc5aae3cd76}
@@ -133,6 +144,9 @@ class \hyperlink{classSpatialSEIR_1_1ParameterDecorrelationSampler}{Spatial\-S\-
 \hypertarget{LSS__Samplers_8hpp_a857b09eb4601eb9695015df0cf5bedf7}{\index{L\-S\-S\-\_\-\-Samplers.\-hpp@{L\-S\-S\-\_\-\-Samplers.\-hpp}!P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-J\-O\-I\-N\-T\-\_\-\-S\-L\-I\-C\-E\-\_\-\-S\-A\-M\-P\-L\-E\-R@{P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-J\-O\-I\-N\-T\-\_\-\-S\-L\-I\-C\-E\-\_\-\-S\-A\-M\-P\-L\-E\-R}}
 \index{P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-J\-O\-I\-N\-T\-\_\-\-S\-L\-I\-C\-E\-\_\-\-S\-A\-M\-P\-L\-E\-R@{P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-J\-O\-I\-N\-T\-\_\-\-S\-L\-I\-C\-E\-\_\-\-S\-A\-M\-P\-L\-E\-R}!LSS_Samplers.hpp@{L\-S\-S\-\_\-\-Samplers.\-hpp}}
 \subsubsection[{P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-J\-O\-I\-N\-T\-\_\-\-S\-L\-I\-C\-E\-\_\-\-S\-A\-M\-P\-L\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-J\-O\-I\-N\-T\-\_\-\-S\-L\-I\-C\-E\-\_\-\-S\-A\-M\-P\-L\-E\-R~9}}\label{LSS__Samplers_8hpp_a857b09eb4601eb9695015df0cf5bedf7}
+\hypertarget{LSS__Samplers_8hpp_a0f34829a1248cdcb52004eb1e93fb5b4}{\index{L\-S\-S\-\_\-\-Samplers.\-hpp@{L\-S\-S\-\_\-\-Samplers.\-hpp}!P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-N\-U\-L\-L\-\_\-\-S\-A\-M\-P\-L\-E\-R@{P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-N\-U\-L\-L\-\_\-\-S\-A\-M\-P\-L\-E\-R}}
+\index{P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-N\-U\-L\-L\-\_\-\-S\-A\-M\-P\-L\-E\-R@{P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-N\-U\-L\-L\-\_\-\-S\-A\-M\-P\-L\-E\-R}!LSS_Samplers.hpp@{L\-S\-S\-\_\-\-Samplers.\-hpp}}
+\subsubsection[{P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-N\-U\-L\-L\-\_\-\-S\-A\-M\-P\-L\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-N\-U\-L\-L\-\_\-\-S\-A\-M\-P\-L\-E\-R~17}}\label{LSS__Samplers_8hpp_a0f34829a1248cdcb52004eb1e93fb5b4}
 \hypertarget{LSS__Samplers_8hpp_a45d557c90c2bec1b2f9e7c40a7edcdac}{\index{L\-S\-S\-\_\-\-Samplers.\-hpp@{L\-S\-S\-\_\-\-Samplers.\-hpp}!P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-S\-I\-N\-G\-L\-E\-\_\-\-M\-E\-T\-R\-O\-P\-O\-L\-I\-S\-\_\-\-S\-A\-M\-P\-L\-E\-R@{P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-S\-I\-N\-G\-L\-E\-\_\-\-M\-E\-T\-R\-O\-P\-O\-L\-I\-S\-\_\-\-S\-A\-M\-P\-L\-E\-R}}
 \index{P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-S\-I\-N\-G\-L\-E\-\_\-\-M\-E\-T\-R\-O\-P\-O\-L\-I\-S\-\_\-\-S\-A\-M\-P\-L\-E\-R@{P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-S\-I\-N\-G\-L\-E\-\_\-\-M\-E\-T\-R\-O\-P\-O\-L\-I\-S\-\_\-\-S\-A\-M\-P\-L\-E\-R}!LSS_Samplers.hpp@{L\-S\-S\-\_\-\-Samplers.\-hpp}}
 \subsubsection[{P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-S\-I\-N\-G\-L\-E\-\_\-\-M\-E\-T\-R\-O\-P\-O\-L\-I\-S\-\_\-\-S\-A\-M\-P\-L\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-A\-R\-A\-M\-E\-T\-E\-R\-\_\-\-S\-I\-N\-G\-L\-E\-\_\-\-M\-E\-T\-R\-O\-P\-O\-L\-I\-S\-\_\-\-S\-A\-M\-P\-L\-E\-R~7}}\label{LSS__Samplers_8hpp_a45d557c90c2bec1b2f9e7c40a7edcdac}

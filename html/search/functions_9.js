@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['normal',['normal',['../classSpatialSEIR_1_1RandomNumberProvider.html#a06dbed8db603b3c6d8dd6aafba9ab030',1,'SpatialSEIR::RandomNumberProvider']]]
+  ['makerowstochastic',['makeRowStochastic',['../classSpatialSEIR_1_1DistanceMatrix.html#a55c0d0a8fdae58e8f556cdeaefc773ed',1,'SpatialSEIR::DistanceMatrix']]],
+  ['marginsum',['marginSum',['../classSpatialSEIR_1_1CompartmentalModelMatrix.html#a7c9078aef66ee4ef712c542ea9c0e302',1,'SpatialSEIR::CompartmentalModelMatrix']]],
+  ['modelcontext',['ModelContext',['../classSpatialSEIR_1_1ModelContext.html#aa00f6876aa8bff52856656c0a717af69',1,'SpatialSEIR::ModelContext']]]
 ];

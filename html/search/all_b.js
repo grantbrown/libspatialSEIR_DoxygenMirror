@@ -1,13 +1,16 @@
 var searchData=
 [
-  ['n',['N',['../classSpatialSEIR_1_1ModelContext.html#a170b3ee4076d929c5e8012765f825eed',1,'SpatialSEIR::ModelContext']]],
-  ['ncol',['ncol',['../classSpatialSEIR_1_1CompartmentalModelMatrix.html#a7993fa87c9a14c96e0462bd11d075d00',1,'SpatialSEIR::CompartmentalModelMatrix']]],
-  ['ncol_5fx',['ncol_x',['../classSpatialSEIR_1_1CovariateMatrix.html#a84e9369443cf51230067605b13a36702',1,'SpatialSEIR::CovariateMatrix']]],
-  ['ncol_5fz',['ncol_z',['../classSpatialSEIR_1_1CovariateMatrix.html#ac4e692ef3c7fe38cb0c383c561f4991e',1,'SpatialSEIR::CovariateMatrix']]],
-  ['normal',['normal',['../classSpatialSEIR_1_1RandomNumberProvider.html#a06dbed8db603b3c6d8dd6aafba9ab030',1,'SpatialSEIR::RandomNumberProvider']]],
-  ['nrow',['nrow',['../classSpatialSEIR_1_1CompartmentalModelMatrix.html#a7b1ff895cb76d4e58423691de0ee2ce3',1,'SpatialSEIR::CompartmentalModelMatrix']]],
-  ['nrow_5fx',['nrow_x',['../classSpatialSEIR_1_1CovariateMatrix.html#afd333a01394a5aea9ccd3cb34f781a59',1,'SpatialSEIR::CovariateMatrix']]],
-  ['nrow_5fz',['nrow_z',['../classSpatialSEIR_1_1CovariateMatrix.html#a01bcdc77f58b3f98fea4f3fb20edbeae',1,'SpatialSEIR::CovariateMatrix']]],
-  ['numiterations',['numIterations',['../classSpatialSEIR_1_1ModelContext.html#aa8b6063ce0c31c485b42b2de28317ca4',1,'SpatialSEIR::ModelContext']]],
-  ['numlocations',['numLocations',['../classSpatialSEIR_1_1DistanceMatrix.html#ad4efa9884c0b6fa2bd8dcc61ed17263f',1,'SpatialSEIR::DistanceMatrix::numLocations()'],['../classSpatialSEIR_1_1InitData.html#aa9bc45e52403b6a9779acf3ab51f451b',1,'SpatialSEIR::InitData::numLocations()']]]
+  ['makerowstochastic',['makeRowStochastic',['../classSpatialSEIR_1_1DistanceMatrix.html#a55c0d0a8fdae58e8f556cdeaefc773ed',1,'SpatialSEIR::DistanceMatrix']]],
+  ['marginsum',['marginSum',['../classSpatialSEIR_1_1CompartmentalModelMatrix.html#a7c9078aef66ee4ef712c542ea9c0e302',1,'SpatialSEIR::CompartmentalModelMatrix']]],
+  ['matrixmaptype',['MatrixMapType',['../namespaceSpatialSEIR.html#a56ce20bdcae25d006d2ddc637596dbd3',1,'SpatialSEIR']]],
+  ['matrixtype',['MatrixType',['../namespaceSpatialSEIR.html#a998a0502213346d0f88197c232de3331',1,'SpatialSEIR']]],
+  ['mode',['mode',['../structSpatialSEIR_1_1scaledDistanceArgs.html#ad9c4a2a8701453b54110ad51164aa39e',1,'SpatialSEIR::scaledDistanceArgs']]],
+  ['model',['model',['../classSpatialSEIR_1_1ModelContext.html#ad8f3a8fd85bef0ce628c0ea0a5debc8b',1,'SpatialSEIR::ModelContext']]],
+  ['model_5fcontext_5finc',['MODEL_CONTEXT_INC',['../ModelContext_8hpp.html#a9a75963459a910d3e39826dcd734d944',1,'ModelContext.hpp']]],
+  ['modelconfiguration',['modelConfiguration',['../structSpatialSEIR_1_1modelConfiguration.html',1,'SpatialSEIR']]],
+  ['modelcontext',['ModelContext',['../classSpatialSEIR_1_1ModelContext.html',1,'SpatialSEIR']]],
+  ['modelcontext',['ModelContext',['../classSpatialSEIR_1_1ModelContext.html#aa00f6876aa8bff52856656c0a717af69',1,'SpatialSEIR::ModelContext']]],
+  ['modelcontext_2ecpp',['ModelContext.cpp',['../ModelContext_8cpp.html',1,'']]],
+  ['modelcontext_2ehpp',['ModelContext.hpp',['../ModelContext_8hpp.html',1,'']]],
+  ['modelcontextsummaryfunctions_2ecpp',['ModelContextSummaryFunctions.cpp',['../ModelContextSummaryFunctions_8cpp.html',1,'']]]
 ];

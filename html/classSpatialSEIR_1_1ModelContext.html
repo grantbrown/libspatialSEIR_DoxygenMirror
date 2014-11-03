@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -231,10 +231,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9cb6ca074aff51c1f789b81111c7e153"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa450557786a891db5bb3338a047b1544"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatialSEIR_1_1ModelContext.html#aa450557786a891db5bb3338a047b1544">estimateR0</a> ()</td></tr>
 <tr class="separator:aa450557786a891db5bb3338a047b1544"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac392c01b668dfbaaede3c5468a597513"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatialSEIR_1_1ModelContext.html#ac392c01b668dfbaaede3c5468a597513">estimateR0</a> (int t)</td></tr>
-<tr class="separator:ac392c01b668dfbaaede3c5468a597513"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aceb1cb88b80e72b00d560871218c932c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatialSEIR_1_1ModelContext.html#aceb1cb88b80e72b00d560871218c932c">estimateR0</a> (int l, int t)</td></tr>
-<tr class="separator:aceb1cb88b80e72b00d560871218c932c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a950c26a1969e4785b3e3d5bbc9a3f082"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatialSEIR_1_1ModelContext.html#a950c26a1969e4785b3e3d5bbc9a3f082">estimateR0</a> (int t)</td></tr>
+<tr class="separator:a950c26a1969e4785b3e3d5bbc9a3f082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55531781c4053d4ec61f2ecb81689c6d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatialSEIR_1_1ModelContext.html#a55531781c4053d4ec61f2ecb81689c6d">estimateEffectiveR0</a> ()</td></tr>
+<tr class="separator:a55531781c4053d4ec61f2ecb81689c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab950a7d14042e0383197c3fac906b5bd"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatialSEIR_1_1ModelContext.html#ab950a7d14042e0383197c3fac906b5bd">estimateEffectiveR0</a> (int t)</td></tr>
+<tr class="separator:ab950a7d14042e0383197c3fac906b5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a1e958b01b2d09df92abe698eec6ec5"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatialSEIR_1_1ModelContext.html#a4a1e958b01b2d09df92abe698eec6ec5">calculateR0Components</a> (int t)</td></tr>
+<tr class="separator:a4a1e958b01b2d09df92abe698eec6ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a522336043faa876bb47494f409082b34"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatialSEIR_1_1ModelContext.html#a522336043faa876bb47494f409082b34">calculateEffectiveR0Components</a> (int t)</td></tr>
+<tr class="separator:a522336043faa876bb47494f409082b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26650599b445d706e833ad33bbc4ad71"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatialSEIR_1_1ModelContext.html#a26650599b445d706e833ad33bbc4ad71">calculateG</a> (int t)</td></tr>
 <tr class="separator:a26650599b445d706e833ad33bbc4ad71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a637ceadc71ad656202e3d3fa21d01ade"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatialSEIR_1_1ModelContext.html#a637ceadc71ad656202e3d3fa21d01ade">calculateIntegratedG</a> (int t)</td></tr>
@@ -278,6 +284,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a97d54a9e4778575b5c88264f88831fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc04b849ec0d819b9a4893862348a606"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask.html">SetCompartmentSamplingIndicesTask</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatialSEIR_1_1ModelContext.html#abc04b849ec0d819b9a4893862348a606">setSamplingIndicesTask</a></td></tr>
 <tr class="separator:abc04b849ec0d819b9a4893862348a606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae27950c823d73953740dd8e2267638af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpatialSEIR_1_1PerformHybridSE__EI__UpdateStep.html">PerformHybridSE_EI_UpdateStep</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatialSEIR_1_1ModelContext.html#ae27950c823d73953740dd8e2267638af">performHybridSE_EI_UpdateTask</a></td></tr>
+<tr class="separator:ae27950c823d73953740dd8e2267638af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b5cd5089cd6b9ebf3034387406dccb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpatialSEIR_1_1PerformDecorrelationStep.html">PerformDecorrelationStep</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatialSEIR_1_1ModelContext.html#a0b5cd5089cd6b9ebf3034387406dccb2">decorrelationStepTask</a></td></tr>
 <tr class="separator:a0b5cd5089cd6b9ebf3034387406dccb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21143ccd9b787ff4a42c83cdb2b81a80"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpatialSEIR_1_1ModelContext.html#a21143ccd9b787ff4a42c83cdb2b81a80">Y</a></td></tr>
@@ -573,6 +581,23 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a522336043faa876bb47494f409082b34"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double * SpatialSEIR::ModelContext::calculateEffectiveR0Components </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calculates the location specific components of the effective R0 quantity at time t </p>
+
+</div>
+</div>
 <a class="anchor" id="a26650599b445d706e833ad33bbc4ad71"></a>
 <div class="memitem">
 <div class="memproto">
@@ -586,7 +611,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calculates the next generation matrix used </p>
+<p>Calculates the next generation matrix </p>
 
 </div>
 </div>
@@ -862,7 +887,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calculates the next generation matrix used, integrated forward in time. </p>
+<p>Calculates the next generation matrix, integrated forward in time. </p>
 
 </div>
 </div>
@@ -970,6 +995,23 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>calculateP_SE_OCL works identically to calculateP_SE_CPU, while making calls to oclProvider to perform calculations in parallel. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4a1e958b01b2d09df92abe698eec6ec5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double * SpatialSEIR::ModelContext::calculateR0Components </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calculates the location specific components of the effective R0 quantity at time t </p>
 
 </div>
 </div>
@@ -1209,6 +1251,39 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a55531781c4053d4ec61f2ecb81689c6d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double SpatialSEIR::ModelContext::estimateEffectiveR0 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Estimates the effective reproductive rate across all time periods and spatial locations </p>
+
+</div>
+</div>
+<a class="anchor" id="ab950a7d14042e0383197c3fac906b5bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double * SpatialSEIR::ModelContext::estimateEffectiveR0 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Estimates the effective reproductive rate at time t. </p>
+
+</div>
+</div>
 <a class="anchor" id="aa450557786a891db5bb3338a047b1544"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1225,12 +1300,12 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac392c01b668dfbaaede3c5468a597513"></a>
+<a class="anchor" id="a950c26a1969e4785b3e3d5bbc9a3f082"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double SpatialSEIR::ModelContext::estimateR0 </td>
+          <td class="memname">double * SpatialSEIR::ModelContext::estimateR0 </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>t</em></td><td>)</td>
@@ -1239,33 +1314,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Estimates the basic reproductive number for time point t </p>
-
-</div>
-</div>
-<a class="anchor" id="aceb1cb88b80e72b00d560871218c932c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double SpatialSEIR::ModelContext::estimateR0 </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>l</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>t</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Estimates the basic reproductive number for location l and time point t </p>
 
 </div>
 </div>
@@ -2375,6 +2423,19 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae27950c823d73953740dd8e2267638af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSpatialSEIR_1_1PerformHybridSE__EI__UpdateStep.html">PerformHybridSE_EI_UpdateStep</a>* SpatialSEIR::ModelContext::performHybridSE_EI_UpdateTask</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pointer to the beta+gamma_ei hybrid sampling task. </p>
+
+</div>
+</div>
 <a class="anchor" id="a7873aaa6fe424c33d09287e63cdb6787"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2643,7 +2704,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 23 2014 14:31:22 for libspatialSEIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 3 2014 14:50:47 for libspatialSEIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

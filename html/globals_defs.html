@@ -71,6 +71,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals.html"><span>All</span></a></li>
       <li><a href="globals_func.html"><span>Functions</span></a></li>
       <li><a href="globals_vars.html"><span>Variables</span></a></li>
+      <li><a href="globals_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="globals_eval.html"><span>Enumerator</span></a></li>
       <li class="current"><a href="globals_defs.html"><span>Macros</span></a></li>
     </ul>
   </div>
@@ -81,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_c"><span>c</span></a></li>
       <li><a href="#index_d"><span>d</span></a></li>
       <li><a href="#index_f"><span>f</span></a></li>
+      <li><a href="#index_h"><span>h</span></a></li>
       <li><a href="#index_i"><span>i</span></a></li>
       <li><a href="#index_l"><span>l</span></a></li>
       <li><a href="#index_m"><span>m</span></a></li>
@@ -95,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,13 +113,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h3><a class="anchor" id="index__"></a>- _ -</h3><ul>
 <li>__CL_ENABLE_EXCEPTIONS
 : <a class="el" href="OCLProvider_8hpp.html#af1b68fb4ba71d72d397f46a730f03f2f">OCLProvider.hpp</a>
-, <a class="el" href="OCLProvider_8cpp.html#af1b68fb4ba71d72d397f46a730f03f2f">OCLProvider.cpp</a>
 , <a class="el" href="OCLFunctions_8cpp.html#af1b68fb4ba71d72d397f46a730f03f2f">OCLFunctions.cpp</a>
+, <a class="el" href="OCLProvider_8cpp.html#af1b68fb4ba71d72d397f46a730f03f2f">OCLProvider.cpp</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>BLAS_extern
+: <a class="el" href="dgemv_8h.html#a4f12519c5e7e547da75b0e0e291785c2">dgemv.h</a>
+</li>
 <li>BLAS_INC
 : <a class="el" href="ModelContext_8cpp.html#a5a782ef784c34573a817984c2da6bed3">ModelContext.cpp</a>
 , <a class="el" href="ModelContextSummaryFunctions_8cpp.html#a5a782ef784c34573a817984c2da6bed3">ModelContextSummaryFunctions.cpp</a>
@@ -125,6 +131,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>CBLAS_INDEX
+: <a class="el" href="cblas_8h.html#a0cc6c9831e05958bc66dc000e02f33b9">cblas.h</a>
+</li>
 <li>COMPARTMENT_BINOM_IDX_METROPOLIS_SAMPLER
 : <a class="el" href="LSS__Samplers_8hpp.html#ae34f4c5d521d87fcbd74d61a35a3cc75">LSS_Samplers.hpp</a>
 </li>
@@ -169,6 +178,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </ul>
 
 
+<h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
+<li>HYBRID_SAMPLER_BETA_P_EI
+: <a class="el" href="LSS__Samplers_8hpp.html#a12f15b8595ae049dea1724c3643b7de1">LSS_Samplers.hpp</a>
+</li>
+</ul>
+
+
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>INITCOMPARTMENT_IDX_METROPOLIS_SAMPLER
 : <a class="el" href="LSS__Samplers_8hpp.html#a149be7241f9f075e03fdcfc5aae3cd76">LSS_Samplers.hpp</a>
@@ -194,6 +210,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>LSS_DEGENERATE_DATA_MODEL
 : <a class="el" href="ModelContext_8hpp.html#a5333c3f98fdcb505114c67ba0ae2c344">ModelContext.hpp</a>
+</li>
+<li>LSS_HYBRID_SE_EI_UPDATE_STEP_TASK_TYPE
+: <a class="el" href="LSS__IterationTasks_8hpp.html#aca1bbd4ac7458d8d6bb52b6a85f9903f">LSS_IterationTasks.hpp</a>
 </li>
 <li>LSS_INIT_COMPARTMENT_FULL_CONDITIONAL_TYPE
 : <a class="el" href="LSS__FullConditional_8hpp.html#a57955af041922db2dcbf31073517c4d9">LSS_FullConditional.hpp</a>
@@ -236,6 +255,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>PARAMETER_JOINT_SLICE_SAMPLER
 : <a class="el" href="LSS__Samplers_8hpp.html#a857b09eb4601eb9695015df0cf5bedf7">LSS_Samplers.hpp</a>
 </li>
+<li>PARAMETER_NULL_SAMPLER
+: <a class="el" href="LSS__Samplers_8hpp.html#a0f34829a1248cdcb52004eb1e93fb5b4">LSS_Samplers.hpp</a>
+</li>
 <li>PARAMETER_SINGLE_METROPOLIS_SAMPLER
 : <a class="el" href="LSS__Samplers_8hpp.html#a45d557c90c2bec1b2f9e7c40a7edcdac">LSS_Samplers.hpp</a>
 </li>
@@ -257,7 +279,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 23 2014 14:31:25 for libspatialSEIR by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 3 2014 14:50:50 for libspatialSEIR by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

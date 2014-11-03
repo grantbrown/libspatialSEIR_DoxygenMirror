@@ -138,9 +138,15 @@ double \hyperlink{classSpatialSEIR_1_1ModelContext_a9cb6ca074aff51c1f789b81111c7
 \item 
 double \hyperlink{classSpatialSEIR_1_1ModelContext_aa450557786a891db5bb3338a047b1544}{estimate\-R0} ()
 \item 
-double \hyperlink{classSpatialSEIR_1_1ModelContext_ac392c01b668dfbaaede3c5468a597513}{estimate\-R0} (int t)
+double $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a950c26a1969e4785b3e3d5bbc9a3f082}{estimate\-R0} (int t)
 \item 
-double \hyperlink{classSpatialSEIR_1_1ModelContext_aceb1cb88b80e72b00d560871218c932c}{estimate\-R0} (int l, int t)
+double \hyperlink{classSpatialSEIR_1_1ModelContext_a55531781c4053d4ec61f2ecb81689c6d}{estimate\-Effective\-R0} ()
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_ab950a7d14042e0383197c3fac906b5bd}{estimate\-Effective\-R0} (int t)
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a4a1e958b01b2d09df92abe698eec6ec5}{calculate\-R0\-Components} (int t)
+\item 
+double $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a522336043faa876bb47494f409082b34}{calculate\-Effective\-R0\-Components} (int t)
 \item 
 double $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a26650599b445d706e833ad33bbc4ad71}{calculate\-G} (int t)
 \item 
@@ -184,6 +190,8 @@ double $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a637ceadc71ad656202e3d
 \hyperlink{classSpatialSEIR_1_1FC__Phi}{F\-C\-\_\-\-Phi} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a97d54a9e4778575b5c88264f88831fc4}{phi\-\_\-fc}
 \item 
 \hyperlink{classSpatialSEIR_1_1SetCompartmentSamplingIndicesTask}{Set\-Compartment\-Sampling\-Indices\-Task} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_abc04b849ec0d819b9a4893862348a606}{set\-Sampling\-Indices\-Task}
+\item 
+\hyperlink{classSpatialSEIR_1_1PerformHybridSE__EI__UpdateStep}{Perform\-Hybrid\-S\-E\-\_\-\-E\-I\-\_\-\-Update\-Step} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_ae27950c823d73953740dd8e2267638af}{perform\-Hybrid\-S\-E\-\_\-\-E\-I\-\_\-\-Update\-Task}
 \item 
 \hyperlink{classSpatialSEIR_1_1PerformDecorrelationStep}{Perform\-Decorrelation\-Step} $\ast$ \hyperlink{classSpatialSEIR_1_1ModelContext_a0b5cd5089cd6b9ebf3034387406dccb2}{decorrelation\-Step\-Task}
 \item 
@@ -358,14 +366,21 @@ The two parameter overload of calculate E\-\_\-given\-I\-\_\-\-C\-P\-U takes adv
 {}
 \end{DoxyParamCaption}
 )}}\label{classSpatialSEIR_1_1ModelContext_a0da1ddb3f08c92bc7bca2587477e7bb3}
-calculate\-E\-\_\-\-O\-C\-L works identically to calculate\-S\-\_\-\-C\-P\-U using calls to ocl\-Provider to perform computations in parallel. \hypertarget{classSpatialSEIR_1_1ModelContext_a26650599b445d706e833ad33bbc4ad71}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-G@{calculate\-G}}
+calculate\-E\-\_\-\-O\-C\-L works identically to calculate\-S\-\_\-\-C\-P\-U using calls to ocl\-Provider to perform computations in parallel. \hypertarget{classSpatialSEIR_1_1ModelContext_a522336043faa876bb47494f409082b34}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-Effective\-R0\-Components@{calculate\-Effective\-R0\-Components}}
+\index{calculate\-Effective\-R0\-Components@{calculate\-Effective\-R0\-Components}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-Effective\-R0\-Components}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-Effective\-R0\-Components (
+\begin{DoxyParamCaption}
+\item[{int}]{t}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a522336043faa876bb47494f409082b34}
+Calculates the location specific components of the effective R0 quantity at time t \hypertarget{classSpatialSEIR_1_1ModelContext_a26650599b445d706e833ad33bbc4ad71}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-G@{calculate\-G}}
 \index{calculate\-G@{calculate\-G}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
 \subsubsection[{calculate\-G}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-G (
 \begin{DoxyParamCaption}
 \item[{int}]{t}
 \end{DoxyParamCaption}
 )}}\label{classSpatialSEIR_1_1ModelContext_a26650599b445d706e833ad33bbc4ad71}
-Calculates the next generation matrix used \hypertarget{classSpatialSEIR_1_1ModelContext_acfeda1172ab57c9cc5876c23749d86b5}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-Generic\-Compartment\-\_\-\-C\-P\-U@{calculate\-Generic\-Compartment\-\_\-\-C\-P\-U}}
+Calculates the next generation matrix \hypertarget{classSpatialSEIR_1_1ModelContext_acfeda1172ab57c9cc5876c23749d86b5}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-Generic\-Compartment\-\_\-\-C\-P\-U@{calculate\-Generic\-Compartment\-\_\-\-C\-P\-U}}
 \index{calculate\-Generic\-Compartment\-\_\-\-C\-P\-U@{calculate\-Generic\-Compartment\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
 \subsubsection[{calculate\-Generic\-Compartment\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-Generic\-Compartment\-\_\-\-C\-P\-U (
 \begin{DoxyParamCaption}
@@ -478,7 +493,7 @@ calculate\-I\-\_\-\-O\-C\-L works identically to calculate\-I\-\_\-\-C\-P\-U usi
 \item[{int}]{t}
 \end{DoxyParamCaption}
 )}}\label{classSpatialSEIR_1_1ModelContext_a637ceadc71ad656202e3d3fa21d01ade}
-Calculates the next generation matrix used, integrated forward in time. \hypertarget{classSpatialSEIR_1_1ModelContext_a29e0e03f136c0c55acfd94d2b858bb8b}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-P\-\_\-\-E\-I\-\_\-\-C\-P\-U@{calculate\-P\-\_\-\-E\-I\-\_\-\-C\-P\-U}}
+Calculates the next generation matrix, integrated forward in time. \hypertarget{classSpatialSEIR_1_1ModelContext_a29e0e03f136c0c55acfd94d2b858bb8b}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-P\-\_\-\-E\-I\-\_\-\-C\-P\-U@{calculate\-P\-\_\-\-E\-I\-\_\-\-C\-P\-U}}
 \index{calculate\-P\-\_\-\-E\-I\-\_\-\-C\-P\-U@{calculate\-P\-\_\-\-E\-I\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
 \subsubsection[{calculate\-P\-\_\-\-E\-I\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-P\-\_\-\-E\-I\-\_\-\-C\-P\-U (
 \begin{DoxyParamCaption}
@@ -521,7 +536,14 @@ The two parameter overload of calculate\-P\-\_\-\-S\-E\-\_\-\-C\-P\-U calculates
 {}
 \end{DoxyParamCaption}
 )}}\label{classSpatialSEIR_1_1ModelContext_ab4136d72b61266483fd36fb914359d13}
-calculate\-P\-\_\-\-S\-E\-\_\-\-O\-C\-L works identically to calculate\-P\-\_\-\-S\-E\-\_\-\-C\-P\-U, while making calls to ocl\-Provider to perform calculations in parallel. \hypertarget{classSpatialSEIR_1_1ModelContext_a92f748128f4fa804119358bde45d9495}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-R\-\_\-\-C\-P\-U@{calculate\-R\-\_\-\-C\-P\-U}}
+calculate\-P\-\_\-\-S\-E\-\_\-\-O\-C\-L works identically to calculate\-P\-\_\-\-S\-E\-\_\-\-C\-P\-U, while making calls to ocl\-Provider to perform calculations in parallel. \hypertarget{classSpatialSEIR_1_1ModelContext_a4a1e958b01b2d09df92abe698eec6ec5}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-R0\-Components@{calculate\-R0\-Components}}
+\index{calculate\-R0\-Components@{calculate\-R0\-Components}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{calculate\-R0\-Components}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-R0\-Components (
+\begin{DoxyParamCaption}
+\item[{int}]{t}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a4a1e958b01b2d09df92abe698eec6ec5}
+Calculates the location specific components of the effective R0 quantity at time t \hypertarget{classSpatialSEIR_1_1ModelContext_a92f748128f4fa804119358bde45d9495}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!calculate\-R\-\_\-\-C\-P\-U@{calculate\-R\-\_\-\-C\-P\-U}}
 \index{calculate\-R\-\_\-\-C\-P\-U@{calculate\-R\-\_\-\-C\-P\-U}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
 \subsubsection[{calculate\-R\-\_\-\-C\-P\-U}]{\setlength{\rightskip}{0pt plus 5cm}void Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::calculate\-R\-\_\-\-C\-P\-U (
 \begin{DoxyParamCaption}
@@ -609,29 +631,35 @@ check\-Compartment\-Bounds is a debug mode function which checks for impossible 
 {}
 \end{DoxyParamCaption}
 )}}\label{classSpatialSEIR_1_1ModelContext_a997a0c014e321b460f676aedb905a443}
-configure\-Iteration\-Tasks determines whether there are any conditions which require additional logical tasks to be performed during M\-C\-M\-C sampling. \hypertarget{classSpatialSEIR_1_1ModelContext_aa450557786a891db5bb3338a047b1544}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!estimate\-R0@{estimate\-R0}}
+configure\-Iteration\-Tasks determines whether there are any conditions which require additional logical tasks to be performed during M\-C\-M\-C sampling. \hypertarget{classSpatialSEIR_1_1ModelContext_a55531781c4053d4ec61f2ecb81689c6d}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!estimate\-Effective\-R0@{estimate\-Effective\-R0}}
+\index{estimate\-Effective\-R0@{estimate\-Effective\-R0}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{estimate\-Effective\-R0}]{\setlength{\rightskip}{0pt plus 5cm}double Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::estimate\-Effective\-R0 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_a55531781c4053d4ec61f2ecb81689c6d}
+Estimates the effective reproductive rate across all time periods and spatial locations \hypertarget{classSpatialSEIR_1_1ModelContext_ab950a7d14042e0383197c3fac906b5bd}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!estimate\-Effective\-R0@{estimate\-Effective\-R0}}
+\index{estimate\-Effective\-R0@{estimate\-Effective\-R0}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{estimate\-Effective\-R0}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::estimate\-Effective\-R0 (
+\begin{DoxyParamCaption}
+\item[{int}]{t}
+\end{DoxyParamCaption}
+)}}\label{classSpatialSEIR_1_1ModelContext_ab950a7d14042e0383197c3fac906b5bd}
+Estimates the effective reproductive rate at time t. \hypertarget{classSpatialSEIR_1_1ModelContext_aa450557786a891db5bb3338a047b1544}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!estimate\-R0@{estimate\-R0}}
 \index{estimate\-R0@{estimate\-R0}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
 \subsubsection[{estimate\-R0}]{\setlength{\rightskip}{0pt plus 5cm}double Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::estimate\-R0 (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{classSpatialSEIR_1_1ModelContext_aa450557786a891db5bb3338a047b1544}
-Estimates the average basic reproductive number across all time periods and spatial locations. \hypertarget{classSpatialSEIR_1_1ModelContext_ac392c01b668dfbaaede3c5468a597513}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!estimate\-R0@{estimate\-R0}}
+Estimates the average basic reproductive number across all time periods and spatial locations. \hypertarget{classSpatialSEIR_1_1ModelContext_a950c26a1969e4785b3e3d5bbc9a3f082}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!estimate\-R0@{estimate\-R0}}
 \index{estimate\-R0@{estimate\-R0}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
-\subsubsection[{estimate\-R0}]{\setlength{\rightskip}{0pt plus 5cm}double Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::estimate\-R0 (
+\subsubsection[{estimate\-R0}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::estimate\-R0 (
 \begin{DoxyParamCaption}
 \item[{int}]{t}
 \end{DoxyParamCaption}
-)}}\label{classSpatialSEIR_1_1ModelContext_ac392c01b668dfbaaede3c5468a597513}
-Estimates the basic reproductive number for time point t \hypertarget{classSpatialSEIR_1_1ModelContext_aceb1cb88b80e72b00d560871218c932c}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!estimate\-R0@{estimate\-R0}}
-\index{estimate\-R0@{estimate\-R0}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
-\subsubsection[{estimate\-R0}]{\setlength{\rightskip}{0pt plus 5cm}double Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::estimate\-R0 (
-\begin{DoxyParamCaption}
-\item[{int}]{l, }
-\item[{int}]{t}
-\end{DoxyParamCaption}
-)}}\label{classSpatialSEIR_1_1ModelContext_aceb1cb88b80e72b00d560871218c932c}
-Estimates the basic reproductive number for location l and time point t \hypertarget{classSpatialSEIR_1_1ModelContext_aaae62ac4cd67fe7bc5468214213cdaf3}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!get\-Compartment\-Sampling\-Mode@{get\-Compartment\-Sampling\-Mode}}
+)}}\label{classSpatialSEIR_1_1ModelContext_a950c26a1969e4785b3e3d5bbc9a3f082}
+Estimates the basic reproductive number for time point t \hypertarget{classSpatialSEIR_1_1ModelContext_aaae62ac4cd67fe7bc5468214213cdaf3}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!get\-Compartment\-Sampling\-Mode@{get\-Compartment\-Sampling\-Mode}}
 \index{get\-Compartment\-Sampling\-Mode@{get\-Compartment\-Sampling\-Mode}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
 \subsubsection[{get\-Compartment\-Sampling\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}int Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::get\-Compartment\-Sampling\-Mode (
 \begin{DoxyParamCaption}
@@ -1003,7 +1031,10 @@ Transition probability vector p\-\_\-rs \hypertarget{classSpatialSEIR_1_1ModelCo
 Storage for the exposure probability matrix, p\-\_\-se \hypertarget{classSpatialSEIR_1_1ModelContext_aa6a04d39cec1ace0e7c57c3551d12bc4}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!p\-\_\-se\-\_\-components@{p\-\_\-se\-\_\-components}}
 \index{p\-\_\-se\-\_\-components@{p\-\_\-se\-\_\-components}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
 \subsubsection[{p\-\_\-se\-\_\-components}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::p\-\_\-se\-\_\-components}}\label{classSpatialSEIR_1_1ModelContext_aa6a04d39cec1ace0e7c57c3551d12bc4}
-Storage for cacheable portions of the p\-\_\-se calculation \hypertarget{classSpatialSEIR_1_1ModelContext_a7873aaa6fe424c33d09287e63cdb6787}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!phi@{phi}}
+Storage for cacheable portions of the p\-\_\-se calculation \hypertarget{classSpatialSEIR_1_1ModelContext_ae27950c823d73953740dd8e2267638af}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!perform\-Hybrid\-S\-E\-\_\-\-E\-I\-\_\-\-Update\-Task@{perform\-Hybrid\-S\-E\-\_\-\-E\-I\-\_\-\-Update\-Task}}
+\index{perform\-Hybrid\-S\-E\-\_\-\-E\-I\-\_\-\-Update\-Task@{perform\-Hybrid\-S\-E\-\_\-\-E\-I\-\_\-\-Update\-Task}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
+\subsubsection[{perform\-Hybrid\-S\-E\-\_\-\-E\-I\-\_\-\-Update\-Task}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Perform\-Hybrid\-S\-E\-\_\-\-E\-I\-\_\-\-Update\-Step}$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::perform\-Hybrid\-S\-E\-\_\-\-E\-I\-\_\-\-Update\-Task}}\label{classSpatialSEIR_1_1ModelContext_ae27950c823d73953740dd8e2267638af}
+Pointer to the beta+gamma\-\_\-ei hybrid sampling task. \hypertarget{classSpatialSEIR_1_1ModelContext_a7873aaa6fe424c33d09287e63cdb6787}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!phi@{phi}}
 \index{phi@{phi}!SpatialSEIR::ModelContext@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}}
 \subsubsection[{phi}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Spatial\-S\-E\-I\-R\-::\-Model\-Context\-::phi}}\label{classSpatialSEIR_1_1ModelContext_a7873aaa6fe424c33d09287e63cdb6787}
 Storage for the overdispersion parameter \hypertarget{classSpatialSEIR_1_1ModelContext_a97d54a9e4778575b5c88264f88831fc4}{\index{Spatial\-S\-E\-I\-R\-::\-Model\-Context@{Spatial\-S\-E\-I\-R\-::\-Model\-Context}!phi\-\_\-fc@{phi\-\_\-fc}}
